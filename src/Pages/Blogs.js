@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from './NavBar';
-import Footer from './Footer';
+import Navbar from '../component/NavBar';
+import Footer from '../component/Footer';
 
 
-const Home = () => {
+const Blogs = () => {
 
     return (
         <>
@@ -25,4 +25,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default Blogs;

@@ -1,13 +1,15 @@
 
 import React from "react";
 import Logo from '../Images/CodesBunny/Artboardd.png'
-import '../Style/navbar.css'
+import '../Assets/Style/navbar.css'
 import { NavLink } from "react-router-dom";
 
 
 
 
 const Navbar = () => {
+
+  
 
     // const navigate = useNavigate();
     // const handleLogout = () => {
@@ -36,7 +38,7 @@ const Navbar = () => {
           <div className="main-menu-wrapper-inner clearfix">
             <div className="main-menu-wrapper__left clearfix">  
               <div className="main-menu-wrapper__logo">
-             <NavLink to="index.html"><img src={Logo}  style={{ width: '170px' }}
+             <NavLink to="/"><img src={Logo}  style={{ width: '170px' }}
                     alt="CodesBunny" /></NavLink>
               </div>      
             </div>
@@ -45,13 +47,13 @@ const Navbar = () => {
                 <NavLink to="#" className="mobile-nav__toggler"><i className="fa fa-bars"></i></NavLink>
                 <ul className="main-menu__list">
                   <li className="">
-                    <NavLink to="index.html">HOME</NavLink>
+                    <NavLink to="/">HOME</NavLink>
                   </li>
-                  <li><NavLink to="about.html">ABOUT US</NavLink></li>
+                  <li><NavLink to="/about">ABOUT US</NavLink></li>
                   <li className="dropdown current">
-                    <NavLink to="services.html">SERVICES</NavLink>
+                    <NavLink to="/service">SERVICES</NavLink>
                     <ul>
-                      <li><NavLink to="">Services</NavLink></li>
+                      <li><NavLink to="/service">Services</NavLink></li>
                       <li><NavLink to="">Our Products</NavLink></li>
                       <li><NavLink to="">Web Development</NavLink></li>
                       <li><NavLink to="">App Development</NavLink></li>
@@ -62,23 +64,22 @@ const Navbar = () => {
                     </ul>
                   </li>
                   <li className="dropdown current">
-                    <NavLink to="news.html">BLOG</NavLink>
-                    <ul>
+                    <NavLink to="/blog">BLOG</NavLink>
+                    {/* <ul>
                       <li><NavLink to="blogone.html">Blog One</NavLink></li>
                       <li><NavLink to="blogtwo.html">Blog Two</NavLink></li>
                       <li><NavLink to="blogthree.html">Blog Three</NavLink></li>
                       <li><NavLink to="blogfour.html">Blog Four</NavLink></li>
                       <li><NavLink to="blogfive.html">Blog Five</NavLink></li>
                       <li><NavLink to="blogsix.html">Blog Six</NavLink></li>
-                    </ul>
+                    </ul> */}
                   </li>
-                  <li><NavLink to="contact.html">CONTACT US</NavLink></li>
+                  <li><NavLink to="/contact">CONTACT US</NavLink></li>
                 </ul>
               </div>
             </div>
             <div className="main-menu-wrapper__right">
-              <NavLink to="contact.html" className ="nav__btn nav-btn">Get Free Quote Now</NavLink>
-
+              <NavLink to="/contact" className ="nav__btn nav-btn">Get Free Quote Now</NavLink>
             </div>
           </div>
         </div>
