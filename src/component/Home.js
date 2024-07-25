@@ -10,12 +10,6 @@ const Home = () => {
    <Navbar />
 <br></br>
 <br></br>
-   
-  
-
-
-
-  
 <br></br>
 <br></br>
 <br></br>
