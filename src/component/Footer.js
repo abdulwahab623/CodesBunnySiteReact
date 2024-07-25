@@ -1,6 +1,6 @@
 
 import React from "react";
-import '../Style/footer.css'
+import '../Assets/Style/footer.css';
 // import '../style/navbar.css';
 // import { NavLink } from "react-router-dom";
 // import { useNavigate } from 'react-router-dom';
