@@ -1,0 +1,114 @@
+.mainHero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .imageLayerHero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+  }
+  
+  .imageHeroOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    z-index: 2;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 3;
+  }
+  
+  .HeroContent {
+    text-align: center;
+    color: white;
+    
+  }
+  
+  .HeroContent h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .HeroContent p {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  
+  .herothm-btn {
+    position: relative;
+    width: 355px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    border: none;
+    outline: none !important;
+    background-color:  #40537a;
+    color: var(--thm-base);
+    font-size: 15px; 
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    padding:3px 20px;
+    /* padding: 9px 35px; */
+    border-radius: 9px;
+    transition: all 0.1s linear;
+    overflow: hidden;
+    letter-spacing: 0.2em;
+    z-index: 1;
+    text-align: center;}
+
+    .herothm-btn:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        background-color: #202735;
+        transition-delay: .1s;
+        transition-timing-function: ease-in-out;
+        transition-duration: .3s;
+        transition-property: all;
+        opacity: 1;
+        transform-origin: bottom;
+        transform-style: preserve-3d;
+        transform: scaleY(0);
+        z-index: -1;
+    }
+  
+
+  .herothm-btn:hover:after {
+    opacity: 1;
+    transform: scaleY(1.0);
+}
+
+
+  
+  @media (max-width: 768px) {
+    .HeroContent h2 {
+      font-size: 32px;
+    }
+  
+    .HeroContent p {
+      font-size: 16px;
+    }
+  }
+  

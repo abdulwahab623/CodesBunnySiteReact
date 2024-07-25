@@ -110,6 +110,7 @@ ul {
 .container {
     padding-left: 15px;
     padding-right: 15px;
+    overflow-x: hidden;
 }
 
 @media (min-width: 1200px) {
@@ -351,25 +352,15 @@ canvas {
     background: var(--thm-base);
 }
 
-.main-header__top {
+.main-header__top-inner {
     display: flex;
     align-items: center; /* Vertically center */
     justify-content: center; /* Horizontally center */
     background-color: var( --thm-novablue);
-    height: 45px;
-}
-
-
-/* .main-header__top {
+    height: 50px;
     position: relative;
     display: block;
-    padding: 0px 80px;
-    background-color: var( --thm-novablue);
-} */
-.main-header__top-inner {
-    position: relative;
-    display: block;
-    padding: 1.5px 0;
+    padding: 10px 0;
 }
 
 
@@ -411,19 +402,17 @@ canvas {
 /* logo header */
 .main-menu {
     position: relative;
-    padding: 0 80px;
+  
     z-index: 91;
+    height: 90px;
+    
 }
 
-.main-menu-wrapper {
+.main-menu-wrapper, .main-menu-wrapper-inner{
     position: relative;
     display: block;
 }
 
-.main-menu-wrapper-inner {
-    position: relative;
-    display: block;
-}
 
 .main-menu-wrapper__left {
     position: relative;
@@ -442,7 +431,7 @@ canvas {
     float: left;
     padding-top: 30px;
     padding-bottom: 15px;
-    margin-right: 165px;
+    margin-left: 128px;
 }
 
 .main-menu-wrapper__main-menu {
@@ -461,6 +450,8 @@ canvas {
   
 .nav-btn {
     position: relative;
+    width: auto;
+    height: auto;
     display: inline-block;
     vertical-align: middle;
     -webkit-appearance: none;
@@ -468,7 +459,7 @@ canvas {
     outline: none !important;
     background-color: var(--thm-novablue);
     color: var(--thm-base);
-    font-size: 16px; 
+    font-size: 15px; 
     font-weight: 600;
     /* text-transform: uppercase; */
     padding:3px 20px;
@@ -487,7 +478,7 @@ canvas {
     left: 0;
     right: 0;
     height: 100%;
-    background-color: #202735;
+    background-color:  #2a3346;
     transition-delay: .1s;
     transition-timing-function: ease-in-out;
     transition-duration: .3s;
@@ -1794,7 +1785,7 @@ canvas {
     padding-bottom: 220px;
 }
 
-.main-slider-two .main-slider__content {
+ .main-slider__content {
     position: relative;
     display: block;
    justify-content: center;

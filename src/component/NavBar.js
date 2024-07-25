@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <>
       <header className="main-header clearfix">
-        <div className="main-header__top clearfix">
+       
           <div className="main-header__top-inner clearfix">
             <div className="main-header__top-right">
               <div className="main-header__top-right-text">
@@ -25,13 +25,12 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-        </div>
         <nav className="main-menu clearfix">
           <div className="main-menu-wrapper clearfix">
             <div className="main-menu-wrapper-inner clearfix">
               <div className="main-menu-wrapper__left clearfix">
                 <div className="main-menu-wrapper__logo">
-                  <NavLink to="/"><img src={Logo} style={{ width: '170px' }} alt="CodesBunny" /></NavLink>
+                  <NavLink to="/"><img src={Logo} style={{ width: '154px' , height: '45px' }} alt="CodesBunny" /></NavLink>
                 </div>
               </div>
               <div className="main-menu-wrapper__center">
