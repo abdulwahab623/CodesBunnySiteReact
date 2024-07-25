@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 import '../Assets/Style/About.css';
 import Navbar from "../component/NavBar";
 import Footer from "../component/Footer";
+import Image5 from '../Images/CodesBunny/image5.png';
+import Image6 from '../Images/CodesBunny/image6.png';
 
 const About = () => {
     return (
@@ -10,8 +12,8 @@ const About = () => {
         <Navbar />
         
             <section className="page-header"> 
-                <div className="page-header-bg" style={{ backgroundImage: 'url(assets/images/CodesBunny/image5.png)' }}>
-                </div>
+            <div className="page-header-bg" style={{ backgroundImage: `url(${Image5})` }}>
+            </div>
                 <div className="page-header-bg-overly"></div>
           
                 <div className="container">
@@ -33,7 +35,7 @@ const About = () => {
                         <div className="col-xl-6">
                             <div className="about-two__left wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
                                 <div className="about-two__img">
-                                    {/* <img src="assets/images/CodesBunny/image6.png" alt="" /> */}
+                                     <img src={Image6}  alt="" /> 
                                 </div>
                             </div>
                         </div>
