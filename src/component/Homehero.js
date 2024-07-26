@@ -9,8 +9,8 @@ const Homehero = () => {
     return (
         <>
       <section className="mainHero">
-      <div className="imageLayerHero" style={{ backgroundImage: `url(${Banna1})` }}></div>
-      <div className="imageHeroOverlay"></div>
+      {/* <div className="imageLayerHero" ></div>
+      <div className="imageHeroOverlay"></div> */}
       <div className="container">
         <div className="row">
           <div className="col-lg-6 col-md-6">

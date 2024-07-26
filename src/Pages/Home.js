@@ -390,7 +390,7 @@ const Home = () => {
               Technology Challenges
             </h2>
             <p class="ctaOneSubTitle">Let’s Get Started Now</p>
-            <a href="contact.html" class="ctabtn">Get Free Quote Now</a>
+            <a href="contact.html" className="ctabtn">Get Free Quote Now</a>
           </div>
         </div>
       {/* </div> */}
