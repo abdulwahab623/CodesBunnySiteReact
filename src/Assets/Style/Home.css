@@ -1,0 +1,132 @@
+/* --------------------
+CTS CSS home page footer upper 
+-------------------- */
+
+.cta-one {
+  position: relative;
+  display: block;
+  z-index: 1;
+}
+
+.cta-one__container {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 365px;
+  background: radial-gradient(
+    circle,
+    rgba(14, 69, 82, 1) 0%,
+    rgba(10, 109, 136, 1) 100%
+  );
+
+  margin: 85px auto;
+  z-index: 1;
+}
+
+/* .cta-one-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    background-blend-mode: luminosity;
+    opacity: 0.3;
+    z-index: -1
+} */
+
+.cta-one__inner {
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 40px 0 120px;
+}
+
+.ctaOneSubTitle {
+  margin-top: 20px;
+  color: #00c9ff;
+  font-family: Barlow;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.8px;
+  text-align: center;
+}
+
+.cta-one__title {
+  font-family: Barlow;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 50.4px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+
+.ctabtn {
+    color: #ffffff;
+  margin-top: 20px;
+  position: relative;
+  width: 400px;
+  display: inline-block;
+  vertical-align: middle;
+  /* -webkit-appearance: none; */
+  border: none;
+  outline: none !important;
+  /* background-color: var(--thm-novablue); */
+  
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 9px 35px;
+  border-radius: 9px;
+  border: 1px solid grey;
+  transition: all 0.1s linear;
+  overflow: hidden;
+  letter-spacing: 0.2em;
+  z-index: 1;
+}
+
+.ctabtn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(9,101,126,1) 100%);
+  transition-delay: 0.1s;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+  transition-property: all;
+  opacity: 1;
+  transform-origin: bottom;
+  transform-style: preserve-3d;
+  transform: scaleY(0);
+  z-index: -1;
+}
+
+.ctabtn:hover:after {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.ctabtn:hover {
+  color: var(--thm-base);
+}
+
+.cta-one__btn:after {
+  background-color: var(--thm-base);
+}
+
+.cta-one__btn:hover:after {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.cta-one__btn:hover {
+  color: var(--thm-primary);
+}

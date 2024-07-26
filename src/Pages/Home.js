@@ -6,7 +6,8 @@ import Abouthome from "../component/Abouthome";
 import Image9 from '../Images/CodesBunny/image9.png'
 import HMS from '../Images/CodesBunny/hms.jpg'
 import image10 from '../Images/CodesBunny/image10.png'
-import Banna2 from '../Images/CodesBunny/banna2.png'
+
+import '../Assets/Style/Home.css'
 
 
 const Home = () => {
@@ -378,20 +379,21 @@ const Home = () => {
 
   <section class="cta-one">
     <div class="cta-one__container">
-      <div class="cta-one-bg" style={{ backgroundImage: `url(${Banna2})` }}></div>
-      <div class="cta-one-overly"></div>
-      <div class="container">
+      {/* <div class="cta-one-bg"></div> */}
+      {/* <div class="cta-one-overly"></div> */}
+      {/* <div class="container"> */}
         <div class="col-lg-12">
           <div class="cta-one__inner">
-            <p class="cta-one__sub-title">Let’s Get Started Now</p>
+            
             <h2 class="cta-one__title">
               We’ll Help You Overcome Your <br />
               Technology Challenges
             </h2>
+            <p class="ctaOneSubTitle">Let’s Get Started Now</p>
             <a href="contact.html" class="ctabtn">Get Free Quote Now</a>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </div>
   </section>
 
