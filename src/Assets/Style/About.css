@@ -1,101 +1,369 @@
-.about-two {
-    position: relative;
-    display: block;
-    padding: 120px 0 120px;
-}
+/* About.css */
 
-.about-two__left {
-    position: relative;
-    display: block;
-    margin-right: 62px;
-}
+/* General styles */
+.aboutMainHero {
+    padding: 2rem 1rem;
+  }
+  
 
-.about-two__img {
-    position: relative;
-    display: block;
-}
-.Aboutsection-title__title{
-    margin: 0;
-    font-weight: 650;  
-    font-size: 30px;
-    line-height: 30px;
-    color: #333333;
-}
-
-.about-two__img img {
-    width: 100%;
-    border-radius: var(--thm-bdr-radius);
-}
-
-.about-two__right {
-    position: relative;
-    display: block;
-    margin-left: -30px;
-}
-
-.about-two__right .section-title {
-    margin-bottom: 28px;
-}
-
-.about-two__text-1 {
-    margin: 0;
-    padding-bottom: 19px;
-}
-
-.about-two__text-2 {
-    font-size: 24px;
-    color: var(--thm-primary);
-    font-weight: 600;
-    margin: 0;
-    line-height: 40px;
-    padding-bottom: 39px;
-}
-
-.about-two__progress {
+  .aboutHeroContainer {
     display: flex;
     align-items: center;
-    line-height: 0;
+    justify-content: center;
+    text-align: left;
+    font-family: Barlow;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .col-lg-6,
+  .col-md-6 {
+    flex: 1;
+    padding: 1rem;
+  }
+
+
+.aboutHeroContent {
+    margin: auto;
 }
 
-.about-two__progress-wrap {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
+.aboutHeroContent h2 {
+    font-family: Barlow;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
 }
 
-@media (min-width: 768px) {
-    .about-two__progress-wrap {
-        grid-template-columns: repeat(2, 290px);
+
+.aboutHeroContent p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    
+    color: #ffffff;
+    
+}
+
+.aboutHeroContent ul {
+    list-style: none;
+    padding: 0;
+
+    color: #ffffff;
+}
+
+.aboutHeroContent ul li {
+
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.aboutHeroBtn {
+    color: #ffffff;
+    margin-top: 20px;
+    position: relative;
+    width: 250px;
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    outline: none !important;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 9px 35px;
+    border-radius: 9px;
+    border: 1px solid grey;
+    transition: all 0.1s linear;
+    overflow: hidden;
+    letter-spacing: 0.2em;
+    z-index: 1;
+}
+
+.aboutHeroBtn:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(9,101,126,1) 100%);
+    transition-delay: 0.1s;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    transition-property: all;
+    opacity: 1;
+    transform-origin: bottom;
+    transform-style: preserve-3d;
+    transform: scaleY(0);
+    z-index: -1;
+}
+
+.aboutHeroBtn:hover:after {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.aboutHeroBtn:hover {
+    color: var(--thm-base);
+}
+
+.aboutAnimatedImage {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-28px);
+    }
+  }
+
+.aboutHome {
+    text-align: center;
+}
+
+.aboutHome h1 {
+    font-family: Barlow;
+    text-align: center;
+    color: #ffffff;
+}
+
+.aboutHome p {
+    text-align: center;
+    color: #25c8f5;
+    font-family: Barlow;
+}
+
+.aboutSectionOne {
+    padding: 50px 20px;
+}
+
+.aboutSecondContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.aboutLeft,
+.aboutRight {
+    padding: 20px;
+}
+
+.aboutImgBox {
+    position: relative;
+}
+
+.aboutImg {
+    overflow: hidden;
+}
+
+.aboutImg img {
+    max-width: 100%;
+    height: auto;
+}
+
+.aboutText {
+    font-size: 1rem;
+    color: #333;
+}
+
+.aboutText strong {
+    color: #13abd4;
+}
+
+.aboutList {
+    padding-left: 20px;
+}
+
+.aboutList li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-family: Barlow;
+}
+
+.aboutList li img {
+    margin-right: 10px;
+}
+
+.aboutOneText {
+    color: #ffffff;
+    font-family: Barlow;
+    text-align: left;
+}
+
+.aboutSectionTwo {
+    margin-bottom: 60px;
+    padding: 50px 20px;
+}
+
+
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-28px);
+    }
+  }
+
+/* Responsive styles */
+@media (max-width: 767px) {
+    .row {
+    flex-direction: column;
+  }
+
+  .col-lg-6,
+  .col-md-6 {
+    width: 100%;
+  }
+
+  .HeroContent UL{
+    text-align: left;
+  }
+
+  .aboutHeroContent {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .aboutAnimatedImage {
+    margin: 0 auto;
+    max-width: 100%;
+    display: block;
+  }
+    .aboutMainHero {
+        padding: 30px 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutHeroContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutHeroContent {
+        margin: 0;
+    }
+
+    .aboutHeroContent h2 {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+
+    .aboutHeroContent p {
+        font-size: 0.875rem;
+        text-align: center;
+    }
+
+    .aboutHeroContent ul li {
+        font-size: 0.875rem;
+        text-align: center;
+    }
+
+    .aboutHeroBtn {
+        font-size: 0.875rem;
+        margin-top: 20px;
+    }
+
+   
+
+    .aboutSectionOne {
+        padding: 30px 10px;
+    }
+
+    .aboutText {
+        font-size: 0.875rem;
+    }
+    .aboutOneImg img{
+        width: 400px;
     }
 }
 
-.about-two__progress-box {
-    position: relative;
-    display: inline-block;
+@media (min-width: 768px) and (max-width: 991px) {
+    .aboutHeroContent h2 {
+        font-size: 1.75rem;
+    }
+
+    .aboutHeroContent p {
+        font-size: 0.95rem;
+    }
+
+    .aboutHeroContent ul li {
+        font-size: 0.95rem;
+    }
+
+    .aboutHeroBtn {
+        font-size: 0.95rem;
+    }
+
+    .aboutSectionOne {
+        padding: 40px 15px;
+    }
+
+    .aboutText {
+        font-size: 0.95rem;
+    }
 }
 
-.about-two__progress-box canvas {
-    transform: rotate(90deg);
+@media (min-width: 992px) and (max-width: 1199px) {
+    .aboutHeroContent h2 {
+        font-size: 2rem;
+    }
+
+    .aboutHeroContent p {
+        font-size: 1rem;
+    }
+
+    .aboutHeroContent ul li {
+        font-size: 1rem;
+    }
+
+    .aboutHeroBtn {
+        font-size: 1rem;
+    }
+
+    .aboutSectionOne {
+        padding: 50px 20px;
+    }
+
+    .aboutText {
+        font-size: 1rem;
+    }
 }
 
-.about-two__progress-box span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: block;
-    transform: translateY(-50%) translateX(-50%);
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1;
-    color: var(--thm-black);
-}
+@media (min-width: 1200px) {
+    .aboutHeroContent h2 {
+        font-size: 2.5rem;
+    }
 
-.about-two__progress h3 {
-    margin: 0;
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 800;
-    color: var(--thm-black);
-    width: 120px;
-    margin-left: 20px;
+    .aboutHeroContent p {
+        font-size: 1.1rem;
+    }
+
+    .aboutHeroContent ul li {
+        font-size: 1.1rem;
+    }
+
+    .aboutHeroBtn {
+        font-size: 1.1rem;
+    }
+
+    .aboutSectionOne {
+        padding: 60px 30px;
+    }
+
+    .aboutText {
+        font-size: 1.1rem;
+    }
 }

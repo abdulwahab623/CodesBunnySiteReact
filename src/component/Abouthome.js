@@ -1,7 +1,7 @@
 import React from "react";
-import image7 from '../Images/CodesBunny/image7.png'
-import image11 from '../Images/CodesBunny/image11.png'
-import '../Assets/Style/All.css'
+import image7 from '../Images/CodesBunny/image7.png';
+import image11 from '../Images/CodesBunny/image11.png';
+import '../Assets/Style/abouthome.css';
 
 const Abouthome = () => {
   return (

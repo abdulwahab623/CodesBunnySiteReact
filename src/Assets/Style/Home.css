@@ -1,3 +1,31 @@
+.sectionserviceRow {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to right, #004d6e, #016ba2);
+  padding: 20px 0;
+}
+
+.serviceRow {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.serviceItem {
+  color: white;
+  font-size: 1.2rem;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+.serviceItem::before {
+  content: "";
+  margin-right: 8px;
+}
+
+
+
 /* --------------------
 CTS CSS home page footer upper 
 -------------------- */
@@ -130,3 +158,6 @@ CTS CSS home page footer upper
 .cta-one__btn:hover {
   color: var(--thm-primary);
 }
+
+
+
