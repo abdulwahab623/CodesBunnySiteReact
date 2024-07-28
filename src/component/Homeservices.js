@@ -1,21 +1,23 @@
 import React from "react";
-
 import '../Assets/Style/homeser.css';
+import App from '../Images/CodesBunny/mobV.png'
+import { NavLink } from "react-router-dom";
+import Web from '../Images/CodesBunny/WebV.png'
+import Media from '../Images/CodesBunny/Media.png'
 
 const Homeservices = () => {
   return (
     <section class="services-one">
       <div class="container">
         <div class="section-title text-center">
-          <span class="sersection-title__tagline">Wide Range of Services</span>
-          <h2 class="sersection-title__title">What We’re Offering</h2>
+        <h2 class="sersection-title__title">Tailored Solutions for Your Business</h2>
+          <span class="sersection-title__tagline">Designed to Elevate Your Success</span>
         </div>
         <div class="row">
           <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="100ms">
             <div class="services-one__single">
               <div class="services-one__icon">
-                <span class="icon-"></span>
-                <img class="im" src="assets/images/CodesBunny/Vector1.png" alt="" />
+                <img class="im" src={Web} alt="App" />
               </div>
               <h3 class="services-one__title">
                 <a href="web.html">Web Development
@@ -25,7 +27,8 @@ const Homeservices = () => {
                 Web Development Enhance your online presence with custom solutions. We build responsive, user-friendly websites that drive engagement and conversions.
               </p>
               <div class="services-one__arrow">
-                <a href="web.html"><span class="icon-right-arrow"></span></a>
+              <NavLink to="/about" className="SerBtn">Learn More</NavLink>
+                {/* <a href="web.html"><span class="icon-right-arrow"></span></a> */}
               </div>
             </div>
           </div>
@@ -33,8 +36,8 @@ const Homeservices = () => {
 
             <div class="services-one__single">
               <div class="services-one__icon">
-                <span class="icon-app-development"></span>
-                <img class="im" src="assets/images/CodesBunny/mblapp.png" alt="" />
+                
+              <img class="im" src={App} alt="App" />
               </div>
               <h3 class="services-one__title">
                 <a href="App.html">App Development</a>
@@ -45,7 +48,7 @@ const Homeservices = () => {
                 tailored to your business needs.
               </p>
               <div class="services-one__arrow">
-                <a href="App.html"><span class="icon-right-arrow"></span></a>
+              <NavLink to="/about" className="SerBtn">Learn More</NavLink>
               </div>
             </div>
           </div>
@@ -54,7 +57,7 @@ const Homeservices = () => {
               <div class="services-one__icon">
 
 
-                <img class="im" src="assets/images/CodesBunny/Vector2.png" alt="" />
+              <img class="im" src={Media} alt="App" />
               </div>
               <h3 class="services-one__title">
                 <a href="Digital.html">Digital Marketing</a>
@@ -63,8 +66,8 @@ const Homeservices = () => {
                 Boost your brand's visibility and reach with our digital marketing services. We offer SEO, social media marketing, and PPC strategies to grow your business.
               </p>
               <div class="services-one__arrow">
-                <a href="Digital.html"><span class="icon-right-arrow"></span></a>
-              </div>
+              <NavLink to="/about" className="SerBtn">Learn More</NavLink>
+                            </div>
             </div>
           </div>
         </div>
