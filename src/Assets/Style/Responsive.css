@@ -1242,6 +1242,23 @@
         display: none;
     } */
 
+    .news-one__content {
+        width: 90%;
+        bottom: 10px;
+      }
+
+      .news-one__title {
+        font-size: 14px;
+      }
+    
+      .news-one__content p {
+        font-size: 12px;
+      }
+    
+      .news-one__read-more-btn {
+        font-size: 12px;
+        padding: 4px 8px;
+      }
     .main-header__top-inner{
           display: none;
     }

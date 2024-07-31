@@ -284,6 +284,8 @@ const Abouthome = () => {
   </div>
 </div>
 </section>
+
+
     </>
   );
 };
