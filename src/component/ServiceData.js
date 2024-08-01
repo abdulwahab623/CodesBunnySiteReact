@@ -4,6 +4,9 @@ import hmsV from "../Images/CodesBunny/hmsv.png"
 import digi from "../Images/CodesBunny/Media.png"
 import SEO from "../Images/CodesBunny/seoV.png"
 import con from "../Images/CodesBunny/ContentV.png"
+import erp from "../Images/CodesBunny/erpv.png"
+import Cyber from "../Images/CodesBunny/CyberV.png"
+import ASO from "../Images/CodesBunny/ASOV.png"
 
 
 
@@ -23,7 +26,7 @@ const Sdata = [
     {
         id:3,
         imgsrc: hmsV,
-        title: "Hospital Management System HMS",
+        title: "Hospital Management System",
         des:"It offers a comprehensive suite of tools that manage patient information, appointments, billing, and medical records with ease and precision. ",
     },
     {id:4,
@@ -44,9 +47,27 @@ const Sdata = [
     },
     {
         id:7,
-        imgsrc:App ,
+        imgsrc:ASO ,
         title: "App Store Optimization",
         des:" ASO services improve your app's visibility and ranking in app stores.",
+    },
+    {
+        id:8,
+        imgsrc:App ,
+        title: "Data Science",
+        des:"By harnessing advanced analytical techniques, we extract valuable insights, predict future trends, and optimize business operations.",
+    },
+    {
+        id:9,
+        imgsrc:Cyber ,
+        title: "Cyber Security",
+        des:" We implement robust security measures to protect your sensitive information, systems, and networks from cyberattacks. Our experts provide proactive protection.",
+    },
+    {
+        id:10,
+        imgsrc:erp ,
+        title: "Enterprises Resource Plan ",
+        des:"Enterprise Resource Planning (ERP) is a system that integrates and manages a company's core business processes in real-time.",
     },
 ]
 export default Sdata

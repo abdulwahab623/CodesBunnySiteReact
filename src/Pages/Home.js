@@ -18,105 +18,56 @@ const Home = () => {
       <Abouthome />
       {/* <Testimonal /> */}
       <section className="testimonial-one">
-        <div id="particles-js"></div>
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-4 col-lg-5">
-              <div className="testimonial-one__left">
-                <div className="section-title text-left">
-                  <span className="section-title__tagline">
-                    Customers Feedbacks
-                  </span>
-                  <h2 className="section-title__title">
-                    What They’re Talking About Company
-                  </h2>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-8 col-lg-7">
-              <div className="testimonial-one__right">
-                <div className="testimonial-one__carousel owl-theme owl-carousel">
-                  <div className="testimonial-one__single">
-                    <div className="testimonial-one__client-info">
-                      <div className="testimonial-one__client-img">
-                        <img
-                          src="assets/images/testimonial/testimonial-one-img-1.png"
-                          alt=""
-                        />
-                      </div>
-                      <div className="testimonial-one__client-details">
-                        <h5 className="testimonial-one__client-name">
-                          Kevin Martin
-                        </h5>
-                        <p className="testimonial-one__client-title">
-                          Customer
-                        </p>
-                      </div>
-                    </div>
-                    <p className="testimonial-one__text">
-                      Lorem ipsum is simply free text dolor sit amet,
-                      consectetur notted adipisicing elit sed do eiusmod tempor
-                      incididunt ut labore et dolore text.
-                    </p>
-                    <div className="testimonial-one__quote">
-                      <span className="icon-right-quote"></span>
-                    </div>
-                  </div>
+      <h1>Our amazing people</h1>
+<div class="container">
+  <div class="faders">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
 
-                  <div className="testimonial-one__single">
-                    <div className="testimonial-one__client-info">
-                      <div className="testimonial-one__client-img">
-                        <img
-                          src="assets/images/testimonial/testimonial-one-img-2.png"
-                          alt=""
-                        />
-                      </div>
-                      <div className="testimonial-one__client-details">
-                        <h5 className="testimonial-one__client-name">
-                          Christine Eve
-                        </h5>
-                        <p className="testimonial-one__client-title">
-                          Customer
-                        </p>
-                      </div>
-                    </div>
-                    <p className="testimonial-one__text">
-                      Lorem ipsum is simply free text dolor sit amet,
-                      consectetur notted adipisicing elit sed do eiusmod tempor
-                      incididunt ut labore et dolore text.
-                    </p>
-                    <div className="testimonial-one__quote">
-                      <span className="icon-right-quote"></span>
-                    </div>
-                  </div>
-
-                  <div class="testimonial-one__single">
-                    <div class="testimonial-one__client-info">
-                      <div class="testimonial-one__client-img">
-                        <img
-                          src="assets/images/testimonial/testimonial-one-img-3.png"
-                          alt=""
-                        />
-                      </div>
-                      <div class="testimonial-one__client-details">
-                        <h5 class="testimonial-one__client-name">Jon Smith</h5>
-                        <p class="testimonial-one__client-title">Customer</p>
-                      </div>
-                    </div>
-                    <p class="testimonial-one__text">
-                      Lorem ipsum is simply free text dolor sit amet,
-                      consectetur notted adipisicing elit sed do eiusmod tempor
-                      incididunt ut labore et dolore text.
-                    </p>
-                    <div class="testimonial-one__quote">
-                      <span class="icon-right-quote"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <div class="items">
+    <div class="entry">
+      <p class="name">John Doe</p>
+      <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Smiling person" />
+      <p class="quote">"Man, I think this app freaking rocks and stuff. Dude."</p>
+    </div>
+    <div class="entry">
+      <p class="name">John Doe</p>
+      <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Smiling person" />
+      <p class="quote">"Man, I think this app freaking rocks and stuff. Dude."</p>
+    </div>
+    <div class="entry">
+      <p class="name">John Doe</p>
+      <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Smiling person" />
+      <p class="quote">"Man, I think this app freaking rocks and stuff. Dude."</p>
+    </div>
+    <div class="entry">
+      <p class="name">John Doe</p>
+      <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Smiling person" />
+      <p class="quote">"Man, I think this app freaking rocks and stuff. Dude."</p>
+    </div>
+    <div class="entry">
+      <p class="name">John Doe</p>
+      <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Smiling person" />
+      <p class="quote">"Man, I think this app freaking rocks and stuff. Dude."</p>
+    </div>
+    <div class="entry">
+      <p class="name">John Doe</p>
+      <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Smiling person" />
+      <p class="quote">"Man, I think this app freaking rocks and stuff. Dude."</p>
+    </div>
+    <div class="entry">
+      <p class="name">John Doe</p>
+      <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Smiling person" />
+      <p class="quote">"Man, I think this app freaking rocks and stuff. Dude."</p>
+    </div>
+    <div class="entry">
+      <p class="name">John Doe</p>
+      <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Smiling person" />
+      <p class="quote">"Man, I think this app freaking rocks and stuff. Dude."</p>
+    </div>
+  </div>
+</div>
       </section>
 
       <section className="news-one">
@@ -127,6 +78,29 @@ const Home = () => {
             </div>
           </div>
           <div className="row">
+          <div className="col-xl-4 col-lg-4 wow fadeInLeft">
+              <div className="news-one__single">
+                <div className="news-one__img">
+                  <img
+                    src={AI}
+                   
+                    alt=""
+                  />
+                </div>
+                <div className="news-one__content">
+                  <h3 className="news-one__title">
+                    Impact of Artificial Intelligence On Business.
+                  </h3>
+                  <p>Jun 25 2025</p>
+                  <NavLink
+                    href="blogone.html"
+                    className="news-one__read-more-btn"
+                  >
+                    Read More
+                  </NavLink>
+                </div>
+              </div>
+            </div>
             <div className="col-xl-4 col-lg-4 col-md-6 wow fadeInLeft">
               <div className="news-one__single">
                 <div className="news-one__img">
@@ -150,29 +124,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-lg-4 wow fadeInLeft">
-              <div className="news-one__single">
-                <div className="news-one__img">
-                  <img
-                    src={AI}
-                   
-                    alt=""
-                  />
-                </div>
-                <div className="news-one__content">
-                  <h3 className="news-one__title">
-                    Impact of Artificial Intelligence On Business.
-                  </h3>
-                  <p>Jun 25 2025</p>
-                  <NavLink
-                    href="blogone.html"
-                    className="news-one__read-more-btn"
-                  >
-                    Read More
-                  </NavLink>
-                </div>
-              </div>
-            </div>
+            
 
             <div className="col-xl-4 col-lg-4 wow fadeInLeft">
               <div className="news-one__single">

@@ -3,11 +3,8 @@
     position: relative;
     display: block;
     width: 100%;
-    
     margin-top: 50px;
-    margin-bottom: 150px;
-
-    
+    margin-bottom: 110px;
 }
 
 .abouthome{
@@ -125,7 +122,8 @@ justify-content: center;
 }
 
 .about-one__right .section-title {
-    margin-bottom: 28px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .about-one__text {
@@ -375,7 +373,7 @@ home services
 }
 
 .sersection-title__title {
-    margin: 0;
+   margin-top: 20px;
     font-weight: 700;
     color: white;
     font-size: 30px;
