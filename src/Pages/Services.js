@@ -73,11 +73,11 @@ const Services = () => {
                     />
                   </div>
                   <h3 className="servicestitle">
-                    <NavLink to={service.link || "/Web"}>{service.title}</NavLink>
+                    <NavLink to={service.link}>{service.title}</NavLink>
                   </h3>
                   <p className="services-one__text">{service.des}</p>
                   <div className="services-one__arrow">
-                    <NavLink to={service.link || "/Web"} className="SerBtn">
+                    <NavLink to={service.link} className="SerBtn">
                       Learn More
                     </NavLink>
                   </div>

@@ -14,7 +14,7 @@ import Web from "./component/Web";
 // import Footer from "./component/Footer";
 import Whatsapp from './Images/CodesBunny/WhatsApp.png'
 import Mail from './Images/CodesBunny/mail.png'
-
+import HmsErp from "./component/HmsErp";
 
 
 function App() {
@@ -49,7 +49,8 @@ function App() {
         <Route path='/service' element={<Services />} />
         <Route path='/blog' element={<Blogs />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/Web' element={<Web />} />
+        <Route path='/web' element={<Web />} />
+        <Route path='/Hms' element={<HmsErp />} />
       </Routes>
     
 <Footer />

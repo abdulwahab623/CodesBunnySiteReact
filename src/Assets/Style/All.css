@@ -4701,27 +4701,27 @@ ul {
 /*--------------------------------------------------------------
 # News sections hms
 --------------------------------------------------------------*/
-@keyframes fadeInFromSide {
+/* @keyframes fadeInFromSide {
     from {
       opacity: 0;
-      transform: translateX(50px); /* Move from the right side */
+      transform: translateX(50px); 
     }
     to {
       opacity: 1;
-      transform: translateX(0); /* Move to the original position */
+      transform: translateX(0); 
     }
   }
   
   @keyframes fadeInFromSideLeft {
     from {
       opacity: 0;
-      transform: translateX(-50px); /* Move from the left side */
+      transform: translateX(-50px); 
     }
     to {
       opacity: 1;
-      transform: translateX(0); /* Move to the original position */
+      transform: translateX(0); 
     }
-  }
+  } */
   
   /* Default state before animation starts */
   .news-img, .news-text-wrapper {
@@ -4800,6 +4800,10 @@ ul {
   
   .news-img-col-right {
     order: 2;
+  }
+  .news-section {
+    position: relative;
+    z-index: 1; /* Ensure it's above the particles container */
   }
 /*--------------------------------------------------------------
 # News Details

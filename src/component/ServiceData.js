@@ -16,23 +16,27 @@ const Sdata = [
         imgsrc: web,
         title: "Web Development",
         des:" Web Development Enhance your online presence with custom solutions. We build responsive, user-friendly websites that drive engagement and conversions.",
+        link:"/web",
     },
     {
         id:2,
         imgsrc: App,
         title: "App Development",
         des:"Transform your ideas into powerful Android applications. Our expert developers create feature-rich, high-performance apps tailored to your business needs.",
+        link:"/web",
     },
     {
         id:3,
         imgsrc: hmsV,
         title: "Hospital Management System",
         des:"It offers a comprehensive suite of tools that manage patient information, appointments, billing, and medical records with ease and precision. ",
+        link:"/Hms",
     },
     {id:4,
         imgsrc: digi,
         title: "Digital Marketing",
         des:"Boost your brand's visibility and reach with our digital marketing services. We offer SEO, social media marketing, and PPC strategies to grow your business.",
+        link:"/",
     },
     {id:5,
         imgsrc: con,
@@ -68,6 +72,7 @@ const Sdata = [
         imgsrc:erp ,
         title: "Enterprises Resource Plan ",
         des:"Enterprise Resource Planning (ERP) is a system that integrates and manages a company's core business processes in real-time.",
+        link:"/Hms"
     },
 ]
 export default Sdata
