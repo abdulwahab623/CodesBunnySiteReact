@@ -1,9 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Sdata from "../component/ServiceData";
-import Bunny from "../Images/CodesBunny/herobunny.png";
+import Bunny from "../Assets/Images/CodesBunny/herobunny.png";
 import Servicerow from "../component/Servicerow";
-import Tick from "../Images/CodesBunny/tick.png";
+import Tick from "../Assets/Images/CodesBunny/tick.png";
 import "../Assets/Style/Service.css";
 
 const Services = () => {

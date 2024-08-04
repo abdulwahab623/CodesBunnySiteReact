@@ -1,7 +1,7 @@
  import React, { useState } from "react";
-import Logo from '../Images/CodesBunny/Artboardd.png';
+import Logo from '../Assets/Images/CodesBunny/Artboardd.png';
 import { NavLink } from "react-router-dom";
-import emailpic from '../Images/CodesBunny/mail.png';
+import emailpic from '../Assets/Images/CodesBunny/mail.png';
 
 
 const Navbar = () => {

@@ -12,8 +12,8 @@ import Contact from "./Pages/Contact";
 import Footer from "./component/Footer";
 import Web from "./component/Web";
 // import Footer from "./component/Footer";
-import Whatsapp from './Images/CodesBunny/WhatsApp.png'
-import Mail from './Images/CodesBunny/mail.png'
+import Whatsapp from './Assets/Images/CodesBunny/WhatsApp.png'
+import Mail from './Assets/Images/CodesBunny/mail.png'
 import HmsErp from "./component/HmsErp";
 
 

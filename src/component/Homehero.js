@@ -1,8 +1,8 @@
 import React from "react";
 import '../Assets/Style/Hero.css'
 import { NavLink } from "react-router-dom";
-import Herobunny from '../Images/CodesBunny/herobunny.png'
-import Tick from '../Images/CodesBunny/tick.png';
+import Herobunny from '../Assets/Images/CodesBunny/herobunny.png'
+import Tick from '../Assets/Images/CodesBunny/tick.png';
 
 const Homehero = () => {
 

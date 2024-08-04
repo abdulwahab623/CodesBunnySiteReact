@@ -15,6 +15,9 @@
 
 .HeroContent h2 {
   color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  
 }
 
 .row {
@@ -31,11 +34,6 @@
 
 .HeroContent {
   margin: auto;
-}
-
-.HeroContent h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
 }
 
 .HeroContent p {

@@ -1,14 +1,14 @@
 import React from "react";
-import image7 from "../Images/CodesBunny/image7.png";
-import image11 from "../Images/CodesBunny/image11.png";
+import image7 from "../Assets/Images/CodesBunny/image7.png";
+import image11 from "../Assets/Images/CodesBunny/image11.png";
 import "../Assets/Style/abouthome.css";
-import App from "../Images/CodesBunny/mobV.png";
-import Web from "../Images/CodesBunny/WebV.png";
-import Media from "../Images/CodesBunny/Media.png";
+import App from "../Assets/Images/CodesBunny/mobV.png";
+import Web from "../Assets/Images/CodesBunny/WebV.png";
+import Media from "../Assets/Images/CodesBunny/Media.png";
 import { NavLink } from "react-router-dom";
-import image10 from '../Images/CodesBunny/image10.png'
-import Tick from "../Images/CodesBunny/tick.png";
-import Image9 from "../Images/CodesBunny/image9.png";
+import image10 from '../Assets/Images/CodesBunny/image10.png'
+import Tick from "../Assets/Images/CodesBunny/tick.png";
+import Image9 from "../Assets/Images/CodesBunny/image9.png";
 
 const Abouthome = () => {
   return (

@@ -1,12 +1,12 @@
-import web from "../Images/CodesBunny/WebV.png"
-import App from "../Images/CodesBunny/mobV.png"
-import hmsV from "../Images/CodesBunny/hmsv.png"
-import digi from "../Images/CodesBunny/Media.png"
-import SEO from "../Images/CodesBunny/seoV.png"
-import con from "../Images/CodesBunny/ContentV.png"
-import erp from "../Images/CodesBunny/erpv.png"
-import Cyber from "../Images/CodesBunny/CyberV.png"
-import ASO from "../Images/CodesBunny/ASOV.png"
+import web from "../Assets/Images/CodesBunny/WebV.png"
+import App from "../Assets/Images/CodesBunny/mobV.png"
+import hmsV from "../Assets/Images/CodesBunny/hmsv.png"
+import digi from "../Assets/Images/CodesBunny/Media.png"
+import SEO from "../Assets/Images/CodesBunny/seoV.png"
+import con from "../Assets/Images/CodesBunny/ContentV.png"
+import erp from "../Assets/Images/CodesBunny/erpv.png"
+import Cyber from "../Assets/Images/CodesBunny/CyberV.png"
+import ASO from "../Assets/Images/CodesBunny/ASOV.png"
 
 
 

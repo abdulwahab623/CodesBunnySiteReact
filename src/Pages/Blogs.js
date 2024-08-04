@@ -1,7 +1,7 @@
 import React from "react";
-import Tick from "../Images/CodesBunny/tick.png";
+import Tick from "../Assets/Images/CodesBunny/tick.png";
 import { NavLink } from "react-router-dom";
-import Bunny from "../Images/CodesBunny/herobunny.png";
+import Bunny from "../Assets/Images/CodesBunny/herobunny.png";
 import Servicerow from "../component/Servicerow";
 
 

@@ -1,24 +1,23 @@
 import React from "react";
 import "../Assets/Style/footer.css";
 import { NavLink } from "react-router-dom";
-import EmailVector from '../Images/CodesBunny/emailvector.png'
-import Instagram from '../Images/CodesBunny/instavector.png'
-import TelePhone from '../Images/CodesBunny/telephonevector.png'
-import FaceBook from '../Images/CodesBunny/Facabookvec.png'
-import Linkedin from '../Images/CodesBunny/LinkedInvector.png'
-import Mail from '../Images/CodesBunny/mailvector.png'
+import EmailVector from '../Assets/Images/CodesBunny/emailvector.png'
+import Instagram from '../Assets/Images/CodesBunny/instavector.png'
+import TelePhone from '../Assets/Images/CodesBunny/telephonevector.png'
+import FaceBook from '../Assets/Images/CodesBunny/Facabookvec.png'
+import Linkedin from '../Assets/Images/CodesBunny/LinkedInvector.png'
+import Mail from '../Assets/Images/CodesBunny/mailvector.png'
 const Footer = () => {
   return (
     <>
       <footer className="site-footer">
+      <div className="Footerbackground"></div>
         <div className="site-footer__top">
           {/* <div className="container"> */}
           <div className="site-footer__top-inner">
             <div className="row">
               <div
-                className="
-                                col-lg-1"
-              ></div>
+                className="col-lg-1"></div>
               <div
                 className="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-xs-12 wow fadeInUp"
                 data-wow-delay="100ms"
@@ -174,7 +173,6 @@ const Footer = () => {
                     </div>
                   </div>
                 </div>
-              
             </div>
           </div>
         </div>

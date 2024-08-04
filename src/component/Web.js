@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Tick from "../Images/CodesBunny/tick.png";
-import Bunny from "../Images/CodesBunny/herobunny.png";
+import Tick from "../Assets/Images/CodesBunny/tick.png";
+import Bunny from "../Assets/Images/CodesBunny/herobunny.png";
 import Servicerow from "../component/Servicerow";
-import web from '../Images/CodesBunny/web.jpg';
+import web from '../Assets/Images/CodesBunny/web.jpg';
 
 
 const Web = () => {

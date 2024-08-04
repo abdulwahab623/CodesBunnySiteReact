@@ -1,9 +1,29 @@
+
 .site-footer {
     position: relative;
     display: block;
-
     margin-top: -120px;
+    background-image: url('../Images/CodesBunny/Ellipse1.png'); /* Ensure this path is correct */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0% 0%; /* Start position for animation */
+    overflow: hidden;
+    animation: moveBackground 5s linear infinite; /* Apply both animations */
 }
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 60% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
 
 .site-footer__top {
     position: relative;

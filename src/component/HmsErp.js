@@ -1,9 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Tick from "../Images/CodesBunny/tick.png";
-import Bunny from "../Images/CodesBunny/herobunny.png";
+import Tick from "../Assets/Images/CodesBunny/tick.png";
+import Bunny from "../Assets/Images/CodesBunny/herobunny.png";
 import Servicerow from "../component/Servicerow";
-import HMS from '../Images/CodesBunny/hms.jpg'
+import HMS from '../Assets/Images/CodesBunny/hms.jpg'
 import '../Assets/Style/Hms.css'
 
 
@@ -52,7 +52,7 @@ const HmsErp = () => {
 
       <Servicerow />
 
-      <section className="custom-news-section">
+  <section className="custom-news-section">
   <div className="container">
     <div className="custom-news-row">
       <div className="col-xl-5 col-lg-6 custom-img-col-left" id="img1">
@@ -76,6 +76,20 @@ const HmsErp = () => {
               billing, healthcare providers can focus more on patient care
               and less on administrative tasks.
             </p>
+            <ul>
+                  <li>
+                    <img src={Tick} alt="Tick icon" /> Wide range of digital
+                    services
+                  </li>
+                  <li>
+                    <img src={Tick} alt="Tick icon" /> Exceptional online
+                    experiences
+                  </li>
+                  <li>
+                    <img src={Tick} alt="Tick icon" /> Expertise with user
+                    understanding
+                  </li>
+                </ul>
           </div>
         </div>
       </div>
@@ -97,6 +111,20 @@ const HmsErp = () => {
               reduce costs, improve efficiency, and gain a competitive
               edge.
             </p>
+            <ul>
+                  <li>
+                    <img src={Tick} alt="Tick icon" /> Wide range of digital
+                    services
+                  </li>
+                  <li>
+                    <img src={Tick} alt="Tick icon" /> Exceptional online
+                    experiences
+                  </li>
+                  <li>
+                    <img src={Tick} alt="Tick icon" /> Expertise with user
+                    understanding
+                  </li>
+                </ul>
           </div>
         </div>
       </div>
@@ -129,6 +157,20 @@ const HmsErp = () => {
               and effective learning experiences while providing educators
               and trainers with the tools they need to succeed.
             </p>
+            <ul>
+                  <li>
+                    <img src={Tick} alt="Tick icon" /> Wide range of digital
+                    services
+                  </li>
+                  <li>
+                    <img src={Tick} alt="Tick icon" /> Exceptional online
+                    experiences
+                  </li>
+                  <li>
+                    <img src={Tick} alt="Tick icon" /> Expertise with user
+                    understanding
+                  </li>
+                </ul>
           </div>
         </div>
       </div>

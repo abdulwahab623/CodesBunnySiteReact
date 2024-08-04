@@ -1,5 +1,5 @@
 import React from "react";
- import Contactus from '../Images/CodesBunny/Contactus.png'
+ import Contactus from '../Assets/Images/CodesBunny/Contactus.png'
 
 const Contact = () => {
 

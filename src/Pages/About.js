@@ -1,12 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "../Assets/Style/About.css";
-import image7 from "../Images/CodesBunny/abouttwo.png";
+import image7 from "../Assets/Images/CodesBunny/abouttwo.png";
 
-import Bunny from "../Images/CodesBunny/herobunny.png";
+import Bunny from "../Assets/Images/CodesBunny/herobunny.png";
 import Servicerow from "../component/Servicerow";
-import Team from "../Images/CodesBunny/Team.jpg";
-import Tick from "../Images/CodesBunny/tick.png";
+import Team from "../Assets/Images/CodesBunny/Team.jpg";
+import Tick from "../Assets/Images/CodesBunny/tick.png";
 // import App from '../Images/CodesBunny/mobV.png'
 // import Web from '../Images/CodesBunny/WebV.png'
 // import Media from '../Images/CodesBunny/Media.png'

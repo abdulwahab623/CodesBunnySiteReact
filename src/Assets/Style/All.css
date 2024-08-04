@@ -55,7 +55,7 @@ body {
     font-weight: 500;
     box-sizing: border-box;
     overflow-x: hidden;
-    background: linear-gradient(94deg, rgba(16,17,17,1) 0%, rgba(45,86,98,1) 44%, rgba(9,27,31,0.9808298319327731) 100%);
+    background: linear-gradient(94deg, rgba(7, 15, 17, 0.981) 100%, rgba(7, 15, 17, 0.981) 100%);
 }
 
 body.locked {
@@ -2353,15 +2353,36 @@ ul {
 /*--------------------------------------------------------------
 # News One
 --------------------------------------------------------------*/
+
+.news-one__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../Images/CodesBunny/Ellipse1.png'); /* Update this path if necessary */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: moveBackground 6s linear infinite;
+    z-index: -1; /* Ensure it’s behind other content */
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
 .news-one {
     position: relative;
     display: block;
-    padding: 60px 0;
+    padding: 60px 0 0 0;
 
 }
-
-
-
 .news-one h2 {
     text-align: center;
     color: white;

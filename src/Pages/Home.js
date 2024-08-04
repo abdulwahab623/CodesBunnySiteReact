@@ -5,9 +5,9 @@ import Abouthome from "../component/Abouthome";
 import "../Assets/Style/Home.css";
 import Servicerow from "../component/Servicerow";
 // import Testimonal from "../component/Testimonal";
-import Innovation from "../Images/CodesBunny/Innovation.jpg";
-import AI from "../Images/CodesBunny/AI.jpg";
-import Digital from "../Images/CodesBunny/Digital Transformation.jpg";
+import Innovation from "../Assets/Images/CodesBunny/Innovation.jpg";
+import AI from "../Assets/Images/CodesBunny/AI.jpg";
+import Digital from "../Assets/Images/CodesBunny/Digital Transformation.jpg";
 import { NavLink } from "react-router-dom";
 
 const Home = () => {
@@ -71,6 +71,7 @@ const Home = () => {
       </section>
 
       <section className="news-one">
+      <div className="news-one__background"></div>
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12">
