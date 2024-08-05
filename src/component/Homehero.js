@@ -12,7 +12,7 @@ const Homehero = () => {
         <div className="Herocontainer">
           <div className="row">
             <div className="col-lg-6 col-md-6">
-              <div className="HeroContent">
+              <div className="HeroContent" data-aos="zoom-in">
                 <h2>Welcome to Codesbunny Where Innovation Meets Excellence</h2>
                 <p>
                 At Codesbunny, we are passionate about turning ideas into reality through cutting-edge software

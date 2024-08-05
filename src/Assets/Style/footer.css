@@ -1,15 +1,14 @@
 
 .site-footer {
     position: relative;
-    display: block;
     margin-top: -120px;
     background-image: url('../Images/CodesBunny/Ellipse1.png'); /* Ensure this path is correct */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 0% 0%; /* Start position for animation */
-    overflow: hidden;
-    animation: moveBackground 5s linear infinite; /* Apply both animations */
+   
+    animation: moveBackground 3s ease-in-out infinite; /* Apply both animations */
 }
 
 @keyframes moveBackground {

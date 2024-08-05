@@ -1,6 +1,5 @@
 import React from "react";
 import image7 from "../Assets/Images/CodesBunny/image7.png";
-import image11 from "../Assets/Images/CodesBunny/image11.png";
 import "../Assets/Style/abouthome.css";
 import App from "../Assets/Images/CodesBunny/mobV.png";
 import Web from "../Assets/Images/CodesBunny/WebV.png";
@@ -9,11 +8,15 @@ import { NavLink } from "react-router-dom";
 import image10 from '../Assets/Images/CodesBunny/image10.png'
 import Tick from "../Assets/Images/CodesBunny/tick.png";
 import Image9 from "../Assets/Images/CodesBunny/image9.png";
-
+import Innovation from "../Assets/Images/CodesBunny/Innovation.jpg";
+import AI from "../Assets/Images/CodesBunny/AI.jpg";
+import Digital from "../Assets/Images/CodesBunny/Digital Transformation.jpg";
 const Abouthome = () => {
   return (
     <>
+    
       <section className="about-one">
+      <div className="backg"></div>        
         <div className="container">
           <div className="row">
             <div className="col-lg-12 abouthome">
@@ -23,24 +26,18 @@ const Abouthome = () => {
           </div>
           <div className="row">
             <div className="col-xl-6">
-              <div
-                className="about-one__left wow slideInLeft"
-                data-wow-delay="100ms"
-                data-wow-duration="2500ms"
-              >
+              <div className="about-one__left " data-aos="zoom-in">
                 <div className="about-one__img-box">
                   <div className="about-one__img">
-                    <img src={image7} alt="" />
+                    <img src={image7} alt="img" />
                   </div>
-                  <div className="about-one__small-img">
-                    <img src={image11} alt="" />
-                  </div>
+               
                 </div>
               </div>
             </div>
             <div className="col-xl-6">
               <div className="about-one__right">
-                <p className="about-one__text">
+                <p className="about-one__text" data-aos="zoom-in">
                   <strong style={{ color: "#13abd4" }}>
                     Customized Solutions:{" "}
                   </strong>
@@ -49,14 +46,14 @@ const Abouthome = () => {
                   meet the unique needs of your business, ensuring optimal
                   results and satisfaction.
                 </p>
-                <p className="about-one__text">
+                <p className="about-one__text" data-aos="zoom-in">
                   <strong style={{ color: "#13abd4" }}>Expert Team: </strong>
                   <br></br>
                   Our team of experienced professionals is dedicated to
                   delivering high-quality, innovative solutions that drive
                   growth and success for your business.
                 </p>
-                <p className="about-one__text">
+                <p className="about-one__text" data-aos="zoom-in">
                   <strong style={{ color: "#13abd4" }}>
                     Cutting-Edge Technology:{" "}
                   </strong>
@@ -65,7 +62,7 @@ const Abouthome = () => {
                   delivering high-quality, innovative solutions that drive
                   growth and success for your business.
                 </p>
-                <p className="about-one__text">
+                <p className="about-one__text" data-aos="zoom-in">
                   <strong style={{ color: "#13abd4" }}>
                     Comprehensive Support:{" "}
                   </strong>
@@ -75,7 +72,7 @@ const Abouthome = () => {
                   and performs optimally.
                 </p>
 
-                <NavLink href="about.html" className="aboutHome__btn">
+                <NavLink to="/about" className="aboutHome__btn">
                   Read More
                 </NavLink>
               </div>
@@ -85,6 +82,7 @@ const Abouthome = () => {
       </section>
 
       <section className="services-one">
+      <div className="backgg"></div>  
         <div className="container">
           <div className="section-title text-center">
             <h2 className="sersection-title__title">
@@ -96,10 +94,9 @@ const Abouthome = () => {
           </div>
           <div className="row">
             <div
-              className="col-xl-4 col-lg-4 wow fadeInLeft"
-              data-wow-delay="100ms"
+              className="col-xl-4 col-lg-4" 
             >
-              <div className="services-one__single">
+              <div className="services-one__single" >
                 <div className="services-one__icon">
                   <img className="im" src={Web} alt="App" />
                 </div>
@@ -123,7 +120,7 @@ const Abouthome = () => {
               className="col-xl-4 col-lg-4 wow fadeInUp"
               data-wow-delay="200ms"
             >
-              <div className="services-one__single">
+              <div className="services-one__single" data-aos="zoom-in">
                 <div className="services-one__icon">
                   <img className="im" src={App} alt="App" />
                 </div>
@@ -174,16 +171,14 @@ const Abouthome = () => {
           <div className="container">
             <div className="row">
               <div className="col-xl-6">
-                {/* <div className="share-the-joy__right"> */}
                 <div className="sharejoyimgbox">
-                  <div className="sharejoyimg wow fadeInRight">
-                    <img src={Image9} alt="" className="float-bob-2" />
+                  <div className="sharejoyimg " data-aos="flip-right">
+                    <img src={Image9} alt="img" className="float-bob-2" />
                   </div>
-                  {/* </div> */}
                 </div>
               </div>
               <div className="col-xl-6">
-                <div className="sharejoyleft">
+                <div className="sharejoyleft" data-aos="flip-left">
                   <h2 className="sharejoytitle">
                     Custom IT Software Development
                   </h2>
@@ -207,7 +202,7 @@ const Abouthome = () => {
                       adaptable.
                     </li>
                   </ul>
-                  <NavLink to="details.html" className="sharejoybtn">
+                  <NavLink to="/about" className="sharejoybtn">
                     Read More
                   </NavLink>
                 </div>
@@ -227,10 +222,10 @@ const Abouthome = () => {
   </div>
   <div class="row">
     <div class="col-xl-6">
-      <div class="improve-one__left wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
+      <div class="improve-one__left " data-aos="zoom-in">
         <div class="improve-one__img-box">
           <div class="improve-one__img">
-            <img src={image10} alt="" />
+            <img src={image10} alt="img" />
           </div>
           <div class="improve-one__project-complete">
             <p>Grow business With <span>CodesBunny</span></p>
@@ -284,6 +279,138 @@ const Abouthome = () => {
   </div>
 </div>
 </section>
+
+<section className="testimonial-one">
+        <h1>In Our Customers Words</h1>
+        <div class="container">
+          <div class="items">
+            <div class="entry">
+              <p class="name">Alex Johnson</p>
+              <p class="quote">
+              This software transformed our project handling with its intuitive interface and responsive support.              </p>
+            </div>
+            <div class="entry">
+              <p class="name">Maria Gonzalez</p>
+              <p class="quote">
+              This software has boosted our productivity with its constant updates and improvements. Worth every penny.              </p>
+            </div>
+            <div class="entry">
+              <p class="name">Amir Younas</p>
+              <p class="quote">
+              Easy integration with our tools and constant updates. The CodesBunny team did a great job.</p>
+              
+            </div>
+            <div class="entry">
+              <p class="name">John Doe</p>
+              <p class="quote">
+                "Man, I think this app freaking rocks and stuff. Dude."
+              </p>
+            </div>
+            <div class="entry">
+              <p class="name">John Doe</p>
+              <p class="quote">
+                "Man, I think this app freaking rocks and stuff. Dude."
+              </p>
+            </div>
+            <div class="entry">
+              <p class="name">John Doe</p>
+              <p class="quote">
+                "Man, I think this app freaking rocks and stuff. Dude."
+              </p>
+            </div>
+            <div class="entry">
+              <p class="name">John Doe</p>
+              <p class="quote">
+                "Man, I think this app freaking rocks and stuff. Dude."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="news-one">
+        <div className="news-one__background"></div>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 col-md-12 col-sm-12">
+              <h2>Dive Into Our Thoughtfull Blog</h2>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-xl-4 col-lg-4 wow fadeInLeft">
+              <div className="news-one__single">
+                <div className="news-one__img">
+                  <img src={AI} alt="AI" />
+                </div>
+                <div className="news-one__content">
+                  <h3 className="news-one__title">
+                    Impact of Artificial Intelligence On Business.
+                  </h3>
+                  <p>Jun 25 2025</p>
+                  <NavLink
+                    to="/blog"
+                    className="news-one__read-more-btn"
+                  >
+                    Read More
+                  </NavLink>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-4 col-lg-4 col-md-6 wow fadeInLeft">
+              <div className="news-one__single">
+                <div className="news-one__img">
+                  <img src={Innovation} alt="Innovation" />
+                </div>
+                <div className="news-one__content">
+                  <h3 className="news-one__title">
+                    The Role of Innovation in Driving Business Success.
+                  </h3>
+                  <p>Jun 25 2025</p>
+                  <NavLink
+                    to="/blog" className="news-one__read-more-btn">
+                    Read More
+                  </NavLink>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-xl-4 col-lg-4 wow fadeInLeft">
+              <div className="news-one__single">
+                <div className="news-one__img">
+                  <img src={Digital} alt="Digital" />{" "}
+                </div>
+                <div className="news-one__content">
+                  <h3 className="news-one__title">
+                    Embracing Digital Transform In Business
+                  </h3>
+                  <p>Jun 25 2025</p>
+                  <NavLink
+                    to="/blog" className="news-one__read-more-btn">
+                    Read More
+                  </NavLink>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="cta-one">
+        <div className="cta-one__container">
+          <div className="col-lg-12">
+            <div className="cta-one__inner">
+              <h2 className="cta-one__title">
+                We’ll Help You Overcome Your <br />
+                Technology Challenges
+              </h2>
+              <p className="ctaOneSubTitle">Let’s Get Started Now</p>
+              <NavLink to="/contact" className="ctabtn">
+                Get Free Quote Now
+              </NavLink>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
     </>

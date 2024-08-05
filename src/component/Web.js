@@ -3,7 +3,8 @@ import { NavLink } from 'react-router-dom';
 import Tick from "../Assets/Images/CodesBunny/tick.png";
 import Bunny from "../Assets/Images/CodesBunny/herobunny.png";
 import Servicerow from "../component/Servicerow";
-import web from '../Assets/Images/CodesBunny/web.jpg';
+import web from '../Assets/Images/CodesBunny/web.png';
+import App from '../Assets/Images/CodesBunny/AppDev.png';
 
 
 const Web = () => {
@@ -40,7 +41,7 @@ const Web = () => {
           </div>
         </div>
       </section>
-      
+
       <Servicerow />
 
       <section className="news-details">
@@ -74,11 +75,11 @@ const Web = () => {
           </div>
         </div>
       </section>
-      
+
       <section className="news-details">
         <div className="container">
           <div className="row">
-           
+
             <div className="col-xl-7 col-lg-6">
               <div className="news-details__left">
                 <div className="news-details__content">
@@ -101,7 +102,8 @@ const Web = () => {
             </div>
             <div className="col-xl-5 col-lg-6">
               <div className="news-details__img">
-              <img src={web} alt="Web Development" />              </div>
+                <img src={App} alt="Web Development" />
+              </div>
             </div>
           </div>
         </div>

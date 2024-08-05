@@ -1,6 +1,5 @@
 import React from "react";
 import {  Routes, Route } from 'react-router-dom';
-
 import '../src/Assets/Style/All.css';
 import './Assets/Style/Responsive.css';
 import Home from "./Pages/Home";
@@ -11,10 +10,12 @@ import Contact from "./Pages/Contact";
  import Navbar from "./component/NavBar";
 import Footer from "./component/Footer";
 import Web from "./component/Web";
-// import Footer from "./component/Footer";
 import Whatsapp from './Assets/Images/CodesBunny/WhatsApp.png'
 import Mail from './Assets/Images/CodesBunny/mail.png'
 import HmsErp from "./component/HmsErp";
+import Content from "./component/ContentDigital";
+import SeoAso from "./component/SeoAso";
+import Datacyber from "./component/DataandCyber";
 
 
 function App() {
@@ -51,6 +52,9 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/web' element={<Web />} />
         <Route path='/Hms' element={<HmsErp />} />
+        <Route path='/Content' element={<Content />} />Datacyber
+        <Route path='/SeoAso' element={<SeoAso />} />
+        <Route path='/Dataandcyber' element={<Datacyber />} />
       </Routes>
     
 <Footer />

@@ -1,9 +1,30 @@
 /* Hero.css */
 
 /* Basic styles for the hero section */
+
 .mainHero {
   padding: 2rem 1rem;
+  position: relative;
+    background-image: url('../Images/CodesBunny/Ellipse1.png'); /* Ensure this path is correct */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0% 0%; /* Start position for animation */
+
+    animation: moveBackground 3s ease-in-out infinite; /* Apply both animations */
 }
+@keyframes moveBackground {
+  0% {
+      background-position: 60% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+
 
 .Herocontainer {
   display: flex;

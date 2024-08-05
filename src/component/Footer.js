@@ -7,11 +7,12 @@ import TelePhone from '../Assets/Images/CodesBunny/telephonevector.png'
 import FaceBook from '../Assets/Images/CodesBunny/Facabookvec.png'
 import Linkedin from '../Assets/Images/CodesBunny/LinkedInvector.png'
 import Mail from '../Assets/Images/CodesBunny/mailvector.png'
+import Officiallogo from '../Assets/Images/CodesBunny/Officiallogo.png'
 const Footer = () => {
   return (
     <>
       <footer className="site-footer">
-      <div className="Footerbackground"></div>
+        <div className="Footerbackground"></div>
         <div className="site-footer__top">
           {/* <div className="container"> */}
           <div className="site-footer__top-inner">
@@ -28,14 +29,13 @@ const Footer = () => {
                     style={{ display: "flex" }}
                   >
                     <NavLink href="index.html">
-                      <img src="assets/images/loader.png" width="90px" alt="" />
+                      <img src={Officiallogo} alt="" />
                     </NavLink>
-                    <h4 style={{ color: "azure", marginTop: "30px" }}>
-                      CodesBunny
-                    </h4>
+                    
                   </div>
                   <p className="footer-widget__about-text">
-                    Welcome to the world of Bunnies.
+
+                    Welcome to CodesBunny, a top software development company. We specialize in App Development, Web Development, WordPress Development, UI/UX Design, and SEO to help businesses build a strong online presence and achieve their goals.
                   </p>
                 </div>
               </div>
@@ -44,22 +44,22 @@ const Footer = () => {
                   <h3 className="footer-widget__title">Services</h3>
                   <ul className="footer-widget__links-list list-unstyled clearfix">
                     <li>
-                      <NavLink href="hms.html">(HMS)</NavLink>
+                      <NavLink to="/Hms">(HMS)</NavLink>
                     </li>
                     <li>
-                      <NavLink href="web.html">Web Development</NavLink>
+                      <NavLink to="/web">Web Development</NavLink>
                     </li>
                     <li>
-                      <NavLink href="App.html">App Development</NavLink>
+                      <NavLink to="/web">App Development</NavLink>
                     </li>
                     <li>
-                      <NavLink href="Digital.html">Digital Marketing</NavLink>
+                      <NavLink to="/Content">Digital Marketing</NavLink>
                     </li>
                     <li>
-                      <NavLink href="content.html">Content Writing</NavLink>
+                      <NavLink to="/Content">Content Writing</NavLink>
                     </li>
                     <li>
-                      <NavLink href="SeoAso.html">(SEO) / (ASO)</NavLink>
+                      <NavLink to="/SeoAso">(SEO) / (ASO)</NavLink>
                     </li>
                   </ul>
                 </div>
@@ -69,19 +69,19 @@ const Footer = () => {
                   <h3 className="footer-widget__title">Quick Links</h3>
                   <ul className="footer-widget__links-list list-unstyled clearfix">
                     <li>
-                      <NavLink href="">Home</NavLink>
+                      <NavLink to="/">Home</NavLink>
                     </li>
                     <li>
-                      <NavLink href="">Who are we?</NavLink>
+                      <NavLink to="/about">Who are we?</NavLink>
                     </li>
                     <li>
-                      <NavLink href="">Services</NavLink>
+                      <NavLink to="/service">Services</NavLink>
                     </li>
                     <li>
-                      <NavLink href="">Blog</NavLink>
+                      <NavLink to="/blog">Blog</NavLink>
                     </li>
                     <li>
-                      <NavLink href="">Contact Us</NavLink>
+                      <NavLink to="/contact">Contact Us</NavLink>
                     </li>
                   </ul>
                 </div>
@@ -93,18 +93,18 @@ const Footer = () => {
                 <div className="footer-widget__column footer-widget__contact">
                   <h3 className="footer-widget__title">Contact</h3>
                   <p className="footer-widget__contact-text">
-                    Gulshan e Madina p-46 B<br />
+                    Gulshan e Madina p-46 B Sargodha Road near Kia Moters 
                     Faisalabad, Punjab Pakistan
                   </p>
                   <ul className="list-unstyled footer-widget__contact-list">
                     <li>
                       <div className="icon">
-                        
-                        <img src={EmailVector} alt="email"/>
+
+                        <img src={EmailVector} alt="email" />
                       </div>
                       <div className="text">
                         <p>
-                          <NavLink href="mailto:needhelp@company.com">
+                          <NavLink to="mailto:needhelp@company.com">
                             needhelp@company.com
                           </NavLink>
                         </p>
@@ -112,11 +112,11 @@ const Footer = () => {
                     </li>
                     <li>
                       <div className="icon">
-                      <img src={TelePhone} alt="email"/>
+                        <img src={TelePhone} alt="email" />
                       </div>
                       <div className="text">
                         <p>
-                          <NavLink href="tel:923080044190">
+                          <NavLink to="tel:923080044190">
                             +92 308 0044190
                           </NavLink>
                         </p>
@@ -127,31 +127,21 @@ const Footer = () => {
               </div>
               <div
                 className="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-xs-12 wow fadeInUp"
-                data-wow-delay="300ms"
-              >
+                >
                 <div className="footer-widget__column footer-widget__contact">
                   <h3 className="footer-widget__title">Social Links</h3>
                   <div className="footer-widget__about-social">
-                    <NavLink
-                      href="mailto:your-email@example.com"
-                      
-                    >
-                      <img src={Mail} alt="email"/>
-
-                      {/* <img
-                        src="assets/images/CodesBunny/Gmailicon.png"
-                        style={{ width: "30px" }}
-                        alt=""
-                      /> */}
+                    <NavLink to="mailto:your-email@example.com" >
+                      <img src={Mail} alt="email" />
                     </NavLink>
-                    <NavLink href="#" >
-                    <img src={Linkedin} alt="Linkedin"/>
+                    <NavLink to="#" >
+                      <img src={Linkedin} alt="Linkedin" />
                     </NavLink>
-                    <NavLink href="#" >
-                    <img src={FaceBook} alt="Facebook"/>
+                    <NavLink to="#" >
+                      <img src={FaceBook} alt="Facebook" />
                     </NavLink>
-                    <NavLink href="#" >
-                    <img src={Instagram} alt="Insta"/>
+                    <NavLink to="#" >
+                      <img src={Instagram} alt="Insta" />
                     </NavLink>
                   </div>
                 </div>
@@ -161,18 +151,18 @@ const Footer = () => {
         </div>
         <div className="site-footer__bottom">
           <div className="site-footer__bottom-container">
-           
-              <div className="row">
-                <div className="col-xl-12">
-                  <div className="site-footer__bottom-inner">
-                    <div className="site-footer__bottom-left">
-                      <p className="site-footer__bottom-text">
-                        © All Copyright <span className="dynamic-year"> </span>
-                        by <NavLink href="#">Layerdrops.com</NavLink>
-                      </p>
-                    </div>
+
+            <div className="row">
+              <div className="col-xl-12">
+                <div className="site-footer__bottom-inner">
+                  <div className="site-footer__bottom-left">
+                    <p className="site-footer__bottom-text">
+                      © All Copyright <span className="dynamic-year"> </span>
+                      by <NavLink href="#">Layerdrops.com</NavLink>
+                    </p>
                   </div>
                 </div>
+              </div>
             </div>
           </div>
         </div>

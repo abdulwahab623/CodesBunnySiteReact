@@ -3,7 +3,9 @@ import { NavLink } from "react-router-dom";
 import Tick from "../Assets/Images/CodesBunny/tick.png";
 import Bunny from "../Assets/Images/CodesBunny/herobunny.png";
 import Servicerow from "../component/Servicerow";
-import HMS from '../Assets/Images/CodesBunny/hms.jpg'
+import HMS from '../Assets/Images/CodesBunny/Hospital.png'
+import ERP from '../Assets/Images/CodesBunny/ERP.png'
+import lms from '../Assets/Images/CodesBunny/LMS.png'
 import '../Assets/Style/Hms.css'
 
 
@@ -130,7 +132,7 @@ const HmsErp = () => {
       </div>
       <div className="col-xl-5 col-lg-6 custom-img-col-right" id="img2">
         <div className="custom-news-img">
-        <img src={HMS} alt="" />
+        <img src={ERP} alt="" />
                 </div>
       </div>
     </div>
@@ -138,7 +140,7 @@ const HmsErp = () => {
     <div className="custom-news-row">
       <div className="col-xl-5 col-lg-6 custom-img-col-left" id="img3">
         <div className="custom-news-img">
-        <img src={HMS} alt="" />
+        <img src={lms} alt="" />
         </div>
       </div>
       <div className="col-xl-7 col-lg-6 custom-text-col-right" id="text3">

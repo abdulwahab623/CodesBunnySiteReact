@@ -1,5 +1,5 @@
  import React, { useState } from "react";
-import Logo from '../Assets/Images/CodesBunny/Artboardd.png';
+import OfficialLogo from '../Assets/Images/CodesBunny/Officiallogo.png';
 import { NavLink } from "react-router-dom";
 import emailpic from '../Assets/Images/CodesBunny/mail.png';
 
@@ -30,7 +30,7 @@ const Navbar = () => {
             <div className="main-menu-wrapper-inner clearfix">
               <div className="main-menu-wrapper__left clearfix">
                 <div className="main-menu-wrapper__logo">
-                  <NavLink to="/"><img src={Logo} style={{ width: '154px' , height: '45px' }} alt="CodesBunny" /></NavLink>
+                  <NavLink to="/"><img src={OfficialLogo} alt="CodesBunny" /></NavLink>
                 </div>
               </div>
               <div className="main-menu-wrapper__center">
@@ -41,20 +41,20 @@ const Navbar = () => {
                   <ul className="main-menu__list">
                     <li><NavLink to="/">HOME</NavLink></li>
                     <li><NavLink to="/about">ABOUT US</NavLink></li>
-                    <li className="dropdown current">
+                    <li className="dropdown">
                       <NavLink to="/service">SERVICES</NavLink>
                       <ul>
                         <li><NavLink to="/service">Services</NavLink></li>
                         <li><NavLink to="/hms">Our Products</NavLink></li>
-                        <li><NavLink to="">Web Development</NavLink></li>
-                        <li><NavLink to="">App Development</NavLink></li>
-                        <li><NavLink to="">Digital Marketing</NavLink></li>
-                        <li><NavLink to="">SEO / ASP Optimization</NavLink></li>
-                        <li><NavLink to="">Content Writing</NavLink></li>
-                        <li><NavLink to="">Custom Software</NavLink></li>
+                        <li><NavLink to="/web">Web Development</NavLink></li>
+                        <li><NavLink to="/web">App Development</NavLink></li>
+                        <li><NavLink to="/Content">Digital Marketing</NavLink></li>
+                        <li><NavLink to="/SeoAso">SEO / ASP Optimization</NavLink></li>
+                        <li><NavLink to="/Content">Content Writing</NavLink></li>
+                      
                       </ul>
                     </li>
-                    <li className="dropdown current"><NavLink to="/blog">BLOG</NavLink></li>
+                    <li className="dropdown "><NavLink to="/blog">BLOG</NavLink></li>
                     <li><NavLink to="/contact">CONTACT US</NavLink></li>
                   </ul>
                 </div>
@@ -74,7 +74,7 @@ const Navbar = () => {
             <i className="fa fa-times"></i>
           </span>
           <div className="logo-box">
-            <NavLink to="/" aria-label="logo image"><img src={Logo} width="95px" alt="" /></NavLink>
+            <NavLink to="/" aria-label="logo image"><img src={OfficialLogo}  alt="" /></NavLink>
             {/* <h3 style={{ color: 'white', marginTop: '32px', fontStyle: 'initial' }}>CodesBunny</h3> */}
           </div>
           <ul className="main-menu__list">
