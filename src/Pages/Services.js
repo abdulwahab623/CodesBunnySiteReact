@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Sdata from "../component/ServiceData";
-import Bunny from "../Assets/Images/CodesBunny/herobunny.png";
+import Bunny from "../Assets/Images/CodesBunny/Bunnie.png";
 import Servicerow from "../component/Servicerow";
 import Tick from "../Assets/Images/CodesBunny/tick.png";
 import "../Assets/Style/Service.css";
@@ -13,7 +13,7 @@ const Services = () => {
         <div className="aboutHeroContainer">
           <div className="row">
             <div className="col-lg-6 col-md-6">
-              <div className="aboutHeroContent">
+              <div className="aboutHeroContent" data-aos="zoom-in">
                 <h2>Crafting Digital Solutions at CodesBunny</h2>
                 <p>
                   We specialize in creating exceptional online experiences
@@ -37,7 +37,7 @@ const Services = () => {
               </div>
             </div>
             <div className="col-lg-6 col-md-6">
-              <img src={Bunny} alt="" className="aboutAnimatedImage" />
+              <img src={Bunny} alt="bun" style={{height:'450px'}}   className="aboutAnimatedImage" />
             </div>
           </div>
         </div>

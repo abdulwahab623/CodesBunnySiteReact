@@ -26,14 +26,19 @@
 
 .site-footer__top {
     position: relative;
-    display: block;
 
+
+}
+
+.Footercontainer{
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .site-footer__top-inner {
     position: relative;
     display: block;
-    padding: 50px 40px 20px 40px;
+    padding: 50px 30px 20px 30px;
     z-index: 1;
 }
 
@@ -74,7 +79,7 @@
     /* background-color: #343236; */
 
     font-size: 14px;
-    height: 40px;
+    height: 50px;
     width: 40px;
     transform: rotate(0);
     -webkit-transition: all 500ms ease;

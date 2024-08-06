@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Tick from "../Assets/Images/CodesBunny/tick.png";
-import Bunny from "../Assets/Images/CodesBunny/herobunny.png";
+import Bunny from "../Assets/Images/CodesBunny/Bunnie.png";
 import Servicerow from "../component/Servicerow";
 import HMS from '../Assets/Images/CodesBunny/Hospital.png'
 import ERP from '../Assets/Images/CodesBunny/ERP.png'
@@ -45,6 +45,7 @@ const HmsErp = () => {
               <img
                 src={Bunny}
                 alt="Animated bunny"
+                style={{height:'450px'}}  
                 className="aboutAnimatedImage"
               />
             </div>

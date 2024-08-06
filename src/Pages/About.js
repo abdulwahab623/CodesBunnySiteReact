@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "../Assets/Style/About.css";
 import image7 from "../Assets/Images/CodesBunny/abouttwo.png";
-import Bunny from "../Assets/Images/CodesBunny/herobunny.png";
+import Bunny from "../Assets/Images/CodesBunny/Bunnie.png";
 import Servicerow from "../component/Servicerow";
 import Team from "../Assets/Images/CodesBunny/Team.jpg";
 import Tick from "../Assets/Images/CodesBunny/tick.png";
@@ -37,7 +37,7 @@ const About = () => {
               </div>
             </div>
             <div className="col-lg-6 col-md-6">
-              <img src={Bunny} alt="" className="aboutAnimatedImage" />
+              <img src={Bunny} alt="bun" style={{height:'450px'}}  className="aboutAnimatedImage" />
             </div>
           </div>
         </div>

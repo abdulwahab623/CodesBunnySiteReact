@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Tick from "../Assets/Images/CodesBunny/tick.png";
-import Bunny from "../Assets/Images/CodesBunny/herobunny.png";
+import Bunny from "../Assets/Images/CodesBunny/Bunnie.png";
 import Servicerow from "../component/Servicerow";
 import Marketing from '../Assets/Images/CodesBunny/DigitalMar.png';
 import content from '../Assets/Images/CodesBunny/ContentWri.png';
@@ -36,7 +36,7 @@ const Content = () => {
               </div>
             </div>
             <div className="col-lg-6 col-md-6">
-              <img src={Bunny} alt="Animated bunny" className="aboutAnimatedImage" />
+              <img src={Bunny} alt="Animated bunny" style={{height:'450px'}}   className="aboutAnimatedImage" />
             </div>
           </div>
         </div>

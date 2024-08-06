@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Tick from "../Assets/Images/CodesBunny/tick.png";
-import Bunny from "../Assets/Images/CodesBunny/herobunny.png";
+import Bunny from "../Assets/Images/CodesBunny/Bunnie.png";
 import Servicerow from "../component/Servicerow";
 import web from '../Assets/Images/CodesBunny/web.png';
 import App from '../Assets/Images/CodesBunny/AppDev.png';
@@ -36,7 +36,7 @@ const Web = () => {
               </div>
             </div>
             <div className="col-lg-6 col-md-6">
-              <img src={Bunny} alt="Animated bunny" className="aboutAnimatedImage" />
+              <img src={Bunny} alt="Animated bunny" style={{height:'450px'}}   className="aboutAnimatedImage" />
             </div>
           </div>
         </div>
@@ -44,19 +44,19 @@ const Web = () => {
 
       <Servicerow />
 
-      <section className="news-details">
+      <section className="serWeb">
         <div className="container">
           <div className="row">
             <div className="col-xl-5 col-lg-6">
-              <div className="news-details__img">
+              <div className="serWebimg">
                 <img src={web} alt="Web Development" />
               </div>
             </div>
             <div className="col-xl-7 col-lg-6">
               <div className="news-details__left">
-                <div className="news-details__content">
-                  <h3 className="news-details__title">Web Development</h3>
-                  <p className="news-details__text-1">
+                <div className="serWebcontent">
+                  <h3 className="serWebcontenttitle">Web Development</h3>
+                  <p className="serWebtext1">
                     Our web development services encompass the creation of dynamic, responsive, and user-friendly websites. Utilizing technologies such as HTML5, CSS3, JavaScript frameworks (React, Angular, Vue.js), and server-side languages (Node.js, Python, PHP), we build websites that are optimized for performance, security, and scalability. Our web development process includes:
                     <br /><br />
                     <strong style={{ color: 'black' }}>Requirements Gathering:</strong> Understanding the client's needs and defining the project scope.

@@ -1,7 +1,7 @@
 import React from "react";
 import '../Assets/Style/Hero.css'
 import { NavLink } from "react-router-dom";
-import Herobunny from '../Assets/Images/CodesBunny/herobunny.png'
+import Herobunny from '../Assets/Images/CodesBunny/Bunnie.png'
 import Tick from '../Assets/Images/CodesBunny/tick.png';
 
 const Homehero = () => {
@@ -28,7 +28,7 @@ const Homehero = () => {
             </div>
             <div className="col-lg-6 col-md-6">
               
-              <img src={Herobunny} alt=""  className="animatedImage"/>
+              <img src={Herobunny} alt="" style={{height:'450px'}}  className="animatedImage"/>
             </div>
           </div>
         </div>

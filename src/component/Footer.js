@@ -1,26 +1,25 @@
 import React from "react";
 import "../Assets/Style/footer.css";
 import { NavLink } from "react-router-dom";
-import EmailVector from '../Assets/Images/CodesBunny/emailvector.png'
-import Instagram from '../Assets/Images/CodesBunny/instavector.png'
-import TelePhone from '../Assets/Images/CodesBunny/telephonevector.png'
-import FaceBook from '../Assets/Images/CodesBunny/Facabookvec.png'
-import Linkedin from '../Assets/Images/CodesBunny/LinkedInvector.png'
-import Mail from '../Assets/Images/CodesBunny/mailvector.png'
-import Officiallogo from '../Assets/Images/CodesBunny/Officiallogo.png'
+import EmailVector from "../Assets/Images/CodesBunny/emailvector.png";
+import Instagram from "../Assets/Images/CodesBunny/instavector.png";
+import TelePhone from "../Assets/Images/CodesBunny/telephonevector.png";
+import FaceBook from "../Assets/Images/CodesBunny/Facabookvec.png";
+import Linkedin from "../Assets/Images/CodesBunny/LinkedInvector.png";
+import Mail from "../Assets/Images/CodesBunny/mailvector.png";
+import Officiallogo from "../Assets/Images/CodesBunny/Officiallogo.png";
 const Footer = () => {
   return (
     <>
-      <footer className="site-footer">
+ <footer className="site-footer">
         <div className="Footerbackground"></div>
+        <div className="Footercontainer">
         <div className="site-footer__top">
-          {/* <div className="container"> */}
           <div className="site-footer__top-inner">
             <div className="row">
+              
               <div
-                className="col-lg-1"></div>
-              <div
-                className="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-xs-12 wow fadeInUp"
+                className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12 wow fadeInUp"
                 data-wow-delay="100ms"
               >
                 <div className="footer-widget__column footer-widget__about">
@@ -28,23 +27,23 @@ const Footer = () => {
                     className="footer-widget__about-logo"
                     style={{ display: "flex" }}
                   >
-                    <NavLink href="index.html">
+                    <NavLink to="/">
                       <img src={Officiallogo} alt="" />
                     </NavLink>
                     
                   </div>
                   <p className="footer-widget__about-text">
 
-                    Welcome to CodesBunny, a top software development company. We specialize in App Development, Web Development, WordPress Development, UI/UX Design, and SEO to help businesses build a strong online presence and achieve their goals.
+                    Welcome to CodesBunny. We specialize in App Development, Web Development, WordPress Development, UI/UX Design, and SEO to help businesses build a strong online presence and achieve their goals.
                   </p>
                 </div>
               </div>
-              <div className="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-xs-12 wow fadeInUp">
+              <div className="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-xs-12 ">
                 <div className="footer-widget__column footer-widget__links clearfix">
                   <h3 className="footer-widget__title">Services</h3>
                   <ul className="footer-widget__links-list list-unstyled clearfix">
                     <li>
-                      <NavLink to="/Hms">(HMS)</NavLink>
+                      <NavLink to="/Hms">Our Products</NavLink>
                     </li>
                     <li>
                       <NavLink to="/web">Web Development</NavLink>
@@ -135,19 +134,20 @@ const Footer = () => {
                       <img src={Mail} alt="email" />
                     </NavLink>
                     <NavLink to="#" >
-                      <img src={Linkedin} alt="Linkedin" />
+                      <img src={Linkedin} alt="Linkedin" /> 
                     </NavLink>
                     <NavLink to="#" >
-                      <img src={FaceBook} alt="Facebook" />
+                      <img src={FaceBook} alt="Facebook" /> 
                     </NavLink>
                     <NavLink to="#" >
-                      <img src={Instagram} alt="Insta" />
+                      <img src={Instagram} alt="Insta" /> 
                     </NavLink>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
         </div>
         <div className="site-footer__bottom">
           <div className="site-footer__bottom-container">
@@ -166,7 +166,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </footer>
+      </footer> 
+
     </>
   );
 };
