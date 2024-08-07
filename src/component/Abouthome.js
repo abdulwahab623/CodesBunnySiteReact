@@ -11,7 +11,10 @@ import Image9 from "../Assets/Images/CodesBunny/image9.png";
 import Innovation from "../Assets/Images/CodesBunny/Innovation.jpg";
 import AI from "../Assets/Images/CodesBunny/AI.jpg";
 import Digital from "../Assets/Images/CodesBunny/Digital Transformation.jpg";
+
 const Abouthome = () => {
+
+
   return (
     <>
     
@@ -26,7 +29,7 @@ const Abouthome = () => {
           </div>
           <div className="row">
             <div className="col-xl-6">
-              <div className="about-one__left " data-aos="zoom-in">
+              <div className="about-one__left  " data-aos="zoom-in">
                 <div className="about-one__img-box">
                   <div className="about-one__img">
                     <img src={image7} alt="img" />
@@ -82,7 +85,7 @@ const Abouthome = () => {
       </section>
 
       <section className="services-one">
-      <div className="backgg"></div>  
+        
         <div className="container">
           <div className="section-title text-center">
             <h2 className="sersection-title__title">
@@ -98,7 +101,7 @@ const Abouthome = () => {
             >
               <div className="services-one__single" >
                 <div className="services-one__icon">
-                  <img className="im" src={Web} alt="App" />
+                  <img className="im" src={Web} alt="App" data-aos="flip-left" />
                 </div>
                 <h3 className="services-one__title">
                   <a href="web.html">Web Development</a>
@@ -122,7 +125,7 @@ const Abouthome = () => {
             >
               <div className="services-one__single" data-aos="zoom-in">
                 <div className="services-one__icon">
-                  <img className="im" src={App} alt="App" />
+                  <img className="im" src={App} alt="App" data-aos="flip-left" />
                 </div>
                 <h3 className="services-one__title">
                   <a href="App.html">App Development</a>
@@ -145,7 +148,7 @@ const Abouthome = () => {
             >
               <div className="services-one__single">
                 <div className="services-one__icon">
-                  <img className="im" src={Media} alt="App" />
+                  <img className="im" src={Media} alt="App" data-aos="flip-left" />
                 </div>
                 <h3 className="services-one__title">
                   <a href="Digital.html">Digital Marketing</a>
@@ -236,10 +239,7 @@ const Abouthome = () => {
     <div class="col-xl-6">
       <div class="improve-one__right">
         <ul class="list-unstyled improve-one__points">
-          <li>
-            <div class="icon">
-              
-            </div>
+          <li >
             <div class="text">
               <h3>For Small Businesses</h3>
               <p>
@@ -249,9 +249,7 @@ const Abouthome = () => {
             </div>
           </li>
           <li>
-            <div class="icon">
-              
-            </div>
+          
             <div class="text">
               <h3>For Medium-Sized Enterprises</h3>
               <p>
@@ -396,6 +394,7 @@ const Abouthome = () => {
       </section>
 
       <section className="cta-one">
+     
         <div className="cta-one__container">
           <div className="col-lg-12">
             <div className="cta-one__inner">

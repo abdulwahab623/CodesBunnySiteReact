@@ -2,7 +2,8 @@ import React from "react";
 //  import Contactus from '../Assets/Images/CodesBunny/Contactus.png'
 import Servicerow from "../component/Servicerow";
 import "../Assets/Style/ContactUs.css";
-import bun from '../Assets/Images/CodesBunny/Officiallogobg.png';
+import bun from "../Assets/Images/CodesBunny/Officiallogobg.png";
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 const Contact = () => {
   return (
     <>
@@ -28,11 +29,19 @@ const Contact = () => {
 
       <section className="contact-page">
         <div className="container">
-            <div className="row">
-                <div className="col-12 mainheading">
-                    <h2>Write Message to Us <img src={bun} className="blink-image" style={{width:'50px'}} alt="bunny" /></h2>
-                </div>
+          <div className="row">
+            <div className="col-12 mainheading">
+              <h2>
+                Write Message to Us{" "}
+                <img
+                  src={bun}
+                  className="blink-image"
+                  style={{ width: "50px" }}
+                  alt="bunny"
+                />
+              </h2>
             </div>
+          </div>
           <div className="row">
             <div className="col-12 maincontact">
               <div className="row">
@@ -57,7 +66,7 @@ const Contact = () => {
                           for="exampleFormControlInput1"
                           className="form-label labelss"
                         >
-                          Full Name
+                          Full name
                         </label>
                         <input
                           type="text"
@@ -67,6 +76,25 @@ const Contact = () => {
                           value=""
                           onChange=""
                           placeholder="Enter your name"
+                          required
+                          autoComplete="off"
+                        />
+                      </div>
+                      <div className="mb-3">
+                        <label
+                          for="exampleFormControlInput1"
+                          className="form-label labelss"
+                        >
+                          E-mail
+                        </label>
+                        <input
+                          type="email"
+                          className="form-control"
+                          id="email"
+                          name="email"
+                          value=""
+                          onChange=""
+                          placeholder="name@example.com"
                           required
                           autoComplete="off"
                         />
@@ -97,28 +125,8 @@ const Contact = () => {
                           for="exampleFormControlInput1"
                           className="form-label labelss"
                         >
-                          Email address
-                        </label>
-                        <input
-                          type="email"
-                          className="form-control"
-                          id="email"
-                          name="email"
-                          value=""
-                          onChange=""
-                          placeholder="name@example.com"
-                          required
-                          autoComplete="off"
-                        />
-                      </div>
-
-                      <div className="mb-3">
-                        <label
-                          for="exampleFormControlInput1"
-                          className="form-label labelss"
-                        >
                           {" "}
-                          Address
+                          Company name
                         </label>
                         <input
                           type="text"
@@ -133,6 +141,27 @@ const Contact = () => {
                         />
                       </div>
 
+                      <div className="mb-3">
+                        <label
+                          for="exampleFormControlInput1"
+                          className="form-label labels">
+                          What communication channel do you prefer?
+                        </label>
+                        <div>
+                        <input class="form-check-input" style={{margin:'7px 10px 0 '}} type="radio" value="Email" name="flexRadioDefault" id="flexRadioDefault1" />
+                      <label class="form-check-label" style={{margin:'0 10px 0 '}}  for="flexRadioDefault1">
+                        Email
+                      </label>
+                      <input class="form-check-input" style={{margin:'7px 10px 0 '}}  type="radio" value="Phone Call" name="flexRadioDefault" id="flexRadioDefault1" />
+                      <label class="form-check-label" style={{margin:'0 10px 0 '}}  for="flexRadioDefault1">
+                        Phone Call
+                      </label>
+                      <input class="form-check-input" style={{margin:'7px 10px 0 '}}   type="radio" value="Whatsapp" name="flexRadioDefault" id="flexRadioDefault1" />
+                      <label class="form-check-label" style={{margin:'0 10px 0 '}}  for="flexRadioDefault1">
+                        Whatsapp </label>
+                        </div>
+                        
+                      </div>
                       <div className="mb-3">
                         <label
                           for="exampleFormControlInput1"
@@ -152,8 +181,8 @@ const Contact = () => {
                         ></textarea>
                       </div>
                       <div className="col-md-12">
-                        <button className="btn btn-warning" type="submit">
-                          Submit form
+                        <button className="btn nav-btnn" type="submit">
+                          Send
                         </button>
                       </div>
                     </form>
@@ -161,6 +190,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="col-xl-6 col-lg-6">
+
                   <div className="contact-page__left">
                     <div className="section-title text-left">
                       <span className="section-title__tagline">

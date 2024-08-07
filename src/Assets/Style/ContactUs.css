@@ -157,9 +157,7 @@
     margin-left: 10px;
 }
 
-.mainform{
-    border-radius: 50px;
-}
+
 .contact-page__right {
     position: relative;
     display: block;
@@ -170,6 +168,42 @@
     
 }
 
+
+.nav-btnn:hover {
+
+  background: linear-gradient(0deg, #00C9FF 0%, rgba(9,101,126,1) 100%);
+  transition-delay: 0.1s;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+  transition-property: all;
+  opacity: 1;
+  transform-origin: bottom;
+  transform-style: preserve-3d;
+  transform: scaleY(1.05);
+  z-index: -1;
+  color: #ffffff;
+  border: none;
+
+}
+
+.nav-btnn{
+    color: rgb(36, 35, 35);
+    background-color: transparent;
+    margin-top: 20px;
+    width: 400px;
+    display: inline-block;
+    
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 9px 35px;
+    border-radius: 9px;
+    border: 1px solid grey;
+    transition: all 0.3s ease;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  
+}
 /*--------------------------------------------------------------
 # Contact Details
 --------------------------------------------------------------*/

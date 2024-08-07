@@ -17,7 +17,6 @@ import Content from "./component/ContentDigital";
 import SeoAso from "./component/SeoAso";
 import Datacyber from "./component/DataandCyber";
 
-
 function App() {
   return (
     <>

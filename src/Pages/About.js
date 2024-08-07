@@ -53,9 +53,8 @@ const About = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-xl-6 col-md-12 col-sm-12">
-              <div
-                className="aboutOneLeft " data-aos="fade-right">
+            <div className="col-xl-6 col-md-12 col-sm-12 aboutonemain">
+              <div className="aboutOneLeft " data-aos="fade-right">
                 <div className="aboutOneImgBox">
                   <div className="aboutOneImg">
                     <img src={Team} style={{ height: "500px" }} alt="" />
@@ -63,7 +62,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+            <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 aboutonemain">
               <div className="row">
                 <div className="col-lg-12 col-xl-12 col-md-12 col-sm-12">
                   <p className="aboutOneText" data-aos="fade-left">
@@ -123,7 +122,7 @@ const About = () => {
             <div className="col-xl-6">
               <div className="aboutOneRight">
                 <div className="row">
-                  <div className="col-lg-12" data-aos="fade-right">
+                  <div className="col-lg-12 aboutonemain" data-aos="fade-right">
                     <p className="aboutOneText" style={{ color: "#ffffff" }}>
                       <strong style={{ color: "#13abd4" }}>
                         Customized Solutions:{" "}
@@ -147,7 +146,7 @@ const About = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="col-lg-12">
+                  <div className="col-lg-12 aboutonemain">
                     <p className="aboutOneText" data-aos="fade-right">
                       <strong style={{ color: "#13abd4" }}>
                         Expert Team:{" "}
@@ -174,7 +173,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-6">
+            <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 aboutonemain">
               <div
                 className="aboutOneLeft" data-aos="fade-left">
                 <div className="aboutOneImgBox">
