@@ -28,7 +28,7 @@ const Footer = () => {
                     style={{ display: "flex" }}
                   >
                     <NavLink to="/">
-                      <img src={Officiallogo} alt="" />
+                      <img src={Officiallogo} decoding="async" alt="logo" />
                     </NavLink>
                     
                   </div>
@@ -99,7 +99,7 @@ const Footer = () => {
                     <li>
                       <div className="icon">
 
-                        <img src={EmailVector} alt="email" />
+                        <img src={EmailVector} decoding="async" alt="email" />
                       </div>
                       <div className="text">
                         <p>
@@ -111,7 +111,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <div className="icon">
-                        <img src={TelePhone} alt="email" />
+                        <img src={TelePhone} decoding="async" alt="email" />
                       </div>
                       <div className="text">
                         <p>
@@ -131,16 +131,16 @@ const Footer = () => {
                   <h3 className="footer-widget__title">Social Links</h3>
                   <div className="footer-widget__about-social">
                     <NavLink to="mailto:your-email@example.com" >
-                      <img src={Mail} alt="email" />
+                      <img src={Mail} decoding="async" alt="email" />
                     </NavLink>
                     <NavLink to="#" >
-                      <img src={Linkedin} alt="Linkedin" /> 
+                      <img src={Linkedin} decoding="async" alt="Linkedin" /> 
                     </NavLink>
                     <NavLink to="#" >
-                      <img src={FaceBook} alt="Facebook" /> 
+                      <img src={FaceBook} decoding="async" alt="Facebook" /> 
                     </NavLink>
                     <NavLink to="#" >
-                      <img src={Instagram} alt="Insta" /> 
+                      <img src={Instagram} decoding="async" alt="Insta" /> 
                     </NavLink>
                   </div>
                 </div>

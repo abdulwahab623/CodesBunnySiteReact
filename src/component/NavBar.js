@@ -30,7 +30,7 @@ const Navbar = () => {
             <div className="main-menu-wrapper-inner clearfix">
               <div className="main-menu-wrapper__left clearfix">
                 <div className="main-menu-wrapper__logo">
-                  <NavLink to="/"><img src={OfficialLogo} alt="CodesBunny" /></NavLink>
+                  <NavLink to="/"><img src={OfficialLogo} decoding="async" fetchpriority="high" alt="CodesBunny" /></NavLink>
                 </div>
               </div>
               <div className="main-menu-wrapper__center">
@@ -74,7 +74,7 @@ const Navbar = () => {
             <i className="fa fa-times"></i>
           </span>
           <div className="logo-box">
-            <NavLink to="/" aria-label="logo image"><img src={OfficialLogo}  alt="" /></NavLink>
+            <NavLink to="/" aria-label="logo image"><img src={OfficialLogo} decoding="async" fetchpriority="high"  alt="OfficialLogo" /></NavLink>
             {/* <h3 style={{ color: 'white', marginTop: '32px', fontStyle: 'initial' }}>CodesBunny</h3> */}
           </div>
           <ul className="main-menu__list">

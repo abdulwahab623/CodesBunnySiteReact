@@ -3,7 +3,6 @@ import React from "react";
 import Servicerow from "../component/Servicerow";
 import "../Assets/Style/ContactUs.css";
 import bun from "../Assets/Images/CodesBunny/Officiallogobg.png";
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 const Contact = () => {
   return (
     <>

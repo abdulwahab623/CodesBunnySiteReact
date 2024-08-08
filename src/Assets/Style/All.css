@@ -1687,16 +1687,14 @@ ul {
 .news-one__read-more-btn {
   color: black;
   font-size: 14px;
+  
   text-decoration: none;
-  border-radius: 5px;
   font-family: 'Barlow', sans-serif;
-  padding: 5px 10px;
-  background-color: #e0e0e0;
   display: inline-block;
 }
 
 .news-one__read-more-btn:hover {
-  background-color: #c0c0c0;
+  color:#0ac7fc;
 }
 /*--------------------------------------------------------------
 # Business Growth

@@ -28,7 +28,7 @@ const Homehero = () => {
             </div>
             <div className="col-lg-6 col-md-6">
               
-              <img src={Herobunny} alt="" style={{height:'450px'}}  className="animatedImage"/>
+              <img src={Herobunny} alt="Herobunny" decoding="async" style={{height:'450px'}} fetchpriority="high"  className="animatedImage"/>
             </div>
           </div>
         </div>

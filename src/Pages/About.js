@@ -57,7 +57,7 @@ const About = () => {
               <div className="aboutOneLeft " data-aos="fade-right">
                 <div className="aboutOneImgBox">
                   <div className="aboutOneImg">
-                    <img src={Team} style={{ height: "500px" }} alt="" />
+                    <img src={Team} decoding="async" style={{ height: "500px" }} alt="" />
                   </div>
                 </div>
               </div>
@@ -76,14 +76,14 @@ const About = () => {
                   </p>
                   <ul className="aboutList" data-aos="fade-left">
                     <li>
-                      <img src={Tick} alt="tick" /> Customize your business{" "}
+                      <img src={Tick} decoding="async" alt="tick" /> Customize your business{" "}
                     </li>
                     <li>
-                      <img src={Tick} alt="tick" /> Address the unique
+                      <img src={Tick} decoding="async" alt="tick" /> Address the unique
                       challenges
                     </li>
                     <li>
-                      <img src={Tick} alt="tick" /> Aim to deliver optimal
+                      <img src={Tick} decoding="async" alt="tick" /> Aim to deliver optimal
                       results
                     </li>
                   </ul>
@@ -98,14 +98,14 @@ const About = () => {
                   </p>
                   <ul className="aboutList" data-aos="fade-left">
                     <li>
-                      <img src={Tick} alt="tick" /> Customize your business
+                      <img src={Tick} decoding="async" alt="tick" /> Customize your business
                     </li>
                     <li>
-                      <img src={Tick} alt="tick" /> Address the unique
+                      <img src={Tick} decoding="async" alt="tick" /> Address the unique
                       challenges
                     </li>
                     <li>
-                      <img src={Tick} alt="tick" /> Aim to deliver optimal
+                      <img src={Tick} decoding="async" alt="tick" /> Aim to deliver optimal
                       results
                     </li>
                   </ul>
@@ -134,14 +134,14 @@ const About = () => {
                     </p>
                     <ul className="aboutList" data-aos="fade-right">
                       <li>
-                        <img src={Tick} alt="tick" /> Customize your business
+                        <img src={Tick} decoding="async" alt="tick" /> Customize your business
                       </li>
                       <li>
-                        <img src={Tick} alt="tick" /> Address the unique
+                        <img src={Tick} decoding="async" alt="tick" /> Address the unique
                         challenges
                       </li>
                       <li>
-                        <img src={Tick} alt="tick" /> Aim to deliver optimal
+                        <img src={Tick} decoding="async" alt="tick" /> Aim to deliver optimal
                         results
                       </li>
                     </ul>
@@ -158,14 +158,14 @@ const About = () => {
                     </p>
                     <ul className="aboutList">
                       <li>
-                        <img src={Tick} alt="tick" /> Customize your business
+                        <img src={Tick} decoding="async" alt="tick" /> Customize your business
                       </li>
                       <li>
-                        <img src={Tick} alt="tick" /> Address the unique
+                        <img src={Tick} decoding="async" alt="tick" /> Address the unique
                         challenges
                       </li>
                       <li>
-                        <img src={Tick} alt="tick" /> Aim to deliver optimal
+                        <img src={Tick} decoding="async" alt="tick" /> Aim to deliver optimal
                         results
                       </li>
                     </ul>
@@ -178,7 +178,7 @@ const About = () => {
                 className="aboutOneLeft" data-aos="fade-left">
                 <div className="aboutOneImgBox">
                   <div className="aboutOneImg">
-                    <img src={image7} style={{ height: "500px" }} alt="" />
+                    <img src={image7} style={{ height: "500px" }} decoding="async" alt="IMG" />
                   </div>
                 </div>
               </div>

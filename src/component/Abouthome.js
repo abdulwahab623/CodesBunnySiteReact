@@ -11,6 +11,7 @@ import Image9 from "../Assets/Images/CodesBunny/image9.png";
 import Innovation from "../Assets/Images/CodesBunny/Innovation.jpg";
 import AI from "../Assets/Images/CodesBunny/AI.jpg";
 import Digital from "../Assets/Images/CodesBunny/Digital Transformation.jpg";
+import gif from '../Assets/Images/shapes/Techofbunny.gif'
 
 const Abouthome = () => {
 
@@ -32,7 +33,7 @@ const Abouthome = () => {
               <div className="about-one__left  " data-aos="zoom-in">
                 <div className="about-one__img-box">
                   <div className="about-one__img">
-                    <img src={image7} alt="img" />
+                    <img src={image7} decoding="async" alt="img" />
                   </div>
                
                 </div>
@@ -101,7 +102,7 @@ const Abouthome = () => {
             >
               <div className="services-one__single" >
                 <div className="services-one__icon">
-                  <img className="im" src={Web} alt="App" data-aos="flip-left" />
+                  <img className="im" decoding="async" src={Web} alt="App" data-aos="flip-left" />
                 </div>
                 <h3 className="services-one__title">
                   <a href="web.html">Web Development</a>
@@ -125,7 +126,7 @@ const Abouthome = () => {
             >
               <div className="services-one__single" data-aos="zoom-in">
                 <div className="services-one__icon">
-                  <img className="im" src={App} alt="App" data-aos="flip-left" />
+                  <img className="im" decoding="async" src={App} alt="App" data-aos="flip-left" />
                 </div>
                 <h3 className="services-one__title">
                   <a href="App.html">App Development</a>
@@ -148,7 +149,7 @@ const Abouthome = () => {
             >
               <div className="services-one__single">
                 <div className="services-one__icon">
-                  <img className="im" src={Media} alt="App" data-aos="flip-left" />
+                  <img className="im" decoding="async" src={Media} alt="App" data-aos="flip-left" />
                 </div>
                 <h3 className="services-one__title">
                   <a href="Digital.html">Digital Marketing</a>
@@ -176,7 +177,7 @@ const Abouthome = () => {
               <div className="col-xl-6">
                 <div className="sharejoyimgbox">
                   <div className="sharejoyimg " data-aos="flip-right">
-                    <img src={Image9} alt="img" className="float-bob-2" />
+                    <img src={Image9} decoding="async" alt="img" className="float-bob-2" />
                   </div>
                 </div>
               </div>
@@ -192,15 +193,15 @@ const Abouthome = () => {
                   </p>
                   <ul>
                     <li>
-                      <img src={Tick} alt="tick" /> We specialize in
+                      <img src={Tick} decoding="async" alt="tick" /> We specialize in
                       transforming your unique ideas into tailored solutions
                     </li>
                     <li>
-                      <img src={Tick} alt="tick" /> Our services are designed to
+                      <img src={Tick} decoding="async" alt="tick" /> Our services are designed to
                       help your business stand out
                     </li>
                     <li>
-                      <img src={Tick} alt="tick" /> We offer customized
+                      <img src={Tick} decoding="async" alt="tick" /> We offer customized
                       strategies to keep your business competitive and
                       adaptable.
                     </li>
@@ -228,7 +229,7 @@ const Abouthome = () => {
       <div class="improve-one__left " data-aos="zoom-in">
         <div class="improve-one__img-box">
           <div class="improve-one__img">
-            <img src={image10} alt="img" />
+            <img src={image10} decoding="async" alt="img" />
           </div>
           <div class="improve-one__project-complete">
             <p>Grow business With <span>CodesBunny</span></p>
@@ -277,8 +278,23 @@ const Abouthome = () => {
   </div>
 </div>
 </section>
+<section className="ourTech"> 
+  <div className="container">
+    <div className="row">
+      <div className="col-lg-12 col-md-12 col-sm-12 ourTechhead">
+        <h2>What we are working with</h2>
+      </div>
+    </div>
+    <div className="row">
+<div className="col-lg-12 col-md-12 col-sm-12">
+  <img src={gif} decoding="async" alt="gif"></img>
+</div>
+    </div>
+  </div>
 
-<section className="testimonial-one">
+</section>
+
+{/* <section className="testimonial-one">
         <h1>In Our Customers Words</h1>
         <div class="container">
           <div class="items">
@@ -324,7 +340,7 @@ const Abouthome = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="news-one">
         <div className="news-one__background"></div>
@@ -338,15 +354,15 @@ const Abouthome = () => {
             <div className="col-xl-4 col-lg-4 wow fadeInLeft">
               <div className="news-one__single">
                 <div className="news-one__img">
-                  <img src={AI} alt="AI" />
+                  <img src={AI} decoding="async" alt="AI" />
                 </div>
                 <div className="news-one__content">
                   <h3 className="news-one__title">
                     Impact of Artificial Intelligence On Business.
                   </h3>
-                  <p>Jun 25 2025</p>
+                  {/* <p>Jun 25 2025</p> */}
                   <NavLink
-                    to="/blog"
+                    to="/Blogtwo"
                     className="news-one__read-more-btn"
                   >
                     Read More
@@ -357,15 +373,15 @@ const Abouthome = () => {
             <div className="col-xl-4 col-lg-4 col-md-6 wow fadeInLeft">
               <div className="news-one__single">
                 <div className="news-one__img">
-                  <img src={Innovation} alt="Innovation" />
+                  <img src={Innovation} decoding="async" alt="Innovation" />
                 </div>
                 <div className="news-one__content">
                   <h3 className="news-one__title">
                     The Role of Innovation in Driving Business Success.
                   </h3>
-                  <p>Jun 25 2025</p>
+                  {/* <p>Jun 25 2025</p> */}
                   <NavLink
-                    to="/blog" className="news-one__read-more-btn">
+                    to="/Blogone" className="news-one__read-more-btn">
                     Read More
                   </NavLink>
                 </div>
@@ -375,15 +391,15 @@ const Abouthome = () => {
             <div className="col-xl-4 col-lg-4 wow fadeInLeft">
               <div className="news-one__single">
                 <div className="news-one__img">
-                  <img src={Digital} alt="Digital" />{" "}
+                  <img src={Digital} decoding="async" alt="Digital" />{" "}
                 </div>
                 <div className="news-one__content">
                   <h3 className="news-one__title">
                     Embracing Digital Transform In Business
                   </h3>
-                  <p>Jun 25 2025</p>
+                  {/* <p>Jun 25 2025</p> */}
                   <NavLink
-                    to="/blog" className="news-one__read-more-btn">
+                    to="/Blogtwo" className="news-one__read-more-btn">
                     Read More
                   </NavLink>
                 </div>

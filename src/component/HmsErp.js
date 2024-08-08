@@ -24,15 +24,15 @@ const HmsErp = () => {
                 </p>
                 <ul>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Wide range of digital
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Wide range of digital
                     services
                   </li>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Exceptional online
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Exceptional online
                     experiences
                   </li>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Expertise with user
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Expertise with user
                     understanding
                   </li>
                 </ul>
@@ -60,7 +60,7 @@ const HmsErp = () => {
     <div className="custom-news-row">
       <div className="col-xl-5 col-lg-6 custom-img-col-left" id="img1">
         <div className="custom-news-img">
-          <img src={HMS} alt="" />
+          <img src={HMS} decoding="async" alt="hms" />
         </div>
       </div>
       <div className="col-xl-7 col-lg-6 custom-text-col-right" id="text1">
@@ -81,15 +81,15 @@ const HmsErp = () => {
             </p>
             <ul>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Wide range of digital
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Wide range of digital
                     services
                   </li>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Exceptional online
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Exceptional online
                     experiences
                   </li>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Expertise with user
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Expertise with user
                     understanding
                   </li>
                 </ul>
@@ -116,15 +116,15 @@ const HmsErp = () => {
             </p>
             <ul>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Wide range of digital
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Wide range of digital
                     services
                   </li>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Exceptional online
-                    experiences
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Exceptional online
+                    experiences 
                   </li>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Expertise with user
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Expertise with user
                     understanding
                   </li>
                 </ul>
@@ -133,7 +133,7 @@ const HmsErp = () => {
       </div>
       <div className="col-xl-5 col-lg-6 custom-img-col-right" id="img2">
         <div className="custom-news-img">
-        <img src={ERP} alt="" />
+        <img src={ERP}  decoding="async" alt="erp" />
                 </div>
       </div>
     </div>
@@ -141,7 +141,7 @@ const HmsErp = () => {
     <div className="custom-news-row">
       <div className="col-xl-5 col-lg-6 custom-img-col-left" id="img3">
         <div className="custom-news-img">
-        <img src={lms} alt="" />
+        <img src={lms} decoding="async" alt="lms" />
         </div>
       </div>
       <div className="col-xl-7 col-lg-6 custom-text-col-right" id="text3">
@@ -162,15 +162,15 @@ const HmsErp = () => {
             </p>
             <ul>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Wide range of digital
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Wide range of digital
                     services
                   </li>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Exceptional online
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Exceptional online
                     experiences
                   </li>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Expertise with user
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Expertise with user
                     understanding
                   </li>
                 </ul>

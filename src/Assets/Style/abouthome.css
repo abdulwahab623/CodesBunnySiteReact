@@ -28,6 +28,7 @@
 
 .particles-container {
   position: absolute;
+  
   top: 0;
   left: 0;
   width: 100%;
@@ -810,12 +811,53 @@ home services
   margin: 0;
   color: #ada8ba;
 }
+.ourTech {
+  /* padding: 0 0 60px 0; */
+  text-align: center;
+}
 
+.ourTech .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ourTech img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: Adds rounded corners */
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+.ourTechhead h2 {
+  font-weight: 700;
+  color: #ffffff; /* White color for the heading */
+  font-size: 2.5rem; /* Adjust the font size as needed */
+  margin-bottom: 30px;
+}
+/* Large Devices (Desktops) */
+@media (min-width: 992px) {
+  
+
+  .ourTech img {
+    max-width: 80%;
+  }
+}
   
   /* Responsive Styles */
   
   /* Mobile */
   @media (max-width: 767px) {
+    .ourTech {
+      padding: 40px 0;
+    }
+  
+    .ourTech img {
+      max-width: 100%;
+    }
     .sharejoyinner {
       flex-direction: column;
     }

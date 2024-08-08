@@ -21,13 +21,13 @@ const Content = () => {
                 </p>
                 <ul>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Wide range of digital services
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Wide range of digital services
                   </li>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Exceptional online experiences
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Exceptional online experiences
                   </li>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Expertise with user understanding
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Expertise with user understanding
                   </li>
                 </ul>
                 <NavLink to="/about" className="aboutHeroBtn">
@@ -36,7 +36,7 @@ const Content = () => {
               </div>
             </div>
             <div className="col-lg-6 col-md-6">
-              <img src={Bunny} alt="Animated bunny" style={{height:'450px'}}   className="aboutAnimatedImage" />
+              <img src={Bunny} decoding="async" alt="Animated bunny" style={{height:'450px'}}   className="aboutAnimatedImage" />
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@ const Content = () => {
           <div className="custom-news-row">
             <div className="col-xl-5 col-lg-6 custom-img-col-left" id="img1">
               <div className="custom-news-img">
-                <img src={Marketing} alt="" />
+                <img src={Marketing} decoding="async" alt="marketing" />
               </div>
             </div>
             <div className="col-xl-7 col-lg-6 custom-text-col-right" id="text1">
@@ -61,16 +61,16 @@ const Content = () => {
                   </p>
                   <ul>
                     <li>
-                      <img src={Tick} alt="Tick icon" /> Improving your website's ranking on search engines to attract organic traffic.
+                      <img src={Tick} decoding="async" alt="Tick icon" /> Improving your website's ranking on search engines to attract organic traffic.
                     </li>
                     <li>
-                      <img src={Tick} alt="Tick icon" /> Creating targeted ad campaigns to drive immediate traffic and conversions.
+                      <img src={Tick} decoding="async" alt="Tick icon" /> Creating targeted ad campaigns to drive immediate traffic and conversions.
                     </li>
                     <li>
-                      <img src={Tick} alt="Tick icon" /> Developing high-quality, engaging content to attract and retain your audience.
+                      <img src={Tick} decoding="async" alt="Tick icon" /> Developing high-quality, engaging content to attract and retain your audience.
                     </li>
                     <li>
-                      <img src={Tick} alt="Tick icon" /> Leveraging social media platforms to build brand awareness and engage with your audience.
+                      <img src={Tick} decoding="async" alt="Tick icon" /> Leveraging social media platforms to build brand awareness and engage with your audience.
                     </li>
 
                   </ul>
@@ -88,16 +88,16 @@ const Content = () => {
                     Our content writing services focus on creating compelling, SEO-optimized content that resonates with your audience. We provide:            </p>
                   <ul>
                     <li>
-                      <img src={Tick} alt="Tick icon" /> Engaging and informative articles that drive organic traffic.
+                      <img src={Tick} decoding="async" alt="Tick icon" /> Engaging and informative articles that drive organic traffic.
                     </li>
                     <li>
-                      <img src={Tick} alt="Tick icon" /> Clear and persuasive content that communicates your brand message.
+                      <img src={Tick} decoding="async" alt="Tick icon" /> Clear and persuasive content that communicates your brand message.
                     </li>
                     <li>
-                      <img src={Tick} alt="Tick icon" /> Detailed and appealing descriptions that highlight your products' features and benefits.
+                      <img src={Tick} decoding="async" alt="Tick icon" /> Detailed and appealing descriptions that highlight your products' features and benefits.
                     </li>
                     <li>
-                      <img src={Tick} alt="Tick icon" /> Creative and engaging posts that foster audience interaction.
+                      <img src={Tick} decoding="async" alt="Tick icon" /> Creative and engaging posts that foster audience interaction.
                     </li>
 
                   </ul>
@@ -106,7 +106,7 @@ const Content = () => {
             </div>
             <div className="col-xl-5 col-lg-6 custom-img-col-right" id="img2">
               <div className="custom-news-img">
-                <img src={content} alt="" />
+                <img src={content} decoding="async" alt="Content" />
               </div>
             </div>
           </div>

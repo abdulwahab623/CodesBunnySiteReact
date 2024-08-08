@@ -16,7 +16,8 @@ import HmsErp from "./component/HmsErp";
 import Content from "./component/ContentDigital";
 import SeoAso from "./component/SeoAso";
 import Datacyber from "./component/DataandCyber";
-
+import Blogonetwo from "./component/Blogonetwo";
+import Blogtwo from "./component/Blogtwo";
 function App() {
   return (
     <>
@@ -51,9 +52,11 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/web' element={<Web />} />
         <Route path='/Hms' element={<HmsErp />} />
-        <Route path='/Content' element={<Content />} />Datacyber
+        <Route path='/Content' element={<Content />} />
         <Route path='/SeoAso' element={<SeoAso />} />
         <Route path='/Dataandcyber' element={<Datacyber />} />
+        <Route path='/Blogone' element={<Blogonetwo />} />
+        <Route path='/Blogtwo' element={<Blogtwo />} />
       </Routes>
     
 <Footer />

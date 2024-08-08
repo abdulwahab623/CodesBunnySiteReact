@@ -43,13 +43,13 @@ const Blogs = () => {
             >
               <div className="news-one__single">
                 <div className="news-one__img">
-                  <img src={item.imgsrc} alt={item.title} />
+                  <img src={item.imgsrc} decoding="async" alt={item.title} />
                 </div>
                 <div className="news-one__content">
                   <h3 className="news-one__title">
                     {item.title}
                   </h3>
-                  <p>{item.date || 'Date not available'}</p> {/* Display the date if available */}
+                  {/* <p>{item.date || 'Date not available'}</p>  */}
                   <NavLink
                     to={item.link}
                     className="news-one__read-more-btn"

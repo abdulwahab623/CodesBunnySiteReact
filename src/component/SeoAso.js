@@ -21,13 +21,13 @@ const SeoAso = () => {
                 </p>
                 <ul>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Wide range of digital services
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Wide range of digital services
                   </li>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Exceptional online experiences
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Exceptional online experiences
                   </li>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Expertise with user understanding
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Expertise with user understanding
                   </li>
                 </ul>
                 <NavLink to="/about" className="aboutHeroBtn">
@@ -36,7 +36,7 @@ const SeoAso = () => {
               </div>
             </div>
             <div className="col-lg-6 col-md-6">
-              <img src={Bunny} alt="Animated bunny" style={{height:'450px'}}   className="aboutAnimatedImage" />
+              <img src={Bunny} alt="Animated bunny" decoding="async" style={{height:'450px'}}   className="aboutAnimatedImage" />
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@ const SeoAso = () => {
     <div className="custom-news-row">
       <div className="col-xl-5 col-lg-6 custom-img-col-left" id="img1">
         <div className="custom-news-img">
-          <img src={Seo} alt="" />
+          <img src={Seo} alt="seo" decoding="async" />
         </div>
       </div>
       <div className="col-xl-7 col-lg-6 custom-text-col-right" id="text1">
@@ -61,16 +61,16 @@ const SeoAso = () => {
             </p>
             <ul>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Identifying the most relevant and high-performing keywords for your business.
+                    <img src={Tick} alt="Tick icon" decoding="async" /> Identifying the most relevant and high-performing keywords for your business.
                   </li>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Optimizing website content, meta tags, and HTML code for search engines.
+                    <img src={Tick} alt="Tick icon" decoding="async" /> Optimizing website content, meta tags, and HTML code for search engines.
                   </li>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Building high-quality backlinks and improving your website's domain authority.
+                    <img src={Tick} alt="Tick icon" decoding="async" /> Building high-quality backlinks and improving your website's domain authority.
                   </li>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Enhancing website speed, mobile-friendliness, and overall user experience.
+                    <img src={Tick} alt="Tick icon" decoding="async" /> Enhancing website speed, mobile-friendliness, and overall user experience.
                   </li>
                  
                 </ul>
@@ -89,19 +89,19 @@ const SeoAso = () => {
                </p>
             <ul>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Identifying and incorporating relevant keywords in your app's title and description.
+                    <img src={Tick} alt="Tick icon" decoding="async" /> Identifying and incorporating relevant keywords in your app's title and description.
                   </li>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Encouraging positive reviews and ratings to boost your app's credibility.
+                    <img src={Tick} alt="Tick icon" decoding="async" /> Encouraging positive reviews and ratings to boost your app's credibility.
                   </li>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Creating compelling icons, screenshots, and videos to attract users.
+                    <img src={Tick} alt="Tick icon" decoding="async" /> Creating compelling icons, screenshots, and videos to attract users.
                   </li>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Adapting your app's listing for different languages and regions to reach a broader audience.
+                    <img src={Tick} alt="Tick icon" decoding="async" /> Adapting your app's listing for different languages and regions to reach a broader audience.
                   </li>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Seamlessly deploying the App and providing ongoing support to address any issues.
+                    <img src={Tick} alt="Tick icon" decoding="async" /> Seamlessly deploying the App and providing ongoing support to address any issues.
                   </li>
                 </ul>
           </div>
@@ -109,7 +109,7 @@ const SeoAso = () => {
       </div>
       <div className="col-xl-5 col-lg-6 custom-img-col-right" id="img2">
         <div className="custom-news-img">
-        <img src={Aso} alt="" />
+        <img src={Aso} alt="aso" decoding="async" />
                 </div>
       </div>
     </div>

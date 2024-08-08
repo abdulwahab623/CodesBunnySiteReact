@@ -21,13 +21,13 @@ const Datacyber = () => {
                 </p>
                 <ul>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Wide range of digital services
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Wide range of digital services
                   </li>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Exceptional online experiences
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Exceptional online experiences
                   </li>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Expertise with user understanding
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Expertise with user understanding
                   </li>
                 </ul>
                 <NavLink to="/about" className="aboutHeroBtn">
@@ -36,7 +36,7 @@ const Datacyber = () => {
               </div>
             </div>
             <div className="col-lg-6 col-md-6">
-              <img src={Bunny} alt="Animated bunny" style={{height:'450px'}}   className="aboutAnimatedImage" />
+              <img src={Bunny} alt="Animated bunny" decoding="async" style={{height:'450px'}}   className="aboutAnimatedImage" />
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@ const Datacyber = () => {
           <div className="custom-news-row">
             <div className="col-xl-5 col-lg-6 custom-img-col-left" id="img1">
               <div className="custom-news-img">
-                <img src={data} alt="" />
+                <img src={data} decoding="async" alt="Data" />
               </div>
             </div>
             <div className="col-xl-7 col-lg-6 custom-text-col-right" id="text1">
@@ -61,19 +61,19 @@ const Datacyber = () => {
                   </p>
                   <ul>
                     <li>
-                      <img src={Tick} alt="Tick icon" /> Understanding the client's needs and defining the project scope.
+                      <img src={Tick} decoding="async" alt="Tick icon" /> Understanding the client's needs and defining the project scope.
                     </li>
                     <li>
-                      <img src={Tick} alt="Tick icon" /> Creating a comprehensive design and architecture plan that ensures a seamless user experience.
+                      <img src={Tick} decoding="async" alt="Tick icon" /> Creating a comprehensive design and architecture plan that ensures a seamless user experience.
                     </li>
                     <li>
-                      <img src={Tick} alt="Tick icon" /> Implementing the design using cutting-edge technologies and best practices.
+                      <img src={Tick} decoding="async" alt="Tick icon" /> Implementing the design using cutting-edge technologies and best practices.
                     </li>
                     <li>
-                      <img src={Tick} alt="Tick icon" /> Conducting rigorous testing to ensure the website meets the highest standards of quality.
+                      <img src={Tick} decoding="async" alt="Tick icon" /> Conducting rigorous testing to ensure the website meets the highest standards of quality.
                     </li>
                     <li>
-                      <img src={Tick} alt="Tick icon" /> Seamlessly deploying the website and providing ongoing support to address any issues.
+                      <img src={Tick} decoding="async" alt="Tick icon" /> Seamlessly deploying the website and providing ongoing support to address any issues.
                     </li>
                   </ul>
                 </div>
@@ -91,19 +91,19 @@ const Datacyber = () => {
                   </p>
                   <ul>
                     <li>
-                      <img src={Tick} alt="Tick icon" /> Understanding the client's needs and defining the project scope.
+                      <img src={Tick} decoding="async" alt="Tick icon" /> Understanding the client's needs and defining the project scope.
                     </li>
                     <li>
-                      <img src={Tick} alt="Tick icon" /> Creating a comprehensive design and architecture plan that ensures a seamless user experience.
+                      <img src={Tick} decoding="async" alt="Tick icon" /> Creating a comprehensive design and architecture plan that ensures a seamless user experience.
                     </li>
                     <li>
-                      <img src={Tick} alt="Tick icon" /> Implementing the design using cutting-edge technologies and best practices.
+                      <img src={Tick} decoding="async" alt="Tick icon" /> Implementing the design using cutting-edge technologies and best practices.
                     </li>
                     <li>
-                      <img src={Tick} alt="Tick icon" /> Conducting rigorous testing to ensure the website meets the highest standards of quality.
+                      <img src={Tick} decoding="async" alt="Tick icon" /> Conducting rigorous testing to ensure the website meets the highest standards of quality.
                     </li>
                     <li>
-                      <img src={Tick} alt="Tick icon" /> Seamlessly deploying the website and providing ongoing support to address any issues.
+                      <img src={Tick} decoding="async" alt="Tick icon" /> Seamlessly deploying the website and providing ongoing support to address any issues.
                     </li>
                   </ul>
                 </div>
@@ -111,7 +111,7 @@ const Datacyber = () => {
             </div>
             <div className="col-xl-5 col-lg-6 custom-img-col-right" id="img2">
               <div className="custom-news-img">
-                <img src={Cyber} alt="" />
+                <img src={Cyber } decoding="async" alt="Cyber" />
               </div>
             </div>
           </div>

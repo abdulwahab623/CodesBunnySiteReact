@@ -21,13 +21,13 @@ const Web = () => {
                 </p>
                 <ul>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Wide range of digital services
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Wide range of digital services
                   </li>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Exceptional online experiences
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Exceptional online experiences
                   </li>
                   <li>
-                    <img src={Tick} alt="Tick icon" /> Expertise with user understanding
+                    <img src={Tick} alt="Tick icon" decoding="async"/> Expertise with user understanding
                   </li>
                 </ul>
                 <NavLink to="/about" className="aboutHeroBtn">
@@ -36,7 +36,7 @@ const Web = () => {
               </div>
             </div>
             <div className="col-lg-6 col-md-6">
-              <img src={Bunny} alt="Animated bunny" style={{height:'450px'}}   className="aboutAnimatedImage" />
+              <img src={Bunny} alt="Animated bunny" style={{height:'450px'}}  decoding="async"  className="aboutAnimatedImage" />
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@ const Web = () => {
           <div className="row">
             <div className="col-xl-5 col-lg-6">
               <div className="serWebimg">
-                <img src={web} alt="Web Development" />
+                <img src={web} alt="Web Development" decoding="async" />
               </div>
             </div>
             <div className="col-xl-7 col-lg-6">
@@ -102,7 +102,7 @@ const Web = () => {
             </div>
             <div className="col-xl-5 col-lg-6">
               <div className="news-details__img">
-                <img src={App} alt="Web Development" />
+                <img src={App} alt="Web Development" decoding="async" />
               </div>
             </div>
           </div>

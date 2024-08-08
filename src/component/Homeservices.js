@@ -17,7 +17,7 @@ const Homeservices = () => {
           <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="100ms">
             <div class="services-one__single">
               <div class="services-one__icon">
-                <img class="im" src={Web} alt="App" />
+                <img class="im" src={Web} decoding="async" alt="App" />
               </div>
               <h3 class="services-one__title">
                 <a href="web.html">Web Development
@@ -37,7 +37,7 @@ const Homeservices = () => {
             <div class="services-one__single">
               <div class="services-one__icon">
                 
-              <img class="im" src={App} alt="App" />
+              <img class="im" src={App} decoding="async" alt="App" />
               </div>
               <h3 class="services-one__title">
                 <a href="App.html">App Development</a>
@@ -57,7 +57,7 @@ const Homeservices = () => {
               <div class="services-one__icon">
 
 
-              <img class="im" src={Media} alt="App" />
+              <img class="im" decoding="async" src={Media} alt="App" />
               </div>
               <h3 class="services-one__title">
                 <a href="Digital.html">Digital Marketing</a>
