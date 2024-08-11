@@ -18,6 +18,10 @@ import SeoAso from "./component/SeoAso";
 import Datacyber from "./component/DataandCyber";
 import Blogonetwo from "./component/Blogonetwo";
 import Blogtwo from "./component/Blogtwo";
+import Blogthree from "./component/Blogthree";
+import Blogfour from "./component/Blogfour";
+import Blogfive from "./component/Blogfive";
+import Blogsix from "./component/Blogsix";
 function App() {
   return (
     <>
@@ -57,6 +61,10 @@ function App() {
         <Route path='/Dataandcyber' element={<Datacyber />} />
         <Route path='/Blogone' element={<Blogonetwo />} />
         <Route path='/Blogtwo' element={<Blogtwo />} />
+        <Route path='/Blogthree' element={<Blogthree />} />
+        <Route path='/Blogfour' element={<Blogfour />} />
+        <Route path='/Blogfive' element={<Blogfive />} />
+        <Route path='/Blogsix' element={<Blogsix />} />
       </Routes>
     
 <Footer />

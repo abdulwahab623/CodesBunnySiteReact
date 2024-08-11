@@ -97,9 +97,7 @@ const Abouthome = () => {
             </span>
           </div>
           <div className="row">
-            <div
-              className="col-xl-4 col-lg-4" 
-            >
+            <div className="col-xl-4 col-lg-4" >
               <div className="services-one__single" >
                 <div className="services-one__icon">
                   <img className="im" decoding="async" src={Web} alt="App" data-aos="flip-left" />

@@ -72,18 +72,21 @@ const Blogtwo = () => {
                   <h3 className="sidebar__title">Categories</h3>
                   <ul className="sidebar__categories-list list-unstyled">
                     <li>
-                      <NavLink to="/service">Services <span className="icon-right-arrow"></span></NavLink>
+                      <NavLink to="/service">Services </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/Dataandcyber">Data Sciences <span className="icon-right-arrow"></span></NavLink>
+                      <NavLink to="/Dataandcyber">Data Sciences </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/Dataandcyber">Cyber Security <span className="icon-right-arrow"></span></NavLink>
+                      <NavLink to="/Dataandcyber">Cyber Security </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/web">App Development <span className="icon-right-arrow"></span></NavLink>
+                      <NavLink to="/web">App Development </NavLink>
                     </li>
+                  
                   </ul>
+                  <NavLink to="/contact" className="nav-btn">Get Free Quote Now </NavLink>
+                  
                 </div>
               </div>
             </div>

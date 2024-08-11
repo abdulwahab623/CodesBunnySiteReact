@@ -16,7 +16,7 @@
 .servicessingle {
     position: relative;
     display: block;
-    background-color:#39618a;
+    background-image: url('../Images/CodesBunny/BB.png');
 
     border-radius: var(--thm-bdr-radius);
     padding: 40px 50px 40px;

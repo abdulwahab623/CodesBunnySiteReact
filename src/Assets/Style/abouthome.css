@@ -335,10 +335,11 @@ home services
     --bs-gutter-x: 15px;
 }
 
+
 .services-one__single {
     position: relative;
     display: block;
-    background-color:#39618a;
+  background-image: url('../Images/CodesBunny/BB.png');
 
     border-radius: var(--thm-bdr-radius);
     padding: 40px 50px 40px;
@@ -405,7 +406,7 @@ home services
 .sersection-title__tagline {
     display: inline-flex;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     align-items: center;
     line-height: 1.5rem;
     margin-bottom: 2px;
@@ -437,7 +438,7 @@ home services
 
 .services-one__title {
     font-family: Barlow;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 700;
     line-height: 26px;
     margin-top: 26px;
@@ -462,7 +463,7 @@ home services
 }
 
 .services-one__title a:hover {
-    color: var(--thm-primary);
+    color: #00C9FF;
 }
 
 .services-one__text {

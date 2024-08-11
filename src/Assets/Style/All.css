@@ -4265,17 +4265,19 @@ canvas {
 .sidebar__categories {
     position: relative;
     display: block;
-    background: #eef3f7;
+    background-image: url('../Images/CodesBunny/BB.png');
     padding: 45px 25px 36px;
     border-radius: var(--thm-bdr-radius);
 }
 
 .sidebar__categories .sidebar__title {
     margin-left: 25px;
+    color: #ffffff;
 }
 
 .sidebar__categories-list {
     margin: 0;
+    
 }
 
 .sidebar__categories-list li+li {
@@ -4283,7 +4285,7 @@ canvas {
 }
 
 .sidebar__categories-list li a {
-    color: var(--thm-gray);
+    color: #ffffff;
     font-size: 16px;
     font-weight: 500;
     position: relative;
