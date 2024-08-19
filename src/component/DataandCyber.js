@@ -36,7 +36,7 @@ const Datacyber = () => {
               </div>
             </div>
             <div className="col-lg-6 col-md-6">
-              <img src={Bunny} alt="Animated bunny" decoding="async" style={{height:'450px'}}   className="aboutAnimatedImage" />
+              <img src={Bunny} alt="Animated bunny" decoding="async" style={{ height: '450px' }} className="aboutAnimatedImage" />
             </div>
           </div>
         </div>
@@ -44,79 +44,68 @@ const Datacyber = () => {
 
       <Servicerow />
 
-      <section className="custom-news-section">
+      <section className="serWeb">
         <div className="container">
-          <div className="custom-news-row">
-            <div className="col-xl-5 col-lg-6 custom-img-col-left" id="img1">
-              <div className="custom-news-img">
-                <img src={data} decoding="async" alt="Data" />
+          <div className="row">
+            <div className="col-xl-5 col-lg-6">
+              <div className="serWebimg" data-aos="zoom-in">
+                <img src={data} alt="Web Development" decoding="async" />
               </div>
             </div>
-            <div className="col-xl-7 col-lg-6 custom-text-col-right" id="text1">
-              <div className="custom-news-text-wrapper">
-                <div className="custom-news-text-content">
-                  <h3 className="custom-news-title">Data Sciences</h3>
-                  <p className="custom-news-description">
-                    Our web development services encompass the creation of dynamic, responsive, and user-friendly websites. Utilizing technologies such as HTML5, CSS3, JavaScript frameworks (React, Angular, Vue.js), and server-side languages (Node.js, Python, PHP), we build websites that are optimized for performance, security, and scalability. Our web development process includes:
+            <div className="col-xl-7 col-lg-6">
+              <div className="news-details__left">
+                <div className="serWebcontent">
+                  <h3 className="serWebcontenttitle">Data Sciences</h3>
+                  <p className="serWebtext1">
+                    Our SEO services are designed to improve your website's visibility and ranking on search engines. We employ various techniques, including:
+                    <br /><br />
+                    <img src={Tick} alt="Tick icon" decoding="async" /> Identifying the most relevant and high-performing keywords for your business.
+                    <br></br>
+                    <img src={Tick} alt="Tick icon" decoding="async" /> Optimizing website content, meta tags, and HTML code for search engines.
+                    <br></br>
+                    <img src={Tick} alt="Tick icon" decoding="async" /> Building high-quality backlinks and improving your website's domain authority.
+                    <br></br>
+                    <img src={Tick} alt="Tick icon" decoding="async" /> Enhancing website speed, mobile-friendliness, and overall user experience.
                   </p>
-                  <ul>
-                    <li>
-                      <img src={Tick} decoding="async" alt="Tick icon" /> Understanding the client's needs and defining the project scope.
-                    </li>
-                    <li>
-                      <img src={Tick} decoding="async" alt="Tick icon" /> Creating a comprehensive design and architecture plan that ensures a seamless user experience.
-                    </li>
-                    <li>
-                      <img src={Tick} decoding="async" alt="Tick icon" /> Implementing the design using cutting-edge technologies and best practices.
-                    </li>
-                    <li>
-                      <img src={Tick} decoding="async" alt="Tick icon" /> Conducting rigorous testing to ensure the website meets the highest standards of quality.
-                    </li>
-                    <li>
-                      <img src={Tick} decoding="async" alt="Tick icon" /> Seamlessly deploying the website and providing ongoing support to address any issues.
-                    </li>
-                  </ul>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="custom-news-row">
-            <div className="col-xl-7 col-lg-6 custom-text-col-left" id="text2">
-              <div className="custom-news-text-wrapper">
-                <div className="custom-news-text-content">
-                  <h3 className="custom-news-title">Cyber Security</h3>
-                  <p className="custom-news-description">
-                    Our app development services focus on creating feature-rich, high-performance mobile applications for Android and iOS platforms. Utilizing technologies such as Java, Kotlin, Swift, and Flutter, we deliver apps that are tailored to meet the unique needs of our clients. Our app development process includes:
-                  </p>
-                  <ul>
-                    <li>
-                      <img src={Tick} decoding="async" alt="Tick icon" /> Understanding the client's needs and defining the project scope.
-                    </li>
-                    <li>
-                      <img src={Tick} decoding="async" alt="Tick icon" /> Creating a comprehensive design and architecture plan that ensures a seamless user experience.
-                    </li>
-                    <li>
-                      <img src={Tick} decoding="async" alt="Tick icon" /> Implementing the design using cutting-edge technologies and best practices.
-                    </li>
-                    <li>
-                      <img src={Tick} decoding="async" alt="Tick icon" /> Conducting rigorous testing to ensure the website meets the highest standards of quality.
-                    </li>
-                    <li>
-                      <img src={Tick} decoding="async" alt="Tick icon" /> Seamlessly deploying the website and providing ongoing support to address any issues.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-5 col-lg-6 custom-img-col-right" id="img2">
-              <div className="custom-news-img">
-                <img src={Cyber } decoding="async" alt="Cyber" />
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <section className="news-details">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-7 col-lg-6">
+              <div className="news-details__left">
+                <div className="news-details__content">
+                  <h3 className="serWebcontenttitle">Cyber Security</h3>
+                  <p className="serWebtext1">
+                    Our ASO services help improve your app's visibility and ranking in app stores. We focus on:
+                    <br /><br />
+                    <img src={Tick} alt="Tick icon" decoding="async" /> Identifying and incorporating relevant keywords in your app's title and description.
+                    <br />
+                    <img src={Tick} alt="Tick icon" decoding="async" /> Encouraging positive reviews and ratings to boost your app's credibility.
+                    <br />
+                    <img src={Tick} alt="Tick icon" decoding="async" /> Creating compelling icons, screenshots, and videos to attract users.
+                    <br />
+                    <img src={Tick} alt="Tick icon" decoding="async" /> Seamlessly deploying the App and providing ongoing support to address any issues.
+                    <br />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-5 col-lg-6">
+              <div className="news-details__img" data-aos="zoom-in">
+                <img src={Cyber} alt="Web Development" decoding="async" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
     </>
   );
 };

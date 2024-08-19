@@ -32,38 +32,38 @@ const Blogonetwo = () => {
                   <img src="assets/images/blog/news-details-img-1.jpg" alt="news details" />
                 </div> */}
                 <div className="news-details__content">
-                  <h3 className="news-details__title" style={{color:'#00C9FF'}}>
+                  <h3 className="news-details__title" style={{ color: '#00C9FF' }}>
                     The Role of Innovation in Driving Business Success.
                   </h3>
-                  <p className="news-details__text-1" style={{color:'#ffffff'}}>
-                    <strong style={{color:'#00C9FF'}}>Introduction</strong><br />
+                  <p className="news-details__text-1" style={{ color: '#ffffff' }}>
+                    <strong style={{ color: '#00C9FF' }}>Introduction</strong><br />
                     In today’s rapidly evolving business landscape, innovation has become a key driver of success. Companies that embrace innovation not only stay ahead of the competition but also create new opportunities for growth and profitability. This blog explores the importance of innovation in business, strategies to foster a culture of innovation, and examples of companies that have successfully leveraged innovation to their advantage.
                     <br />
-                    <strong style={{color:'#00C9FF'}}>The Importance of Innovation in Business</strong>
+                    <strong style={{ color: '#00C9FF' }}>The Importance of Innovation in Business</strong>
                     <br />
                     Innovation is essential for several reasons. It enables companies to differentiate themselves from competitors, improve efficiency, and respond to changing market demands. Innovative companies can introduce new products and services, enhance customer experience, and streamline operations, leading to increased profitability and market share.
                     <br /><br />
-                    <strong style={{color:'#00C9FF'}}>Strategies to Foster a Culture of Innovation:</strong>
+                    <strong style={{ color: '#00C9FF' }}>Strategies to Foster a Culture of Innovation:</strong>
                     <br />
-                    <strong style={{color:'#00C9FF'}}>Encourage Creativity:</strong> Create an environment where employees feel empowered to share their ideas. Encourage brainstorming sessions and reward innovative thinking.
+                    <strong style={{ color: '#00C9FF' }}>Encourage Creativity:</strong> Create an environment where employees feel empowered to share their ideas. Encourage brainstorming sessions and reward innovative thinking.
                     <br />
-                    <strong style={{color:'#00C9FF'}}>Invest in R&D:</strong> Allocate resources to research and development. Investing in new technologies and processes can lead to breakthrough innovations.
+                    <strong style={{ color: '#00C9FF' }}>Invest in R&D:</strong> Allocate resources to research and development. Investing in new technologies and processes can lead to breakthrough innovations.
                     <br />
-                    <strong style={{color:'#00C9FF'}}>Collaborate:</strong> Partner with other companies, universities, and research institutions. Collaboration can bring in new perspectives and expertise.
+                    <strong style={{ color: '#00C9FF' }}>Collaborate:</strong> Partner with other companies, universities, and research institutions. Collaboration can bring in new perspectives and expertise.
                     <br />
-                    <strong style={{color:'#00C9FF'}}>Embrace Failure:</strong> Understand that not all innovative ideas will succeed. Encourage experimentation and view failures as learning opportunities.
+                    <strong style={{ color: '#00C9FF' }}>Embrace Failure:</strong> Understand that not all innovative ideas will succeed. Encourage experimentation and view failures as learning opportunities.
                     <br />
                   </p>
-                  <p className="news-details__text-2" style={{color:'#ffffff'}}>
-                    <strong style={{color:'#00C9FF'}}>Examples of Successful Innovations</strong>
+                  <p className="news-details__text-2" style={{ color: '#ffffff' }}>
+                    <strong style={{ color: '#00C9FF' }}>Examples of Successful Innovations</strong>
                     <br />
-                    <strong style={{color:'#00C9FF'}}>Apple:</strong> Known for its innovative products like the iPhone and iPad, Apple has consistently pushed the boundaries of technology and design.
+                    <strong style={{ color: '#00C9FF' }}>Apple:</strong> Known for its innovative products like the iPhone and iPad, Apple has consistently pushed the boundaries of technology and design.
                     <br />
-                    <strong style={{color:'#00C9FF'}}>Tesla:</strong> By pioneering electric vehicles and advancing autonomous driving technology, Tesla has revolutionized the automotive industry.
+                    <strong style={{ color: '#00C9FF' }}>Tesla:</strong> By pioneering electric vehicles and advancing autonomous driving technology, Tesla has revolutionized the automotive industry.
                     <br />
-                    <strong style={{color:'#00C9FF'}}>Amazon:</strong> Through innovations like Amazon Prime and AWS, Amazon has transformed e-commerce and cloud computing.
+                    <strong style={{ color: '#00C9FF' }}>Amazon:</strong> Through innovations like Amazon Prime and AWS, Amazon has transformed e-commerce and cloud computing.
                     <br /><br />
-                    <strong style={{color:'#00C9FF'}}>Conclusion</strong>
+                    <strong style={{ color: '#00C9FF' }}>Conclusion</strong>
                     <br />
                     Innovation is crucial for business success. By fostering a culture of creativity, investing in R&D, and embracing collaboration and failure, companies can drive innovation and achieve sustainable growth. Examples of Successful Innovations
                   </p>
@@ -88,7 +88,7 @@ const Blogonetwo = () => {
                       <NavLink to="/web">App Development </NavLink>
                     </li>
                   </ul>
-                  <NavLink to="/contact"  className="nav-btn">Get Free Quote Now </NavLink>
+                  <NavLink to="/contact" className="nav-btnSide">Get Free Quote Now </NavLink>
                 </div>
               </div>
             </div>

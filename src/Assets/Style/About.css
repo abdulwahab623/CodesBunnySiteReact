@@ -3,28 +3,28 @@
 /* General styles */
 .aboutMainHero {
     padding: 2rem 1rem;
-  }
-  
+}
 
-  .aboutHeroContainer {
+
+.aboutHeroContainer {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: left;
     font-family: Barlow;
-  }
+}
 
-  .row {
+.row {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-  }
-  
-  .col-lg-6,
-  .col-md-6 {
+}
+
+.col-lg-6,
+.col-md-6 {
     flex: 1;
     padding: 1rem;
-  }
+}
 
 
 .aboutHeroContent {
@@ -42,9 +42,9 @@
 .aboutHeroContent p {
     font-size: 1rem;
     margin-bottom: 1rem;
-    
+
     color: #ffffff;
-    
+
 }
 
 .aboutHeroContent ul {
@@ -59,7 +59,7 @@
     font-size: 1rem;
     margin-bottom: 10px;
 }
-              
+
 
 .aboutHeroBtn {
     color: #ffffff;
@@ -89,7 +89,7 @@
     left: 0;
     right: 0;
     height: 100%;
-    background: linear-gradient(0deg, #00C9FF 0%, rgba(9,101,126,1) 100%);
+    background: linear-gradient(0deg, #00C9FF 0%, rgba(9, 101, 126, 1) 100%);
     transition-delay: 0.1s;
     transition-timing-function: ease-in-out;
     transition-duration: 0.3s;
@@ -119,13 +119,16 @@
 }
 
 @keyframes float {
-    0%, 100% {
-      transform: translateY(0);
+
+    0%,
+    100% {
+        transform: translateY(0);
     }
+
     50% {
-      transform: translateY(-28px);
+        transform: translateY(-28px);
     }
-  }
+}
 
 .aboutHome {
     text-align: center;
@@ -211,7 +214,7 @@
     padding: 50px 20px;
 }
 
-.btnabout{
+.btnabout {
     color: #ffffff;
     margin-top: 20px;
     position: relative;
@@ -229,8 +232,9 @@
     transition: all 0.1s linear;
     overflow: hidden;
     letter-spacing: 0.2em;
-    z-index: 1;    
+    z-index: 1;
 }
+
 .btnabout:after {
     position: absolute;
     content: "";
@@ -238,7 +242,7 @@
     left: 0;
     right: 0;
     height: 100%;
-    background: linear-gradient(0deg, #00C9FF 0%, rgba(9,101,126,1) 100%);
+    background: linear-gradient(0deg, #00C9FF 0%, rgba(9, 101, 126, 1) 100%);
     transition-delay: 0.1s;
     transition-timing-function: ease-in-out;
     transition-duration: 0.3s;
@@ -258,43 +262,49 @@
 .btnabout:hover {
     color: var(--thm-base);
 }
-  
-  @keyframes float {
-    0%, 100% {
-      transform: translateY(0);
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
     }
+
     50% {
-      transform: translateY(-28px);
+        transform: translateY(-28px);
     }
-  }
+}
 
 /* Responsive styles */
 @media (max-width: 767px) {
     .row {
-    flex-direction: column;
-  }
-.aboutonemain{
-    padding: 0 20%;
-}
-  .col-lg-6,
-  .col-md-6 {
-    width: 100%;
-  }
+        flex-direction: column;
+    }
 
-  .HeroContent UL{
-    text-align: left;
-  }
+    .aboutonemain {
+        padding: 0 20%;
+    }
 
-  .aboutHeroContent {
-    text-align: center;
-    margin-bottom: 1rem;
-  }
+    .col-lg-6,
+    .col-md-6 {
+        width: 100%;
+    }
 
-  .aboutAnimatedImage {
-    margin: 0 auto;
-    max-width: 100%;
-    display: block;
-  }
+    .HeroContent UL {
+        text-align: left;
+    }
+
+    .aboutHeroContent {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .aboutAnimatedImage {
+        margin: 0 auto;
+        max-width: 100%;
+        display: block;
+    }
+
     .aboutMainHero {
         padding: 30px 0;
         flex-direction: column;
@@ -330,18 +340,21 @@
         margin-top: 20px;
     }
 
-   
+
 
     .aboutSectionOne {
         padding: 30px 10px;
+
     }
 
     .aboutText {
         font-size: 0.875rem;
     }
-    .aboutOneImg img{
+
+    .aboutOneImg img {
         width: 400px;
-        
+        margin: 20px auto;
+
     }
 }
 

@@ -30,7 +30,7 @@
 .testimonial-one {
   position: relative;
   display: block;
-  
+
   z-index: 1;
 }
 
@@ -77,11 +77,12 @@
   .items {
     animation: carouselAnim 35s infinite alternate linear;
   }
-  
+
   @keyframes carouselAnim {
     from {
       transform: translate(0, 0);
     }
+
     to {
       transform: translate(calc(-100% + (2 * 300px)));
     }
@@ -101,6 +102,7 @@
   from {
     transform: translate(0, 0);
   }
+
   to {
     transform: translate(calc(-100% + (5 * 300px)));
   }
@@ -128,11 +130,9 @@
 
 .right {
   right: 0;
-  background: linear-gradient(
-    to left,
-    rgba(245, 245, 245, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(to left,
+      rgba(245, 245, 245, 1) 0%,
+      rgba(255, 255, 255, 0) 100%);
 }
 
 
@@ -160,7 +160,7 @@ CTS CSS home page footer upper
 -------------------- */
 
 .cta-one {
-  
+
   position: relative;
   display: block;
   z-index: 1;
@@ -172,11 +172,9 @@ CTS CSS home page footer upper
   max-width: 100%;
   width: 100%;
   height: 365px;
-  background: radial-gradient(
-    circle,
-    rgba(14, 69, 82, 1) 0%,
-    rgba(10, 109, 136, 1) 100%
-  );
+  background: radial-gradient(circle,
+      rgba(14, 69, 82, 1) 0%,
+      rgba(10, 109, 136, 1) 100%);
 
   margin: 85px auto;
   z-index: 1;
@@ -225,7 +223,7 @@ CTS CSS home page footer upper
 
 
 .ctabtn {
-    color: #ffffff;
+  color: #ffffff;
   margin-top: 20px;
   position: relative;
   width: 400px;
@@ -235,7 +233,7 @@ CTS CSS home page footer upper
   border: none;
   outline: none !important;
   /* background-color: var(--thm-novablue); */
-  
+
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -255,7 +253,7 @@ CTS CSS home page footer upper
   left: 0;
   right: 0;
   height: 100%;
-  background: linear-gradient(0deg, #00C9FF 0%, rgba(9,101,126,1) 100%);
+  background: linear-gradient(0deg, #00C9FF 0%, rgba(9, 101, 126, 1) 100%);
   transition-delay: 0.1s;
   transition-timing-function: ease-in-out;
   transition-duration: 0.3s;
@@ -277,7 +275,7 @@ CTS CSS home page footer upper
 }
 
 .cta-one__btn:after {
-  background: linear-gradient(0deg, #00C9FF 0%, rgba(9,101,126,1) 100%);
+  background: linear-gradient(0deg, #00C9FF 0%, rgba(9, 101, 126, 1) 100%);
 }
 
 .cta-one__btn:hover:after {
@@ -288,6 +286,3 @@ CTS CSS home page footer upper
 .cta-one__btn:hover {
   color: var(--thm-primary);
 }
-
-
-

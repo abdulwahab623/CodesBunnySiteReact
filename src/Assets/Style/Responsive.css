@@ -232,7 +232,7 @@
 
 /* Tablet Layout: 768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    
+
     .about-one__left {
         max-width: 600px;
         margin: 0 auto;
@@ -538,7 +538,8 @@
         line-height: 40px;
         text-align: center;
     }
-    .mainHero{
+
+    .mainHero {
         padding: 30px 0;
         flex-direction: column;
         text-align: center;
@@ -549,25 +550,25 @@
         padding: 30px 0;
         flex-direction: column;
         text-align: center;
-      }
-      
-      .contact-page__right {
+    }
+
+    .contact-page__right {
         position: relative;
         display: block;
         padding: 40px;
         border-radius: 5%;
 
         background-color: #ffffff;
-        
+
     }
 
-      .HeroContent ul li {
-        
+    .HeroContent ul li {
+
         flex-direction: column;
         text-align: center;
         font-size: 1rem;
         margin-bottom: 0.5rem;
-      }
+    }
 
     .feature-one__single {
         padding: 41px 20px 41px;
@@ -604,24 +605,30 @@
     .share-the-joy__title {
         font-size: 30px;
         line-height: 40px;
-      text-align: center;
+        text-align: center;
     }
 
     .share-the-joy__btn {
-    margin-left: 115px;
+        margin-left: 115px;
     }
 
-    
+
     .share-the-joy__pra {
-    font-size: 16px;
-    color: white;
-    font-weight: 500;
-    line-height: 30px;
-    margin-bottom: 59px;
-    text-align: center;
-}
+        font-size: 16px;
+        color: white;
+        font-weight: 500;
+        line-height: 30px;
+        margin-bottom: 59px;
+        text-align: center;
+    }
 
+    .contact-page__right {
+        position: relative;
+        display: block;
+        padding: 40px;
+        background-color: #ffffff;
 
+    }
 
 
     .share-the-joy__trusted {
@@ -1040,10 +1047,11 @@
 
 
     .main-menu-wrapper__right {
-        display: none; /* Hide on mobile */
-      }
+        display: none;
+        /* Hide on mobile */
+    }
 
-      .list-unstyled {
+    .list-unstyled {
         padding-left: 0;
         list-style: none;
         text-align: left;
@@ -1114,6 +1122,7 @@
 
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
     .footer-widget__about,
     .footer-widget__links,
     .footer-widget__contact,
@@ -1125,6 +1134,7 @@
         height: 40px;
         width: 40px;
     }
+
     #main-slider-pagination {
         max-width: 720px;
     }
@@ -1185,6 +1195,14 @@
         margin-bottom: 25px;
     }
 
+    .contact-page__right {
+        position: relative;
+        display: block;
+        padding: 40px;
+        background-color: #af2f2f;
+
+    }
+
 }
 
 
@@ -1208,7 +1226,7 @@
 
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  
+
 
     /* .main-menu-wrapper__logo {
         margin-right: 50px;
@@ -1216,24 +1234,25 @@
 
     .main-menu .mobile-nav__toggler {
         margin-right: 0;
-        
+
         display: inline-block;
     }
 
     .main-menu-two .mobile-nav__toggler:hover {
         color: var(--thm-black);
     }
+
     .main-menu-wrapper__main-menu {
         margin-top: 30px;
         float: right;
     }
 
-    
+
 }
 
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-   
+
 
     /* .main-menu-wrapper__logo {
         margin-right: 50px;
@@ -1252,6 +1271,7 @@
     .main-menu-two .mobile-nav__toggler:hover {
         color: var(--thm-black);
     }
+
     .main-menu-wrapper__main-menu {
         margin-top: 30px;
         float: right;
@@ -1275,22 +1295,23 @@
     .news-one__content {
         width: 90%;
         bottom: 10px;
-      }
+    }
 
-      .news-one__title {
+    .news-one__title {
         font-size: 14px;
-      }
-    
-      .news-one__content p {
+    }
+
+    .news-one__content p {
         font-size: 12px;
-      }
-    
-      .news-one__read-more-btn {
+    }
+
+    .news-one__read-more-btn {
         font-size: 12px;
         padding: 4px 8px;
-      }
-    .main-header__top-inner{
-          display: none;
+    }
+
+    .main-header__top-inner {
+        display: none;
     }
 
     .main-menu-wrapper__right {
@@ -1319,7 +1340,7 @@
         padding: 0 30px;
     }
 
-    .about-two__text-1{
+    .about-two__text-1 {
         text-align: center;
     }
 
@@ -1337,11 +1358,13 @@
     .social-icons {
         display: none;
     }
+
     .main-menu-wrapper__right {
-        display: none; /* Hide on mobile */
-      }
-      
-      .brand-one {
+        display: none;
+        /* Hide on mobile */
+    }
+
+    .brand-one {
         position: relative;
         display: block;
         background-color: var(--thm-novablue);
@@ -1349,14 +1372,14 @@
         margin-bottom: 40px;
     }
 
-    .about-one__right a{
-       margin-left: 100px;
-    } 
+    .about-one__right a {
+        margin-left: 100px;
+    }
+
     .share-the-joy__title {
         font-size: 30px;
         line-height: 40px;
         text-align: center;
     }
-   
-}
 
+}

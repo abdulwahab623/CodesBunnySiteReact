@@ -2,6 +2,10 @@ import React from "react";
 //  import Contactus from '../Assets/Images/CodesBunny/Contactus.png'
 import Servicerow from "../component/Servicerow";
 import "../Assets/Style/ContactUs.css";
+import { NavLink } from "react-router-dom";
+import Mail from "../Assets/Images/CodesBunny/mailvector.png";
+import location from '../Assets/Images/CodesBunny/location.png'
+import phone from '../Assets/Images/CodesBunny/phone.png'
 import bun from "../Assets/Images/CodesBunny/Officiallogobg.png";
 const Contact = () => {
   return (
@@ -147,19 +151,19 @@ const Contact = () => {
                           What communication channel do you prefer?
                         </label>
                         <div>
-                        <input class="form-check-input" style={{margin:'7px 10px 0 '}} type="radio" value="Email" name="flexRadioDefault" id="flexRadioDefault1" />
-                      <label class="form-check-label" style={{margin:'0 10px 0 '}}  for="flexRadioDefault1">
-                        Email
-                      </label>
-                      <input class="form-check-input" style={{margin:'7px 10px 0 '}}  type="radio" value="Phone Call" name="flexRadioDefault" id="flexRadioDefault1" />
-                      <label class="form-check-label" style={{margin:'0 10px 0 '}}  for="flexRadioDefault1">
-                        Phone Call
-                      </label>
-                      <input class="form-check-input" style={{margin:'7px 10px 0 '}}   type="radio" value="Whatsapp" name="flexRadioDefault" id="flexRadioDefault1" />
-                      <label class="form-check-label" style={{margin:'0 10px 0 '}}  for="flexRadioDefault1">
-                        Whatsapp </label>
+                          <input class="form-check-input" style={{ margin: '7px 10px 0 ' }} type="radio" value="Email" name="flexRadioDefault" id="flexRadioDefault1" />
+                          <label class="form-check-label" style={{ margin: '0 10px 0 ' }} for="flexRadioDefault1">
+                            Email
+                          </label>
+                          <input class="form-check-input" style={{ margin: '7px 10px 0 ' }} type="radio" value="Phone Call" name="flexRadioDefault" id="flexRadioDefault1" />
+                          <label class="form-check-label" style={{ margin: '0 10px 0 ' }} for="flexRadioDefault1">
+                            Phone Call
+                          </label>
+                          <input class="form-check-input" style={{ margin: '7px 10px 0 ' }} type="radio" value="Whatsapp" name="flexRadioDefault" id="flexRadioDefault1" />
+                          <label class="form-check-label" style={{ margin: '0 10px 0 ' }} for="flexRadioDefault1">
+                            Whatsapp </label>
                         </div>
-                        
+
                       </div>
                       <div className="mb-3">
                         <label
@@ -185,11 +189,9 @@ const Contact = () => {
                         </button>
                       </div>
                     </form>
-                    <div className="result"></div>
                   </div>
                 </div>
                 <div className="col-xl-6 col-lg-6">
-
                   <div className="contact-page__left">
                     <div className="section-title text-left">
                       <span className="section-title__tagline">
@@ -218,20 +220,24 @@ const Contact = () => {
               <div className="col-xl-4 col-lg-4">
                 <div className="contact-details__single">
                   <div className="contact-details__icon">
-                    <span className="icon-map"></span>
+                    <NavLink to="mailto:your-email@example.com" >
+                      <img src={location} decoding="async" style={{ width: '50px' }} alt="email" />
+                    </NavLink>
                   </div>
                   <div className="contact-details__content">
                     <p className="contact-details__sub-title">
-                      Visit Our Store
+                      Visit Our Office
                     </p>
-                    <h5>66 Road Broklyn Street, New York</h5>
+                    <h5>Gulshan e Madina p-46 B Sargodha Road near Kia Moters Faisalabad, Punjab Pakistan</h5>
                   </div>
                 </div>
               </div>
               <div className="col-xl-4 col-lg-4">
                 <div className="contact-details__single contact-details__single-2">
                   <div className="contact-details__icon">
-                    <span className="icon-email-1"></span>
+                    <NavLink to="mailto:your-email@example.com" >
+                      <img src={Mail} decoding="async" style={{ width: '30px' }} alt="email" />
+                    </NavLink>
                   </div>
                   <div className="contact-details__content">
                     <p className="contact-details__sub-title">Send Email</p>
@@ -246,12 +252,14 @@ const Contact = () => {
               <div className="col-xl-4 col-lg-4">
                 <div className="contact-details__single contact-details__single-3">
                   <div className="contact-details__icon">
-                    <span className="icon-phone-call"></span>
+                    <NavLink to="mailto:your-email@example.com" >
+                      <img src={phone} decoding="async" style={{ width: '70px' }} alt="email" />
+                    </NavLink>
                   </div>
                   <div className="contact-details__content">
                     <p className="contact-details__sub-title">Call Anytime</p>
                     <h4>
-                      <a href="tel:926668880000">+ 92 666 888 0000</a>
+                      <a href="tel:923080044190">+92 308 0044190</a>
                     </h4>
                   </div>
                 </div>
@@ -260,26 +268,8 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <br />
-      <br />
-      <hr />
-      <section className="feature-one">
-        <div className="feature-one__bottom">
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="feature-one__bottom-inner">
-                <p>
-                  IT services built specifically for your business.
-                  <a href="services.html">Find Your Solution</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4562.753041141002!2d-118.80123790098536!3d34.152323469614075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e82469c2162619%3A0xba03efb7998eef6d!2sCostco+Wholesale!5e0!3m2!1sbn!2sbd!4v1562518641290!5m2!1sbn!2sbd"
-                    className="contact-page-google-map__one" allowFullScreen></iframe> */}
-      </section>
+
+
     </>
   );
 };

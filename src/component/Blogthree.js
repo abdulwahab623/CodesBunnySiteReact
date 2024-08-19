@@ -155,7 +155,7 @@ const Blogthree = () => {
                       <NavLink to="/web">App Development </NavLink>
                     </li>
                   </ul>
-                  <NavLink to="/contact"  className="nav-btn">Get Free Quote Now </NavLink>
+                  <NavLink to="/contact" className="nav-btnSide">Get Free Quote Now </NavLink>
                 </div>
               </div>
             </div>

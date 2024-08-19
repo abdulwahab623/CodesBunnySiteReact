@@ -1,10 +1,124 @@
-*{
-    padding :0;
-    margin:0;
+/* Reset some default browser styling */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
+/* Apply a basic font smoothing and improve text rendering */
+html {
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure body covers the full viewport height and uses flexbox for layout control */
+body {
     min-height: 100vh;
-    
+    font-family: 'Barlow', sans-serif; /* Ensure consistent typography */
+    line-height: 1.6; /* Set comfortable default line height */
+    color: #333; /* Set a base text color */
+    background-color: #f9f9f9; /* Light background color */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Set default font size and background color for the entire app */
+body, #root {
+    font-size: 16px;
+ 
+}
+
+/* Ensure images, videos, and other media scale responsively */
+img, picture, video, canvas {
+    max-width: 100%;
+
+}
+
+/* Remove default styling from lists */
+ul, ol {
+    list-style: none;
+}
+
+/* Remove underlines from links by default */
+a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+}
+
+/* Remove default button styling for a more consistent appearance */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* Provide a more accessible focus style */
+button:focus, a:focus {
+    outline: 2px dashed #333;
+    outline-offset: 4px;
+}
+
+/* Ensure form elements take up full width and have consistent styling */
+input, textarea, select, button {
+    width: 100%;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Make sure content areas take up available space */
+main {
+    flex-grow: 1;
+}
+
+/* Add basic styling for scrollbars */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Utility classes for common tasks */
+.text-center {
+    text-align: center;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+/* Responsive utility classes */
+.hidden-xs {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .hidden-sm {
+        display: none;
+    }
+}
+
+@media (min-width: 900px) {
+    .hidden-md {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hidden-lg {
+        display: none;
+    }
 }

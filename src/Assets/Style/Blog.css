@@ -1,10 +1,10 @@
-.blogbtn{
+.blogbtn {
     position: relative;
     display: block;
     margin-bottom: 70px;
 }
 
-.aboutctaa{
+.aboutctaa {
     color: #ffffff;
     margin-bottom: 70px;
     position: relative;
@@ -22,8 +22,9 @@
     transition: all 0.1s linear;
     overflow: hidden;
     letter-spacing: 0.2em;
-    z-index: 1;    
+    z-index: 1;
 }
+
 .aboutctaa:after {
     position: absolute;
     content: "";
@@ -31,7 +32,7 @@
     left: 0;
     right: 0;
     height: 100%;
-    background: linear-gradient(0deg, #00C9FF 0%, rgba(9,101,126,1) 100%);
+    background: linear-gradient(0deg, #00C9FF 0%, rgba(9, 101, 126, 1) 100%);
     transition-delay: 0.1s;
     transition-timing-function: ease-in-out;
     transition-duration: 0.3s;
@@ -49,5 +50,61 @@
 }
 
 .aboutctaa:hover {
+    color: var(--thm-base);
+}
+
+
+.nav-btnSide {
+    font-family: Barlow;
+
+    color: #ffffff;
+
+    position: relative;
+    width: 300px;
+    display: inline-block;
+    vertical-align: middle;
+    /* -webkit-appearance: none; */
+    border: none;
+    outline: none !important;
+    /* background-color: var(--thm-novablue); */
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 9px 35px;
+    border-radius: 9px;
+    border: 1px solid grey;
+    transition: all 0.1s linear;
+    overflow: hidden;
+    letter-spacing: 0.2em;
+    z-index: 1;
+    text-align: center;
+}
+
+.nav-btnSide:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(56, 54, 56) 100%);
+    transition-delay: .1s;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s;
+    transition-property: all;
+    opacity: 1;
+    transform-origin: bottom;
+    transform-style: preserve-3d;
+    transform: scaleY(0);
+    z-index: -1;
+}
+
+.nav-btnSide:hover:after {
+    opacity: 1;
+    transform: scaleY(1.0);
+}
+
+.nav-btnSide:hover {
     color: var(--thm-base);
 }

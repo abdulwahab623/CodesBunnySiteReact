@@ -1,4 +1,4 @@
- import React, { useState } from "react";
+import React, { useState } from "react";
 import OfficialLogo from '../Assets/Images/CodesBunny/Officiallogo.png';
 import { NavLink } from "react-router-dom";
 import emailpic from '../Assets/Images/CodesBunny/mail.png';
@@ -15,16 +15,16 @@ const Navbar = () => {
   return (
     <>
       <header className="main-header clearfix">
-       
-          <div className="main-header__top-inner clearfix">
-            <div className="main-header__top-right">
-              <div className="main-header__top-right-text">
-                <p>
-                  <span>Now Hiring:</span> Are you a driven and motivated 1st Line IT Support Engineer?
-                </p>
-              </div>
+
+        <div className="main-header__top-inner clearfix">
+          <div className="main-header__top-right">
+            <div className="main-header__top-right-text">
+              <p>
+                <span>Now Hiring:</span> Are you a driven and motivated 1st Line IT Support Engineer?
+              </p>
             </div>
           </div>
+        </div>
         <nav className="main-menu clearfix">
           <div className="main-menu-wrapper clearfix">
             <div className="main-menu-wrapper-inner clearfix">
@@ -51,7 +51,7 @@ const Navbar = () => {
                         <li><NavLink to="/Content">Digital Marketing</NavLink></li>
                         <li><NavLink to="/SeoAso">SEO / ASP Optimization</NavLink></li>
                         <li><NavLink to="/Content">Content Writing</NavLink></li>
-                      
+
                       </ul>
                     </li>
                     <li className="dropdown "><NavLink to="/blog">BLOG</NavLink></li>
@@ -74,28 +74,28 @@ const Navbar = () => {
             <i className="fa fa-times"></i>
           </span>
           <div className="logo-box">
-            <NavLink to="/" aria-label="logo image"><img src={OfficialLogo} decoding="async" fetchpriority="high"  alt="OfficialLogo" /></NavLink>
+            <NavLink to="/" aria-label="logo image"><img src={OfficialLogo} decoding="async" fetchpriority="high" alt="OfficialLogo" /></NavLink>
             {/* <h3 style={{ color: 'white', marginTop: '32px', fontStyle: 'initial' }}>CodesBunny</h3> */}
           </div>
           <ul className="main-menu__list">
-                    <li><NavLink to="/">HOME</NavLink></li>
-                    <li><NavLink to="/about">ABOUT US</NavLink></li>
-                    <li className="dropdown current">
-                      <NavLink to="/service">SERVICES</NavLink>
-                      <ul>
-                        <li><NavLink to="/service">Services</NavLink></li>
-                        <li><NavLink to="">Our Products</NavLink></li>
-                        <li><NavLink to="">Web Development</NavLink></li>
-                        <li><NavLink to="">App Development</NavLink></li>
-                        <li><NavLink to="">Digital Marketing</NavLink></li>
-                        <li><NavLink to="">SEO / ASP Optimization</NavLink></li>
-                        <li><NavLink to="">Content Writing</NavLink></li>
-                        <li><NavLink to="">Custom Software</NavLink></li>
-                      </ul>
-                    </li>
-                    <li className="dropdown current"><NavLink to="/blog">BLOG</NavLink></li>
-                    <li><NavLink to="/contact">CONTACT US</NavLink></li>
-                  </ul>
+            <li><NavLink to="/">HOME</NavLink></li>
+            <li><NavLink to="/about">ABOUT US</NavLink></li>
+            <li className="dropdown current">
+              <NavLink to="/service">SERVICES</NavLink>
+              <ul>
+                <li><NavLink to="/service">Services</NavLink></li>
+                <li><NavLink to="">Our Products</NavLink></li>
+                <li><NavLink to="">Web Development</NavLink></li>
+                <li><NavLink to="">App Development</NavLink></li>
+                <li><NavLink to="">Digital Marketing</NavLink></li>
+                <li><NavLink to="">SEO / ASP Optimization</NavLink></li>
+                <li><NavLink to="">Content Writing</NavLink></li>
+                <li><NavLink to="">Custom Software</NavLink></li>
+              </ul>
+            </li>
+            <li className="dropdown current"><NavLink to="/blog">BLOG</NavLink></li>
+            <li><NavLink to="/contact">CONTACT US</NavLink></li>
+          </ul>
           <ul className="mobile-nav__contact list-unstyled">
             <li><i className="fa fa-envelope"></i><a href="mailto:needhelp@packageName__.com">needhelp@izeetak.com</a></li>
             <li><i className="fa fa-phone-alt"></i><a href="tel:+92 308 0044190">+92 308 0044190</a></li>

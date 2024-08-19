@@ -37,7 +37,7 @@ const About = () => {
               </div>
             </div>
             <div className="col-lg-6 col-md-6">
-              <img src={Bunny} alt="bun" style={{height:'450px'}}  className="aboutAnimatedImage" />
+              <img src={Bunny} alt="bun" style={{ height: '450px' }} className="aboutAnimatedImage" />
             </div>
           </div>
         </div>
@@ -54,10 +54,10 @@ const About = () => {
           </div>
           <div className="row">
             <div className="col-xl-6 col-md-12 col-sm-12 aboutonemain">
-              <div className="aboutOneLeft " data-aos="fade-right">
+              <div className="aboutOneLeft" data-aos="fade-right">
                 <div className="aboutOneImgBox">
                   <div className="aboutOneImg">
-                    <img src={Team} decoding="async" style={{ height: "500px" }} alt="" />
+                    <img src={Team} decoding="async" style={{ height: "480px" }} alt="" />
                   </div>
                 </div>
               </div>

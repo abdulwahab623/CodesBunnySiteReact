@@ -55,24 +55,24 @@ const Blogfour = () => {
                     potential impact, and how businesses can prepare for the
                     changes ahead.
                     <br />
-                 
-                                        <br />
+
+                    <br />
                     <strong style={{ color: "#00C9FF" }}>
-                    Key Emerging Technologies
+                      Key Emerging Technologies
                     </strong>
                     <br />
                     <strong style={{ color: "#00C9FF" }}>
-                    Artificial Intelligence (AI):
+                      Artificial Intelligence (AI):
                     </strong>{" "}
                     AI continues to evolve, offering advanced capabilities in automation, data analysis, and customer interactions. Future AI applications include predictive analytics, autonomous vehicles, and personalized marketing.
                     <br />
                     <strong style={{ color: "#00C9FF" }}>
-                    Blockchain:
+                      Blockchain:
                     </strong>{" "}
                     Blockchain technology provides secure, transparent, and tamper-proof record-keeping. Its applications in business include supply chain management, secure transactions, and smart contracts.
                     <br />{" "}
                     <strong style={{ color: "#00C9FF" }}>
-                    Internet of Things (IoT):
+                      Internet of Things (IoT):
                     </strong>{" "}
                     IoT connects devices and systems, enabling real-time data
                     collection and analysis. Businesses can leverage IoT for
@@ -80,7 +80,7 @@ const Blogfour = () => {
                     customer experiences.
                     <br />{" "}
                     <strong style={{ color: "#00C9FF" }}>
-                    5G Technology:
+                      5G Technology:
                     </strong>{" "}
                     The rollout of 5G networks will enable faster, more reliable
                     internet connections. This will support advanced
@@ -92,53 +92,53 @@ const Blogfour = () => {
                     style={{ color: "#ffffff" }}
                   >
                     <strong style={{ color: "#00C9FF" }}>
-                    Impact of Emerging Technologies on Business 
+                      Impact of Emerging Technologies on Business
                     </strong>
                     <br />
                     <strong style={{ color: "#00C9FF" }}>
-                    Enhanced Customer Experience:
+                      Enhanced Customer Experience:
                     </strong>{" "}
                     Technologies like AI and IoT enable businesses to provide
                     personalized, real-time experiences that meet customer
                     needs.
                     <br />
                     <strong style={{ color: "#00C9FF" }}>
-                    Operational Efficiency:
+                      Operational Efficiency:
                     </strong>{" "}
                     Automation and advanced analytics streamline operations,
                     reduce costs, and improve decision-making.
                     <br />
                     <strong style={{ color: "#00C9FF" }}>
-                    New Business Models:
+                      New Business Models:
                     </strong>{" "}
                     Emerging technologies open up new opportunities for
                     business models, such as subscription services, digital
                     marketplaces, and on-demand services.
                     <br /><br />
-                    <strong  style={{ color: "#00C9FF" }}
-                      >Preparing for the Future
+                    <strong style={{ color: "#00C9FF" }}
+                    >Preparing for the Future
                     </strong>
                     <br /><strong style={{ color: "#00C9FF" }}>Stay Informed: </strong>
                     Keep up with the latest technological trends and
                     developments. Attend industry conferences, read relevant
                     publications, and participate in webinars. <br /><strong
                       style={{ color: "#00C9FF" }}
-                      >Invest in Technology: </strong> 
-                      Allocate resources to invest in emerging technologies
+                    >Invest in Technology: </strong>
+                    Allocate resources to invest in emerging technologies
                     that align with your business goals. <br /><strong
                       style={{ color: "#00C9FF" }}
-                      >Foster Innovation:</strong>
-                      Encourage a culture of innovation within your organization.
+                    >Foster Innovation:</strong>
+                    Encourage a culture of innovation within your organization.
                     Provide opportunities for employees to experiment with new
                     technologies and ideas. <br /><strong style={{ color: "#00C9FF" }}
-                      >Develop Skills:
+                    >Develop Skills:
                     </strong>
                     Ensure your workforce has the necessary skills to leverage
                     new technologies. Provide training and development programs
                     to keep employees up-to-date.
                     <br />
                     <br />
-                    
+
                     <strong style={{ color: "#00C9FF" }}>Conclusion</strong>
                     <br />
                     The future of business technology is promising, with
@@ -169,7 +169,7 @@ const Blogfour = () => {
                       <NavLink to="/web">App Development </NavLink>
                     </li>
                   </ul>
-                  <NavLink to="/contact"  className="nav-btn">Get Free Quote Now </NavLink>
+                  <NavLink to="/contact" className="nav-btnSide">Get Free Quote Now </NavLink>
                 </div>
               </div>
             </div>

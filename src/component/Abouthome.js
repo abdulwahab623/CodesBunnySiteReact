@@ -11,16 +11,16 @@ import Image9 from "../Assets/Images/CodesBunny/image9.png";
 import Innovation from "../Assets/Images/CodesBunny/Innovation.jpg";
 import AI from "../Assets/Images/CodesBunny/AI.jpg";
 import Digital from "../Assets/Images/CodesBunny/Digital Transformation.jpg";
-import gif from '../Assets/Images/shapes/Techofbunny.gif'
+import gif from '../Assets/Images/ourtecha.gif'
 
 const Abouthome = () => {
 
 
   return (
     <>
-    
+
       <section className="about-one">
-      <div className="backg"></div>        
+        <div className="backg"></div>
         <div className="container">
           <div className="row">
             <div className="col-lg-12 abouthome">
@@ -35,7 +35,7 @@ const Abouthome = () => {
                   <div className="about-one__img">
                     <img src={image7} decoding="async" alt="img" />
                   </div>
-               
+
                 </div>
               </div>
             </div>
@@ -77,7 +77,7 @@ const Abouthome = () => {
                 </p>
 
                 <NavLink to="/about" className="aboutHome__btn">
-                  Read More
+                  Learn More
                 </NavLink>
               </div>
             </div>
@@ -86,7 +86,7 @@ const Abouthome = () => {
       </section>
 
       <section className="services-one">
-        
+
         <div className="container">
           <div className="section-title text-center">
             <h2 className="sersection-title__title">
@@ -205,7 +205,7 @@ const Abouthome = () => {
                     </li>
                   </ul>
                   <NavLink to="/about" className="sharejoybtn">
-                    Read More
+                    Learn More
                   </NavLink>
                 </div>
               </div>
@@ -214,85 +214,85 @@ const Abouthome = () => {
         </div>
       </section>
 
-<section class="improve-one">
-<div class="container">
-  <div className="row">
-    <div className="col-lg-12 col-md-12 col-sm-12">
-      <h2 style={{color:'white', textAlign:'center', paddingTop:'40px'}}>What Your Business Needs</h2>
-      <h4 style={{color:'#00C9FF', textAlign:'center', paddingTop:'20px'}}>strategies for Success</h4>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xl-6">
-      <div class="improve-one__left " data-aos="zoom-in">
-        <div class="improve-one__img-box">
-          <div class="improve-one__img">
-            <img src={image10} decoding="async" alt="img" />
+      <section class="improve-one">
+        <div class="container">
+          <div className="row">
+            <div className="col-lg-12 col-md-12 col-sm-12">
+              <h2 style={{ color: 'white', textAlign: 'center', paddingTop: '40px' }}>What Your Business Needs</h2>
+              <h4 style={{ color: '#00C9FF', textAlign: 'center', paddingTop: '20px' }}>strategies for Success</h4>
+            </div>
           </div>
-          <div class="improve-one__project-complete">
-            <p>Grow business With <span>CodesBunny</span></p>
+          <div class="row">
+            <div class="col-xl-6">
+              <div class="improve-one__left " data-aos="zoom-in">
+                <div class="improve-one__img-box">
+                  <div class="improve-one__img">
+                    <img src={image10} decoding="async" alt="img" />
+                  </div>
+                  <div class="improve-one__project-complete">
+                    <p>Grow business With <span>CodesBunny</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="improve-one__right">
+                <ul class="list-unstyled improve-one__points">
+                  <li >
+                    <div class="text">
+                      <h3>For Small Businesses</h3>
+                      <p>
+                        Streamline productivity with custom software solutions that automate tasks, manage customer
+                        relationships, and provide data insights.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+
+                    <div class="text">
+                      <h3>For Medium-Sized Enterprises</h3>
+                      <p>
+
+                        Enhance efficiency with tailored software solutions that integrate seamlessly, supporting your
+                        business growth and flexibility.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="icon">
+
+                    </div>
+                    <div class="text">
+                      <h3>For Large Corporations</h3>
+                      <p>
+                        Leverage advanced technologies for competitive edge with custom software handling complex processes
+                        and ensuring security.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="col-xl-6">
-      <div class="improve-one__right">
-        <ul class="list-unstyled improve-one__points">
-          <li >
-            <div class="text">
-              <h3>For Small Businesses</h3>
-              <p>
-                Streamline productivity with custom software solutions that automate tasks, manage customer
-                relationships, and provide data insights.
-              </p>
+      </section>
+      <section className="ourTech">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 col-md-12 col-sm-12 ourTechhead">
+              <h2>What we are working with</h2>
             </div>
-          </li>
-          <li>
-          
-            <div class="text">
-              <h3>For Medium-Sized Enterprises</h3>
-              <p>
+          </div>
+          <div className="row">
+            <div className="col-lg-6 col-md-6 col-sm-6">
+              <img src={gif} decoding="async" alt="gif"></img>
+            </div>
+          </div>
+        </div>
 
-                Enhance efficiency with tailored software solutions that integrate seamlessly, supporting your
-                business growth and flexibility.
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="icon">
-              
-            </div>
-            <div class="text">
-              <h3>For Large Corporations</h3>
-              <p>
-                Leverage advanced technologies for competitive edge with custom software handling complex processes
-                and ensuring security.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-<section className="ourTech"> 
-  <div className="container">
-    <div className="row">
-      <div className="col-lg-12 col-md-12 col-sm-12 ourTechhead">
-        <h2>What we are working with</h2>
-      </div>
-    </div>
-    <div className="row">
-<div className="col-lg-12 col-md-12 col-sm-12">
-  <img src={gif} decoding="async" alt="gif"></img>
-</div>
-    </div>
-  </div>
+      </section>
 
-</section>
-
-{/* <section className="testimonial-one">
+      {/* <section className="testimonial-one">
         <h1>In Our Customers Words</h1>
         <div class="container">
           <div class="items">
@@ -408,7 +408,7 @@ const Abouthome = () => {
       </section>
 
       <section className="cta-one">
-     
+
         <div className="cta-one__container">
           <div className="col-lg-12">
             <div className="cta-one__inner">

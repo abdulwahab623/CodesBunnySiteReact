@@ -36,85 +36,75 @@ const SeoAso = () => {
               </div>
             </div>
             <div className="col-lg-6 col-md-6">
-              <img src={Bunny} alt="Animated bunny" decoding="async" style={{height:'450px'}}   className="aboutAnimatedImage" />
+              <img src={Bunny} alt="Animated bunny" decoding="async" style={{ height: '450px' }} className="aboutAnimatedImage" />
             </div>
           </div>
         </div>
       </section>
-      
+
       <Servicerow />
 
-      <section className="custom-news-section">
-  <div className="container">
-    <div className="custom-news-row">
-      <div className="col-xl-5 col-lg-6 custom-img-col-left" id="img1">
-        <div className="custom-news-img">
-          <img src={Seo} alt="seo" decoding="async" />
-        </div>
-      </div>
-      <div className="col-xl-7 col-lg-6 custom-text-col-right" id="text1">
-        <div className="custom-news-text-wrapper">
-          <div className="custom-news-text-content">
-            <h3 className="custom-news-title">Search Engine Optimization</h3>
-            <p className="custom-news-description">
-            Our SEO services are designed to improve your website's visibility and ranking on search engines. We employ various techniques, including:
-            </p>
-            <ul>
-                  <li>
+      <section className="serWeb">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-5 col-lg-6">
+              <div className="serWebimg" data-aos="zoom-in">
+                <img src={Seo} alt="Web Development" decoding="async" />
+              </div>
+            </div>
+            <div className="col-xl-7 col-lg-6">
+              <div className="news-details__left">
+                <div className="serWebcontent">
+                  <h3 className="serWebcontenttitle">Search Engine Optimization</h3>
+                  <p className="serWebtext1">
+                    Our SEO services are designed to improve your website's visibility and ranking on search engines. We employ various techniques, including:
+                    <br /><br />
                     <img src={Tick} alt="Tick icon" decoding="async" /> Identifying the most relevant and high-performing keywords for your business.
-                  </li>
-                  <li>
+                    <br></br>
                     <img src={Tick} alt="Tick icon" decoding="async" /> Optimizing website content, meta tags, and HTML code for search engines.
-                  </li>
-                  <li>
+                    <br></br>
                     <img src={Tick} alt="Tick icon" decoding="async" /> Building high-quality backlinks and improving your website's domain authority.
-                  </li>
-                  <li>
+                    <br></br>
                     <img src={Tick} alt="Tick icon" decoding="async" /> Enhancing website speed, mobile-friendliness, and overall user experience.
-                  </li>
-                 
-                </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div className="custom-news-row">
-      <div className="col-xl-7 col-lg-6 custom-text-col-left" id="text2">
-        <div className="custom-news-text-wrapper">
-          <div className="custom-news-text-content">
-            <h3 className="custom-news-title">App Store Optimization</h3>
-            <p className="custom-news-description">
-            Our ASO services help improve your app's visibility and ranking in app stores. We focus on:        
-               </p>
-            <ul>
-                  <li>
-                    <img src={Tick} alt="Tick icon" decoding="async" /> Identifying and incorporating relevant keywords in your app's title and description.
-                  </li>
-                  <li>
-                    <img src={Tick} alt="Tick icon" decoding="async" /> Encouraging positive reviews and ratings to boost your app's credibility.
-                  </li>
-                  <li>
-                    <img src={Tick} alt="Tick icon" decoding="async" /> Creating compelling icons, screenshots, and videos to attract users.
-                  </li>
-                  <li>
-                    <img src={Tick} alt="Tick icon" decoding="async" /> Adapting your app's listing for different languages and regions to reach a broader audience.
-                  </li>
-                  <li>
-                    <img src={Tick} alt="Tick icon" decoding="async" /> Seamlessly deploying the App and providing ongoing support to address any issues.
-                  </li>
-                </ul>
-          </div>
-        </div>
-      </div>
-      <div className="col-xl-5 col-lg-6 custom-img-col-right" id="img2">
-        <div className="custom-news-img">
-        <img src={Aso} alt="aso" decoding="async" />
+                  </p>
                 </div>
-      </div>
-    </div>
-    </div>
-    </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="news-details">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-7 col-lg-6">
+              <div className="news-details__left">
+                <div className="news-details__content">
+                  <h3 className="serWebcontenttitle">App Store Optimization</h3>
+                  <p className="serWebtext1">
+                    Our ASO services help improve your app's visibility and ranking in app stores. We focus on:
+                    <br /><br />
+                    <img src={Tick} alt="Tick icon" decoding="async" /> Identifying and incorporating relevant keywords in your app's title and description.
+                    <br />
+                    <img src={Tick} alt="Tick icon" decoding="async" /> Encouraging positive reviews and ratings to boost your app's credibility.
+                    <br />
+                    <img src={Tick} alt="Tick icon" decoding="async" /> Creating compelling icons, screenshots, and videos to attract users.
+                    <br />
+                    <img src={Tick} alt="Tick icon" decoding="async" /> Seamlessly deploying the App and providing ongoing support to address any issues.
+                    <br />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-5 col-lg-6">
+              <div className="news-details__img" data-aos="zoom-in">
+                <img src={Aso} alt="Web Development" decoding="async" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </>
   );
 };

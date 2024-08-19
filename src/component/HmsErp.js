@@ -45,7 +45,7 @@ const HmsErp = () => {
               <img
                 src={Bunny}
                 alt="Animated bunny"
-                style={{height:'450px'}}  
+                style={{ height: '450px' }}
                 className="aboutAnimatedImage"
               />
             </div>
@@ -55,131 +55,101 @@ const HmsErp = () => {
 
       <Servicerow />
 
-  <section className="custom-news-section">
-  <div className="container">
-    <div className="custom-news-row">
-      <div className="col-xl-5 col-lg-6 custom-img-col-left" id="img1">
-        <div className="custom-news-img">
-          <img src={HMS} decoding="async" alt="hms" />
-        </div>
-      </div>
-      <div className="col-xl-7 col-lg-6 custom-text-col-right" id="text1">
-        <div className="custom-news-text-wrapper">
-          <div className="custom-news-text-content">
-            <h3 className="custom-news-title">Hospital Management System (HMS)</h3>
-            <p className="custom-news-description">
-              Our Hospital Management System (HMS) is designed to
-              streamline and enhance the operations of healthcare
-              facilities. It offers a comprehensive suite of tools that
-              manage patient information, appointments, billing, and
-              medical records with ease and precision. Our HMS ensures
-              seamless communication between departments, reducing errors
-              and improving patient care. With features like electronic
-              health records (EHR), patient management, and automated
-              billing, healthcare providers can focus more on patient care
-              and less on administrative tasks.
-            </p>
-            <ul>
-                  <li>
-                    <img src={Tick} decoding="async" alt="Tick icon" /> Wide range of digital
-                    services
-                  </li>
-                  <li>
-                    <img src={Tick} decoding="async" alt="Tick icon" /> Exceptional online
-                    experiences
-                  </li>
-                  <li>
-                    <img src={Tick} decoding="async" alt="Tick icon" /> Expertise with user
-                    understanding
-                  </li>
-                </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+      <section className="news-details">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-5 col-lg-6 custom-img-col-left">
+              <div className="news-details__img" data-aos="zoom-in">
+                <img src={HMS} alt="Web Development" decoding="async" />
+              </div>
+            </div>
+            <div className="col-xl-7 col-lg-6">
+              <div className="news-details__left">
+                <div className="news-details__content">
+                  <h3 className="serWebcontenttitle">Hospital Management System (HMS)</h3>
+                  <p className="serWebtext1">
 
-    <div className="custom-news-row">
-      <div className="col-xl-7 col-lg-6 custom-text-col-left" id="text2">
-        <div className="custom-news-text-wrapper">
-          <div className="custom-news-text-content">
-            <h3 className="custom-news-title">Enterprise Resource Planning (ERP)</h3>
-            <p className="custom-news-description">
-              Our Enterprise Resource Planning (ERP) solutions integrate
-              all facets of your business operations into one cohesive
-              system. From finance and human resources to supply chain
-              management and customer relations, our ERP systems provide a
-              centralized platform that boosts productivity and
-              decision-making. By streamlining processes and providing
-              real-time data insights, our ERP solutions help businesses
-              reduce costs, improve efficiency, and gain a competitive
-              edge.
-            </p>
-            <ul>
-                  <li>
-                    <img src={Tick} decoding="async" alt="Tick icon" /> Wide range of digital
-                    services
-                  </li>
-                  <li>
-                    <img src={Tick} decoding="async" alt="Tick icon" /> Exceptional online
-                    experiences 
-                  </li>
-                  <li>
-                    <img src={Tick} decoding="async" alt="Tick icon" /> Expertise with user
-                    understanding
-                  </li>
-                </ul>
-          </div>
-        </div>
-      </div>
-      <div className="col-xl-5 col-lg-6 custom-img-col-right" id="img2">
-        <div className="custom-news-img">
-        <img src={ERP}  decoding="async" alt="erp" />
+                    Our HMS streamlines healthcare by managing patient info, appointments, billing, and records. It improves communication, reduces errors, and lets providers focus more on care than admin tasks.
+                    <br /><br />
+                    <strong style={{ color: '#00C9FF' }}>Requirements Gathering:</strong> Understanding the client's objectives and defining the project scope.
+                    <br />
+                    <strong style={{ color: '#00C9FF' }}>Design & Architecture:</strong> Designing a user-friendly interface and scalable architecture.
+                    <br />
+                    <strong style={{ color: '#00C9FF' }}>Development:</strong> Bringing the design to life with robust coding practices.
+                    <br />
+                    <strong style={{ color: '#00C9FF' }}>Testing & Quality Assurance:</strong> Ensuring the app functions flawlessly across different devices and operating systems.
+                    <br />
+                    <strong style={{ color: '#00C9FF' }}>Deployment & Support:</strong> Launching the app and providing ongoing support for maintenance and updates.
+                  </p>
                 </div>
-      </div>
-    </div>
-
-    <div className="custom-news-row">
-      <div className="col-xl-5 col-lg-6 custom-img-col-left" id="img3">
-        <div className="custom-news-img">
-        <img src={lms} decoding="async" alt="lms" />
-        </div>
-      </div>
-      <div className="col-xl-7 col-lg-6 custom-text-col-right" id="text3">
-        <div className="custom-news-text-wrapper">
-          <div className="custom-news-text-content">
-            <h3 className="custom-news-title">Learning Management System (LMS)</h3>
-            <p className="custom-news-description">
-              Our Learning Management System (LMS) is a powerful platform
-              designed to deliver, manage, and track educational and
-              training programs. Ideal for educational institutions,
-              corporations, and training providers, our LMS supports
-              various learning modalities, including e-learning,
-              instructor-led training, and blended learning. Features
-              include course management, progress tracking, assessments,
-              and certification. Our LMS empowers learners with engaging
-              and effective learning experiences while providing educators
-              and trainers with the tools they need to succeed.
-            </p>
-            <ul>
-                  <li>
-                    <img src={Tick} decoding="async" alt="Tick icon" /> Wide range of digital
-                    services
-                  </li>
-                  <li>
-                    <img src={Tick} decoding="async" alt="Tick icon" /> Exceptional online
-                    experiences
-                  </li>
-                  <li>
-                    <img src={Tick} decoding="async" alt="Tick icon" /> Expertise with user
-                    understanding
-                  </li>
-                </ul>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
+      <section className="news-details">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-7 col-lg-6">
+              <div className="news-details__left">
+                <div className="news-details__content">
+                  <h3 className="serWebcontenttitle">Enterprise Resource Planning (ERP)</h3>
+                  <p className="serWebtext1">
+                    Our ERP solutions integrate all business operations into a single system, enhancing productivity and decision-making. By streamlining processes and providing real-time insights, our ERP helps reduce costs, improve efficiency, and gain a competitive edge.
+                    <br /><br />
+                    <strong style={{ color: '#00C9FF' }}>Requirements Gathering:</strong> Understanding the client's objectives and defining the project scope.
+                    <br />
+                    <strong style={{ color: '#00C9FF' }}>Design & Architecture:</strong> Designing a user-friendly interface and scalable architecture.
+                    <br />
+                    <strong style={{ color: '#00C9FF' }}>Development:</strong> Bringing the design to life with robust coding practices.
+                    <br />
+                    <strong style={{ color: '#00C9FF' }}>Testing & Quality Assurance:</strong> Ensuring the app functions flawlessly across different devices and operating systems.
+                    <br />
+                    <strong style={{ color: '#00C9FF' }}>Deployment & Support:</strong> Launching the app and providing ongoing support for maintenance and updates.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-5 col-lg-6 custom-img-col-left">
+              <div className="news-details__img" data-aos="zoom-in">
+                <img src={ERP} alt="Web Development" decoding="async" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="news-details">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-5 col-lg-6 custom-img-col-left">
+              <div className="news-details__img" data-aos="zoom-in">
+                <img src={lms} alt="Web Development" decoding="async" />
+              </div>
+            </div>
+            <div className="col-xl-7 col-lg-6">
+              <div className="news-details__left">
+                <div className="news-details__content">
+                  <h3 className="serWebcontenttitle">Learning Management System (LMS)</h3>
+                  <p className="serWebtext1">
+                    Our LMS delivers and tracks educational programs for institutions and businesses, supporting e-learning, instructor-led, and blended learning. It offers course management, progress tracking, assessments, and certification, ensuring engaging experiences and effective tools for educators.
+                    <br /><br />
+                    <strong style={{ color: '#00C9FF' }}>Requirements Gathering:</strong> Understanding the client's objectives and defining the project scope.
+                    <br />
+                    <strong style={{ color: '#00C9FF' }}>Design & Architecture:</strong> Designing a user-friendly interface and scalable architecture.
+                    <br />
+                    <strong style={{ color: '#00C9FF' }}>Development:</strong> Bringing the design to life with robust coding practices.
+                    <br />
+                    <strong style={{ color: '#00C9FF' }}>Testing & Quality Assurance:</strong> Ensuring the app functions flawlessly across different devices and operating systems.
+                    <br />
+                    <strong style={{ color: '#00C9FF' }}>Deployment & Support:</strong> Launching the app and providing ongoing support for maintenance and updates.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
     </>
   );

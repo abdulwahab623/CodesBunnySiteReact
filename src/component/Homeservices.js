@@ -10,7 +10,7 @@ const Homeservices = () => {
     <section class="services-one">
       <div class="container">
         <div class="section-title text-center">
-        <h2 class="sersection-title__title">Tailored Solutions for Your Business</h2>
+          <h2 class="sersection-title__title">Tailored Solutions for Your Business</h2>
           <span class="sersection-title__tagline">Designed to Elevate Your Success</span>
         </div>
         <div class="row">
@@ -27,7 +27,7 @@ const Homeservices = () => {
                 Web Development Enhance your online presence with custom solutions. We build responsive, user-friendly websites that drive engagement and conversions.
               </p>
               <div class="services-one__arrow">
-              <NavLink to="/about" className="SerBtn">Learn More</NavLink>
+                <NavLink to="/about" className="SerBtn">Learn More</NavLink>
                 {/* <a href="web.html"><span class="icon-right-arrow"></span></a> */}
               </div>
             </div>
@@ -36,8 +36,8 @@ const Homeservices = () => {
 
             <div class="services-one__single">
               <div class="services-one__icon">
-                
-              <img class="im" src={App} decoding="async" alt="App" />
+
+                <img class="im" src={App} decoding="async" alt="App" />
               </div>
               <h3 class="services-one__title">
                 <a href="App.html">App Development</a>
@@ -48,7 +48,7 @@ const Homeservices = () => {
                 tailored to your business needs.
               </p>
               <div class="services-one__arrow">
-              <NavLink to="/about" className="SerBtn">Learn More</NavLink>
+                <NavLink to="/about" className="SerBtn">Learn More</NavLink>
               </div>
             </div>
           </div>
@@ -57,7 +57,7 @@ const Homeservices = () => {
               <div class="services-one__icon">
 
 
-              <img class="im" decoding="async" src={Media} alt="App" />
+                <img class="im" decoding="async" src={Media} alt="App" />
               </div>
               <h3 class="services-one__title">
                 <a href="Digital.html">Digital Marketing</a>
@@ -66,8 +66,8 @@ const Homeservices = () => {
                 Boost your brand's visibility and reach with our digital marketing services. We offer SEO, social media marketing, and PPC strategies to grow your business.
               </p>
               <div class="services-one__arrow">
-              <NavLink to="/about" className="SerBtn">Learn More</NavLink>
-                            </div>
+                <NavLink to="/about" className="SerBtn">Learn More</NavLink>
+              </div>
             </div>
           </div>
         </div>

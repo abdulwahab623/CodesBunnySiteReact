@@ -5,23 +5,29 @@
 .mainHero {
   padding: 2rem 1rem;
   position: relative;
-    background-image: url('../Images/CodesBunny/Ellipse1.png'); /* Ensure this path is correct */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 0% 0%; /* Start position for animation */
+  background-image: url('../Images/CodesBunny/Ellipse1.png');
+  /* Ensure this path is correct */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0% 0%;
+  /* Start position for animation */
 
-    animation: moveBackground 3s ease-in-out infinite; /* Apply both animations */
+  animation: moveBackground 3s ease-in-out infinite;
+  /* Apply both animations */
 }
+
 @keyframes moveBackground {
   0% {
-      background-position: 60% 0%;
+    background-position: 60% 0%;
   }
+
   50% {
-      background-position: 100% 100%;
+    background-position: 100% 100%;
   }
+
   100% {
-      background-position: 0% 0%;
+    background-position: 0% 0%;
   }
 }
 
@@ -32,13 +38,14 @@
   justify-content: center;
   text-align: left;
   color: #ffffff;
-  font-family: Barlow;}
+  font-family: Barlow;
+}
 
 .HeroContent h2 {
   color: #ffffff;
   font-size: 2rem;
   margin-bottom: 1rem;
-  
+
 }
 
 .row {
@@ -58,6 +65,7 @@
 }
 
 .HeroContent p {
+  color: #ffffff;
   font-size: 1rem;
   margin-bottom: 1rem;
 }
@@ -68,6 +76,7 @@
 }
 
 .HeroContent ul li {
+  color: #ffffff;
   font-size: 1rem;
   margin-bottom: 0.5rem;
 }
@@ -93,7 +102,7 @@
 
 .herothmbtn:hover {
 
-  background: linear-gradient(0deg, #00C9FF 0%, rgba(9,101,126,1) 100%);
+  background: linear-gradient(0deg, #00C9FF 0%, rgba(9, 101, 126, 1) 100%);
   transition-delay: 0.1s;
   transition-timing-function: ease-in-out;
   transition-duration: 0.3s;
@@ -104,7 +113,7 @@
   transform: scaleY(1.05);
   z-index: -1;
   color: #ffffff;
-  
+
 
 }
 
@@ -118,9 +127,12 @@
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }

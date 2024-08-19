@@ -36,7 +36,7 @@ const Blogsix = () => {
                 <div className="news-details__content">
                   <h3
                     className="news-details__title"
-                    style={{ color: "#00C9FF" }} 
+                    style={{ color: "#00C9FF" }}
                   >
                     {" "}
                     Leveraging Technology for Business Success{" "}
@@ -58,11 +58,11 @@ const Blogsix = () => {
                     <br />
                     <br />
                     <strong style={{ color: "#00C9FF" }}>
-                    Harnessing the Power of Web and App Development
+                      Harnessing the Power of Web and App Development
                     </strong>
                     <br />
                     <strong style={{ color: "#00C9FF" }}>
-                    Web Development:
+                      Web Development:
                     </strong>{" "}
                     Web development is the cornerstone of establishing a
                     strong online presence. Utilizing technologies such as
@@ -75,7 +75,7 @@ const Blogsix = () => {
                     loyalty.
                     <br />
                     <strong style={{ color: "#00C9FF" }}>
-                    App Development:
+                      App Development:
                     </strong>{" "}
                     Mobile applications have become essential tools for
                     customer engagement and operational efficiency. Android and
@@ -88,7 +88,7 @@ const Blogsix = () => {
                     satisfaction.
                     <br />{" "}
                     <strong style={{ color: "#00C9FF" }}>
-                    Effective Digital Marketing Strategies:
+                      Effective Digital Marketing Strategies:
                     </strong>{" "}
                     Digital marketing is crucial for reaching and engaging with
                     target audiences. Techniques such as search engine
@@ -99,7 +99,7 @@ const Blogsix = () => {
                     potential customers, and build brand awareness.
                     <br />{" "}
                     <strong style={{ color: "#00C9FF" }}>
-                    SEO and Content Writing:
+                      SEO and Content Writing:
                     </strong>{" "}
                     SEO involves optimizing website content and structure
                     to rank higher in search engine results. Content writing
@@ -109,9 +109,9 @@ const Blogsix = () => {
                     engaging blog posts, and optimizing on-page elements,
                     businesses can enhance their online presence and drive more
                     targeted traffic to their websites.
-                    <br/>
+                    <br />
                     <strong style={{ color: "#00C9FF" }}>
-                    Data Science and Cyber Security
+                      Data Science and Cyber Security
                     </strong>{" "}
                     Data science enables businesses to make data-driven
                     decisions by analyzing large datasets to uncover patterns,
@@ -121,9 +121,9 @@ const Blogsix = () => {
                     market trends, and operational efficiency. This data-driven
                     approach allows for more informed decision-making and
                     strategic planning.
-                    <br/>
+                    <br />
                     <strong style={{ color: "#00C9FF" }}>
-                    Cyber Security:
+                      Cyber Security:
                     </strong>{" "}
                     In an era where cyber threats are constantly evolving,
                     ensuring robust cyber security measures is paramount.
@@ -137,8 +137,6 @@ const Blogsix = () => {
                     className="news-details__text-2"
                     style={{ color: "#ffffff" }}
                   >
-                    
-                    <br />
                     <strong style={{ color: "#00C9FF" }}>Conclusion</strong>
                     <br />
                     Leveraging technology is key to achieving business
@@ -171,7 +169,7 @@ const Blogsix = () => {
                       <NavLink to="/web">App Development </NavLink>
                     </li>
                   </ul>
-                  <NavLink to="/contact"  className="nav-btn">Get Free Quote Now </NavLink>
+                  <NavLink to="/contact" className="nav-btnSide">Get Free Quote Now </NavLink>
                 </div>
               </div>
             </div>

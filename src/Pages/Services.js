@@ -37,13 +37,13 @@ const Services = () => {
               </div>
             </div>
             <div className="col-lg-6 col-md-6">
-              <img src={Bunny} alt="bun" style={{height:'450px'}}   className="aboutAnimatedImage" />
+              <img src={Bunny} alt="bun" style={{ height: '450px' }} className="aboutAnimatedImage" />
             </div>
           </div>
         </div>
       </section>
       <Servicerow />
-     
+
       <section className="services">
         <div className="container">
           <div className="row">

@@ -36,7 +36,7 @@ const Content = () => {
               </div>
             </div>
             <div className="col-lg-6 col-md-6">
-              <img src={Bunny} decoding="async" alt="Animated bunny" style={{height:'450px'}}   className="aboutAnimatedImage" />
+              <img src={Bunny} decoding="async" alt="Animated bunny" style={{ height: '450px' }} className="aboutAnimatedImage" />
             </div>
           </div>
         </div>
@@ -44,74 +44,68 @@ const Content = () => {
 
       <Servicerow />
 
-      <section className="custom-news-section">
+      <section className="serWeb">
         <div className="container">
-          <div className="custom-news-row">
-            <div className="col-xl-5 col-lg-6 custom-img-col-left" id="img1">
-              <div className="custom-news-img">
-                <img src={Marketing} decoding="async" alt="marketing" />
+          <div className="row">
+            <div className="col-xl-5 col-lg-6">
+              <div className="serWebimg" data-aos="zoom-in">
+                <img src={Marketing} alt="Web Development" decoding="async" />
               </div>
             </div>
-            <div className="col-xl-7 col-lg-6 custom-text-col-right" id="text1">
-              <div className="custom-news-text-wrapper">
-                <div className="custom-news-text-content">
-                  <h3 className="custom-news-title">Digital Marketing</h3>
-                  <p className="custom-news-description">
+            <div className="col-xl-7 col-lg-6">
+              <div className="news-details__left">
+                <div className="serWebcontent">
+                  <h3 className="serWebcontenttitle">Digital Marketing</h3>
+                  <p className="serWebtext1">
                     Our digital marketing services aim to boost your brand's visibility and reach through various online channels. Our comprehensive approach includes:
+                    <br /><br />
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Improving your website's ranking on search engines to attract organic traffic.
+                    <br></br>
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Creating targeted ad campaigns to drive immediate traffic and conversions.
+                    <br></br>
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Developing high-quality, engaging content to attract and retain your audience.
+                    <br></br>
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Leveraging social media platforms to build brand awareness and engage with your audience.
                   </p>
-                  <ul>
-                    <li>
-                      <img src={Tick} decoding="async" alt="Tick icon" /> Improving your website's ranking on search engines to attract organic traffic.
-                    </li>
-                    <li>
-                      <img src={Tick} decoding="async" alt="Tick icon" /> Creating targeted ad campaigns to drive immediate traffic and conversions.
-                    </li>
-                    <li>
-                      <img src={Tick} decoding="async" alt="Tick icon" /> Developing high-quality, engaging content to attract and retain your audience.
-                    </li>
-                    <li>
-                      <img src={Tick} decoding="async" alt="Tick icon" /> Leveraging social media platforms to build brand awareness and engage with your audience.
-                    </li>
-
-                  </ul>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="custom-news-row">
-            <div className="col-xl-7 col-lg-6 custom-text-col-left" id="text2">
-              <div className="custom-news-text-wrapper">
-                <div className="custom-news-text-content">
-                  <h3 className="custom-news-title">Content Writing</h3>
-                  <p className="custom-news-description">
-                    Our content writing services focus on creating compelling, SEO-optimized content that resonates with your audience. We provide:            </p>
-                  <ul>
-                    <li>
-                      <img src={Tick} decoding="async" alt="Tick icon" /> Engaging and informative articles that drive organic traffic.
-                    </li>
-                    <li>
-                      <img src={Tick} decoding="async" alt="Tick icon" /> Clear and persuasive content that communicates your brand message.
-                    </li>
-                    <li>
-                      <img src={Tick} decoding="async" alt="Tick icon" /> Detailed and appealing descriptions that highlight your products' features and benefits.
-                    </li>
-                    <li>
-                      <img src={Tick} decoding="async" alt="Tick icon" /> Creative and engaging posts that foster audience interaction.
-                    </li>
-
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-5 col-lg-6 custom-img-col-right" id="img2">
-              <div className="custom-news-img">
-                <img src={content} decoding="async" alt="Content" />
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <section className="news-details">
+        <div className="container">
+          <div className="row">
+
+            <div className="col-xl-7 col-lg-6">
+              <div className="news-details__left">
+                <div className="news-details__content">
+                  <h3 className="serWebcontenttitle">Content Writing</h3>
+                  <p className="serWebtext1">
+                    Our content writing services focus on creating compelling, SEO-optimized content that resonates with your audience. We provide:
+                    <br /><br />
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Engaging and informative articles that drive organic traffic.
+                    <br />
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Clear and persuasive content that communicates your brand message.
+                    <br />
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Detailed and appealing descriptions that highlight your products' features and benefits.
+                    <br />
+                    <img src={Tick} decoding="async" alt="Tick icon" /> Creative and engaging posts that foster audience interaction.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-5 col-lg-6">
+              <div className="news-details__img" data-aos="zoom-in">
+                <img src={content} alt="Web Development" decoding="async" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
     </>
   );
 };
