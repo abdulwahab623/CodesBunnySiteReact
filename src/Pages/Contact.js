@@ -1,13 +1,84 @@
-import React from "react";
-//  import Contactus from '../Assets/Images/CodesBunny/Contactus.png'
+import React, { useState } from "react";
 import Servicerow from "../component/Servicerow";
 import "../Assets/Style/ContactUs.css";
-import { NavLink } from "react-router-dom";
-import Mail from "../Assets/Images/CodesBunny/mailvector.png";
-import location from '../Assets/Images/CodesBunny/location.png'
-import phone from '../Assets/Images/CodesBunny/phone.png'
 import bun from "../Assets/Images/CodesBunny/Officiallogobg.png";
+import Bunny from '../Assets/Images/CodesBunny/contactBun.png';
+
 const Contact = () => {
+  const [fullname, setFullname] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [companyname, setCompanyname] = useState("");
+  const [contactChannel, setContactChannel] = useState("");
+  const [feedback, setFeedback] = useState("");
+  const [result, setResult] = useState("");
+
+  const handlechange = (e) => {
+    const { name, value } = e.target;
+    switch (name) {
+      case "fullname":
+        setFullname(value);
+        break;
+      case "email":
+        setEmail(value);
+        break;
+      case "phone":
+        setPhone(value);
+        break;
+      case "companyname":
+        setCompanyname(value);
+        break;
+      case "flexRadioDefault":
+        setContactChannel(value);
+        break;
+      case "feedback":
+        setFeedback(value);
+        break;
+      default:
+        break;
+    }
+  };
+
+  const handlesubmit = async (e) => {
+    e.preventDefault();
+
+    const formData = {
+      fullname,
+      email,
+      phone,
+      companyname,
+      contactChannel,
+      feedback,
+    };
+
+    try {
+      const response = await fetch("../Assets/inc/Contactback.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        const jsonResponse = await response.json();
+        setResult("Data saved and email sent!"); // Set success message
+      } else {
+        setResult("Error: Could not send data. Please try again."); // Set error message
+      }
+    } catch (error) {
+      setResult("Error: " + error.message); // Handle network errors
+    }
+
+    // Reset form fields after submission
+    setFullname("");
+    setEmail("");
+    setPhone("");
+    setCompanyname("");
+    setContactChannel("");
+    setFeedback("");
+  };
+
   return (
     <>
       <section className="ContactHero">
@@ -48,55 +119,43 @@ const Contact = () => {
           <div className="row">
             <div className="col-12 maincontact">
               <div className="row">
-                <div className="col-xl-6 col-lg-6 col=md-6 col-sm-12 mainform">
+                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 mainform">
                   <div className="contact-page__right">
                     <div className="row">
                       <div className="col-lg-12 col-md-12 col-sm-12 formtop">
                         <h2>Get in Touch </h2>
                         <p>
-                          Have question, comments or feedback ? We'd love to
+                          Have questions, comments, or feedback? We'd love to
                           hear from you.
                         </p>
                       </div>
                     </div>
                     <form
-                      action="assets/inc/sendemail.php"
+                      onSubmit={handlesubmit}
                       className="comment-one__form contact-form-validated"
                       noValidate="novalidate"
                     >
                       <div className="mb-3">
-                        <label
-                          for="exampleFormControlInput1"
-                          className="form-label labelss"
-                        >
-                          Full name
-                        </label>
+                        <label className="form-label labelss">Full name</label>
                         <input
                           type="text"
                           className="form-control"
-                          id="fullname"
                           name="fullname"
-                          value=""
-                          onChange=""
+                          value={fullname}
+                          onChange={handlechange}
                           placeholder="Enter your name"
                           required
                           autoComplete="off"
                         />
                       </div>
                       <div className="mb-3">
-                        <label
-                          for="exampleFormControlInput1"
-                          className="form-label labelss"
-                        >
-                          E-mail
-                        </label>
+                        <label className="form-label labelss">E-mail</label>
                         <input
                           type="email"
                           className="form-control"
-                          id="email"
                           name="email"
-                          value=""
-                          onChange=""
+                          value={email}
+                          onChange={handlechange}
                           placeholder="name@example.com"
                           required
                           autoComplete="off"
@@ -104,19 +163,13 @@ const Contact = () => {
                       </div>
 
                       <div className="mb-3">
-                        <label
-                          for="exampleFormControlInput1"
-                          className="form-label labelss"
-                        >
-                          Phone{" "}
-                        </label>
+                        <label className="form-label labelss">Phone</label>
                         <input
                           type="number"
                           className="form-control"
-                          id="phone"
                           name="phone"
-                          value=""
-                          onChange=""
+                          value={phone}
+                          onChange={handlechange}
                           placeholder="Enter your mobile number"
                           required
                           autoComplete="off"
@@ -124,61 +177,68 @@ const Contact = () => {
                       </div>
 
                       <div className="mb-3">
-                        <label
-                          for="exampleFormControlInput1"
-                          className="form-label labelss"
-                        >
-                          {" "}
-                          Company name
-                        </label>
+                        <label className="form-label labelss">Company name</label>
                         <input
                           type="text"
                           className="form-control"
-                          id="address"
-                          name="address"
-                          value=""
-                          onChange=""
-                          placeholder="Enter your address"
+                          name="companyname"
+                          value={companyname}
+                          onChange={handlechange}
+                          placeholder="Enter your company name"
                           required
                           autoComplete="off"
                         />
                       </div>
 
                       <div className="mb-3">
-                        <label
-                          for="exampleFormControlInput1"
-                          className="form-label labels">
+                        <label className="form-label labels">
                           What communication channel do you prefer?
                         </label>
                         <div>
-                          <input class="form-check-input" style={{ margin: '7px 10px 0 ' }} type="radio" value="Email" name="flexRadioDefault" id="flexRadioDefault1" />
-                          <label class="form-check-label" style={{ margin: '0 10px 0 ' }} for="flexRadioDefault1">
+                          <input
+                            className="form-check-input"
+                            type="radio"
+                            value="Email"
+                            name="flexRadioDefault"
+                            onChange={handlechange}
+                            id="flexRadioDefault1"
+                          />
+                          <label className="form-check-label" htmlFor="flexRadioDefault1">
                             Email
                           </label>
-                          <input class="form-check-input" style={{ margin: '7px 10px 0 ' }} type="radio" value="Phone Call" name="flexRadioDefault" id="flexRadioDefault1" />
-                          <label class="form-check-label" style={{ margin: '0 10px 0 ' }} for="flexRadioDefault1">
+                          <input
+                            className="form-check-input"
+                            type="radio"
+                            value="Phone Call"
+                            name="flexRadioDefault"
+                            onChange={handlechange}
+                            id="flexRadioDefault2"
+                          />
+                          <label className="form-check-label" htmlFor="flexRadioDefault2">
                             Phone Call
                           </label>
-                          <input class="form-check-input" style={{ margin: '7px 10px 0 ' }} type="radio" value="Whatsapp" name="flexRadioDefault" id="flexRadioDefault1" />
-                          <label class="form-check-label" style={{ margin: '0 10px 0 ' }} for="flexRadioDefault1">
-                            Whatsapp </label>
+                          <input
+                            className="form-check-input"
+                            type="radio"
+                            value="WhatsApp"
+                            name="flexRadioDefault"
+                            onChange={handlechange}
+                            id="flexRadioDefault3"
+                          />
+                          <label className="form-check-label" htmlFor="flexRadioDefault3">
+                            WhatsApp
+                          </label>
                         </div>
-
                       </div>
+
                       <div className="mb-3">
-                        <label
-                          for="exampleFormControlInput1"
-                          className="form-label labelss"
-                        >
-                          FeedBack{" "}
-                        </label>
+                        <label className="form-label labelss">Feedback</label>
                         <textarea
                           className="form-control"
-                          id="feedback"
-                          rows="3"
                           name="feedback"
-                          value=""
-                          onChange=""
+                          rows="3"
+                          value={feedback}
+                          onChange={handlechange}
                           placeholder="Drop your Feedback"
                           autoComplete="off"
                         ></textarea>
@@ -189,22 +249,23 @@ const Contact = () => {
                         </button>
                       </div>
                     </form>
+                    {result && <p>{result}</p>} {/* Display submission result message */}
                   </div>
                 </div>
                 <div className="col-xl-6 col-lg-6">
                   <div className="contact-page__left">
                     <div className="section-title text-left">
-                      <span className="section-title__tagline">
+                      <img src={Bunny} alt="Web Development" decoding="async" />
+                      <span className="section-title__tagline" style={{ color: '#ffffff' }}>
                         Contact with us
                       </span>
-                      <h2 className="section-title__title">
+                      <h2 className="section-title__title" style={{ color: '#198ba8' }}>
                         Write Message to Company
                       </h2>
+                      <p className="contact-page__text">
+                        We're here to help! Please fill out the form below to send us a message, and our team will get back to you as soon as possible. Whether you have a question, feedback, or need assistance, we're just a message away.
+                      </p>
                     </div>
-                    <p className="contact-page__text">
-                      Lorem ipsum is simply free text available the market dolor
-                      sit amet, consectetur notted adipisicing elit sed do.
-                    </p>
                   </div>
                 </div>
               </div>
@@ -212,64 +273,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-
-      <section className="contact-details">
-        <div className="container">
-          <div className="contact-details__inner">
-            <div className="row">
-              <div className="col-xl-4 col-lg-4">
-                <div className="contact-details__single">
-                  <div className="contact-details__icon">
-                    <NavLink to="mailto:your-email@example.com" >
-                      <img src={location} decoding="async" style={{ width: '50px' }} alt="email" />
-                    </NavLink>
-                  </div>
-                  <div className="contact-details__content">
-                    <p className="contact-details__sub-title">
-                      Visit Our Office
-                    </p>
-                    <h5>Gulshan e Madina p-46 B Sargodha Road near Kia Moters Faisalabad, Punjab Pakistan</h5>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-4 col-lg-4">
-                <div className="contact-details__single contact-details__single-2">
-                  <div className="contact-details__icon">
-                    <NavLink to="mailto:your-email@example.com" >
-                      <img src={Mail} decoding="async" style={{ width: '30px' }} alt="email" />
-                    </NavLink>
-                  </div>
-                  <div className="contact-details__content">
-                    <p className="contact-details__sub-title">Send Email</p>
-                    <h4>
-                      <a href="mailto:needhelp@company.com">
-                        needhelp@company.com
-                      </a>
-                    </h4>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-4 col-lg-4">
-                <div className="contact-details__single contact-details__single-3">
-                  <div className="contact-details__icon">
-                    <NavLink to="mailto:your-email@example.com" >
-                      <img src={phone} decoding="async" style={{ width: '70px' }} alt="email" />
-                    </NavLink>
-                  </div>
-                  <div className="contact-details__content">
-                    <p className="contact-details__sub-title">Call Anytime</p>
-                    <h4>
-                      <a href="tel:923080044190">+92 308 0044190</a>
-                    </h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
     </>
   );
 };
