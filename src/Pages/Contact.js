@@ -28,7 +28,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("../Assets/inc/Contactback.php", {
+      const response = await fetch("src/Assets/inc/Contactback.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -37,7 +37,6 @@ const Contact = () => {
       });
 
       if (response.ok) {
-        const jsonResponse = await response.json();
         setResult("Data saved and email sent!");
         setError("");
       } else {

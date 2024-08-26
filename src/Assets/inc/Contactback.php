@@ -1,50 +1,29 @@
 <?php
-$servername = "localhost"; // usually localhost
-$username = "your_database_username"; // your database username
-$password = "your_database_password"; // your database password
-$dbname = "your_database_name"; // your database name
+// Get the JSON data
+$json = file_get_contents('php://input');
+$data = json_decode($json, true);
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+if ($data) {
+    $fullname = $data['fullname'];
+    $email = $data['email'];
+    $phone = $data['phone'];
+    $companyname = $data['companyname'];
+    $contactChannel = $data['contactChannel'];
+    $feedback = $data['feedback'];
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+    // Process the form data (e.g., save to a database or send an email)
+    // Example: Sending an email
+    $to = "abdulwahab95623@gmail.com";
+    $subject = "New Contact Form Submission";
+    $body = "Full Name: $fullname\nEmail: $email\nPhone: $phone\nCompany Name: $companyname\nPreferred Contact Channel: $contactChannel\nFeedback: $feedback";
+    $headers = "From: $email";
 
-// Check if the request method is POST
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get form data and sanitize it
-    $fullname = filter_var($_POST['fullname'], FILTER_SANITIZE_STRING);
-    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-    $phone = filter_var($_POST['phone'], FILTER_SANITIZE_STRING);
-    $companyname = filter_var($_POST['companyname'], FILTER_SANITIZE_STRING);
-    $contactChannel = filter_var($_POST['flexRadioDefault'], FILTER_SANITIZE_STRING);
-    $feedback = filter_var($_POST['feedback'], FILTER_SANITIZE_STRING);
-
-    // Prepare and bind
-    $stmt = $conn->prepare("INSERT INTO ClientRecord (name, email, phone, companyName, contactChannel, feedback) VALUES (?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("ssssss", $fullname, $email, $phone, $companyname, $contactChannel, $feedback);
-
-    // Execute the query
-    if ($stmt->execute()) {
-        // Prepare email
-        $to = "abdulwahab95623@gmail.com"; // Your company's email address
-        $subject = "New Contact Form Submission";
-        $message = "Name: $fullname\nEmail: $email\nPhone: $phone\nCompany Name: $companyname\nPreferred Contact Channel: $contactChannel\nFeedback: $feedback";
-        $headers = "From: $email";
-
-        // Send email
-        mail($to, $subject, $message, $headers);
-
-        echo "Data saved and email sent!";
+    if (mail($to, $subject, $body, $headers)) {
+        echo json_encode(["message" => "Data saved and email sent!"]);
     } else {
-        echo "Error: " . $stmt->error;
+        echo json_encode(["error" => "Failed to send the form!"]);
     }
-
-    $stmt->close();
+} else {
+    echo json_encode(["error" => "Invalid input data!"]);
 }
-
-// Close the connection
-$conn->close();
 ?>
