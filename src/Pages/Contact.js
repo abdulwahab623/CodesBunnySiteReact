@@ -5,51 +5,27 @@ import bun from "../Assets/Images/CodesBunny/Officiallogobg.png";
 import Bunny from '../Assets/Images/CodesBunny/contactBun.png';
 
 const Contact = () => {
-  const [fullname, setFullname] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [companyname, setCompanyname] = useState("");
-  const [contactChannel, setContactChannel] = useState("");
-  const [feedback, setFeedback] = useState("");
+  const [formData, setFormData] = useState({
+    fullname: "",
+    email: "",
+    phone: "",
+    companyname: "",
+    contactChannel: "",
+    feedback: "",
+  });
   const [result, setResult] = useState("");
+  const [error, setError] = useState("");
 
-  const handlechange = (e) => {
+  const handleInputChange = (e) => {
     const { name, value } = e.target;
-    switch (name) {
-      case "fullname":
-        setFullname(value);
-        break;
-      case "email":
-        setEmail(value);
-        break;
-      case "phone":
-        setPhone(value);
-        break;
-      case "companyname":
-        setCompanyname(value);
-        break;
-      case "flexRadioDefault":
-        setContactChannel(value);
-        break;
-      case "feedback":
-        setFeedback(value);
-        break;
-      default:
-        break;
-    }
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
   };
 
-  const handlesubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-    const formData = {
-      fullname,
-      email,
-      phone,
-      companyname,
-      contactChannel,
-      feedback,
-    };
 
     try {
       const response = await fetch("../Assets/inc/Contactback.php", {
@@ -62,21 +38,26 @@ const Contact = () => {
 
       if (response.ok) {
         const jsonResponse = await response.json();
-        setResult("Data saved and email sent!"); // Set success message
+        setResult("Data saved and email sent!");
+        setError("");
       } else {
-        setResult("Error: Could not send data. Please try again."); // Set error message
+        setResult("");
+        setError("Error: Could not send data. Please try again.");
       }
     } catch (error) {
-      setResult("Error: " + error.message); // Handle network errors
+      setResult("");
+      setError("Error: " + error.message);
     }
 
     // Reset form fields after submission
-    setFullname("");
-    setEmail("");
-    setPhone("");
-    setCompanyname("");
-    setContactChannel("");
-    setFeedback("");
+    setFormData({
+      fullname: "",
+      email: "",
+      phone: "",
+      companyname: "",
+      contactChannel: "",
+      feedback: "",
+    });
   };
 
   return (
@@ -131,116 +112,114 @@ const Contact = () => {
                       </div>
                     </div>
                     <form
-                      onSubmit={handlesubmit}
+                      onSubmit={handleSubmit}
                       className="comment-one__form contact-form-validated"
                       noValidate="novalidate"
                     >
                       <div className="mb-3">
-                        <label className="form-label labelss">Full name</label>
+                        <label className="form-label">Full name</label>
                         <input
                           type="text"
                           className="form-control"
                           name="fullname"
-                          value={fullname}
-                          onChange={handlechange}
+                          value={formData.fullname}
+                          onChange={handleInputChange}
                           placeholder="Enter your name"
                           required
-                          autoComplete="off"
                         />
                       </div>
                       <div className="mb-3">
-                        <label className="form-label labelss">E-mail</label>
+                        <label className="form-label">E-mail</label>
                         <input
                           type="email"
                           className="form-control"
                           name="email"
-                          value={email}
-                          onChange={handlechange}
+                          value={formData.email}
+                          onChange={handleInputChange}
                           placeholder="name@example.com"
                           required
-                          autoComplete="off"
                         />
                       </div>
 
                       <div className="mb-3">
-                        <label className="form-label labelss">Phone</label>
+                        <label className="form-label">Phone</label>
                         <input
                           type="number"
                           className="form-control"
                           name="phone"
-                          value={phone}
-                          onChange={handlechange}
+                          value={formData.phone}
+                          onChange={handleInputChange}
                           placeholder="Enter your mobile number"
                           required
-                          autoComplete="off"
                         />
                       </div>
 
                       <div className="mb-3">
-                        <label className="form-label labelss">Company name</label>
+                        <label className="form-label">Company name</label>
                         <input
                           type="text"
                           className="form-control"
                           name="companyname"
-                          value={companyname}
-                          onChange={handlechange}
+                          value={formData.companyname}
+                          onChange={handleInputChange}
                           placeholder="Enter your company name"
                           required
-                          autoComplete="off"
                         />
                       </div>
 
                       <div className="mb-3">
-                        <label className="form-label labels">
-                          What communication channel do you prefer?
+                        <label className="form-label">
+                          Preferred communication channel?
                         </label>
                         <div>
                           <input
                             className="form-check-input"
                             type="radio"
                             value="Email"
-                            name="flexRadioDefault"
-                            onChange={handlechange}
-                            id="flexRadioDefault1"
+                            name="contactChannel"
+                            onChange={handleInputChange}
+                            id="contactChannelEmail"
+                            aria-label="Email"
                           />
-                          <label className="form-check-label" htmlFor="flexRadioDefault1">
+                          <label className="form-check-label" htmlFor="contactChannelEmail">
                             Email
                           </label>
                           <input
                             className="form-check-input"
                             type="radio"
                             value="Phone Call"
-                            name="flexRadioDefault"
-                            onChange={handlechange}
-                            id="flexRadioDefault2"
+                            name="contactChannel"
+                            onChange={handleInputChange}
+                            id="contactChannelPhone"
+                            aria-label="Phone Call"
                           />
-                          <label className="form-check-label" htmlFor="flexRadioDefault2">
+                          <label className="form-check-label" htmlFor="contactChannelPhone">
                             Phone Call
                           </label>
                           <input
                             className="form-check-input"
                             type="radio"
                             value="WhatsApp"
-                            name="flexRadioDefault"
-                            onChange={handlechange}
-                            id="flexRadioDefault3"
+                            name="contactChannel"
+                            onChange={handleInputChange}
+                            id="contactChannelWhatsApp"
+                            aria-label="WhatsApp"
                           />
-                          <label className="form-check-label" htmlFor="flexRadioDefault3">
+                          <label className="form-check-label" htmlFor="contactChannelWhatsApp">
                             WhatsApp
                           </label>
                         </div>
                       </div>
 
                       <div className="mb-3">
-                        <label className="form-label labelss">Feedback</label>
+                        <label className="form-label">Feedback</label>
                         <textarea
                           className="form-control"
                           name="feedback"
                           rows="3"
-                          value={feedback}
-                          onChange={handlechange}
+                          value={formData.feedback}
+                          onChange={handleInputChange}
                           placeholder="Drop your Feedback"
-                          autoComplete="off"
                         ></textarea>
                       </div>
                       <div className="col-md-12">
@@ -249,7 +228,8 @@ const Contact = () => {
                         </button>
                       </div>
                     </form>
-                    {result && <p>{result}</p>} {/* Display submission result message */}
+                    {result && <p className="text-success">{result}</p>}
+                    {error && <p className="text-danger">{error}</p>}
                   </div>
                 </div>
                 <div className="col-xl-6 col-lg-6">
